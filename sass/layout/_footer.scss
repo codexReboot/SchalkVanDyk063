@@ -1,3 +1,11 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
 .footer {
-      background-color: rgba(orangered, .5)
+  &__logoContainer {
+    background: url("/img/background/HeroAndFooterBgLandscape.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
