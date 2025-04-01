@@ -24,18 +24,102 @@
       </h1>
     </header>
 
-    <main>
-      <section>
+    <main class="main">
+      <section class="main__aboutSection">
         <h2>About</h2>
       </section>
-      <section>
+      <section class="main__servicesSection">
         <h2>Services</h2>
       </section>
-      <section>
+      <section class="main__portfolioSection">
         <h2>Portfolio</h2>
       </section>
-      <section>
-        <h2>Tech</h2>
+      <section class="main__skillsSection skillsSection">
+        <h2 class="skillsSection__headingH2 headingH2 headingH2--skillsSection">Skills</h2>
+        <hr class="skillsSection__hr hr--skillsSection">
+        <p class="skillsSection__headingH2Tagline headingH2Tagline headingH2Tagline--skillsSection">what I do</p>
+        <article class="skillsSection__skills">
+          <h3 class="skillsSection__headingH3 headingH3 headingH3--skillsSection">Website and Web App Design & Development: Crafting the Digital Experience</h3>
+          <p class="skillsSection__paragraph paragraph paragraph--skillsSection">I specialize in creating fast-loading,
+              responsive web pages and apps for seamless user interaction. With a
+              mobile-first approach, I ensure optimal rendering on various devices.
+              My designs create better user experiences, enabling full focus on the
+              product or service. Additionally, I excel at constructing dynamic
+              pages and apps.</p>
+          <div class="skillsSection__cardContainer">
+            <article class="skillsSection__card card card--skills">
+              <img class="card__img card__img--skills" src="./img/svgIcons/fastIcon.svg" alt="High-Speed Performance Icon">
+              <div class="card__content card__content--skills">
+                  <h3 class="card__title card__title--skills">High-Speed</h3>
+                  <hr class="card__divider card__divider--skills">
+                  <p class="card__description card__description--skills paragraph paragraph--skills">fast loading web pages and applications</p>
+              </div>
+            </article>
+            <article class="skillsSection__card card card--skills">
+              <img class="card__img card__img--skills" src="./img/svgIcons/responsiveIcon.svg" alt="High-Speed Performance Icon">
+              <div class="card__content card__content--skills">
+                  <h3 class="card__title card__title--skills">Responsive</h3>
+                  <hr class="card__divider card__divider--skills">
+                  <p class="card__description card__description--skills paragraph paragraph--skills">flexible layouts and responsive images</p>
+              </div>
+            </article>
+            <article class="skillsSection__card card card--skills">
+              <img class="card__img card__img--skills" src="./img/svgIcons/intuitiveIcon.svg" alt="High-Speed Performance Icon">
+              <div class="card__content card__content--skills">
+                  <h3 class="card__title card__title--skills">Intuitive</h3>
+                  <hr class="card__divider card__divider--skills">
+                  <p class="card__description card__description--skills paragraph paragraph--skills">efficient and easy to use and a good user experience</p>
+              </div>
+            </article>
+            <article class="skillsSection__card card card--skills">
+              <img class="card__img card__img--skills" src="./img/svgIcons/dynamicIcon.svg" alt="High-Speed Performance Icon">
+              <div class="card__content card__content--skills">
+                  <h3 class="card__title card__title--skills">Dynamic</h3>
+                  <hr class="card__divider card__divider--skills">
+                  <p class="card__description card__description--skills paragraph paragraph--skills">active and dynamic content to improve user experience</p>
+              </div>
+            </article>
+            <article class="skillsSection__card card card--skills">
+              <img class="card__img card__img--skills" src="./img/svgIcons/dynamicIcon.svg" alt="High-Speed Performance Icon">
+              <div class="card__content card__content--skills">
+                  <h3 class="card__title card__title--skills">Dynamic</h3>
+                  <hr class="card__divider card__divider--skills">
+                  <p class="card__description card__description--skills paragraph paragraph--skills">active and dynamic content to improve user experience</p>
+              </div>
+            </article>
+          </div>
+        </article>
+        <article class="skillsSection__tech">
+          <h3 class="skillsSection__headingH3 headingH3 headingH3--skillsSection">Tech I use</h3>
+          <p class="skillsSection__paragraph paragraph paragraph--skillsSection">I specialize in full-stack web development,
+              proficiently handling both the front-end and back-end aspects
+              of web applications and pages. My approach involves delivering
+              comprehensive end-to-end solutions, leveraging cutting-edge
+              technologies to swiftly accomplish clients' objectives.</p>
+          <div class="skillsSection__techStack techStack">
+              <img class="techStack__img" src="./img/svgIcons/htmlIcon.svg" alt="">
+              <img class="techStack__img" src="./img/svgIcons/cssIcon.svg" alt="">
+              <img class="techStack__img" src="./img/svgIcons/jsIcon.svg" alt="">
+              <img class="techStack__img" src="./img/svgIcons/bootstrapIcon.svg" alt="">
+              <img class="techStack__img" src="./img/svgIcons/sassIcon.svg" alt="">
+              <img class="techStack__img" src="./img/svgIcons/nodeJsIcon.svg" alt="">
+              <img class="techStack__img" src="./img/svgIcons/npmIcon.svg" alt="">
+              <img class="techStack__img" src="./img/svgIcons/mySqlIcon.svg" alt="">
+              <img class="techStack__img" src="./img/svgIcons/gitIcon.svg" alt="">
+              <img class="techStack__img" src="./img/svgIcons/gitHubIcon.svg" alt="">
+              <img class="techStack__img" src="./img/svgIcons/figmaIcon.svg" alt="">
+              <img class="techStack__img" src="./img/svgIcons/vscodeIcon.svg" alt="">
+              <img class="techStack__img" src="./img/svgIcons/codepenIcon.svg" alt="">
+          </div>
+        </article>
+        <a class="btn btn--primaryBtn skillsContactMeBtn" href="#contact">
+            <svg class="btn__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M4.48833 3.32808L5.50842 2.54674C5.91432 2.23584 6.48935 2.28119 6.8415 2.65187L9.79013 5.7557C10.1568 6.14166 10.1568 6.74723 9.79013 7.13319L8.98765 7.97792C8.62098 8.36388 8.62098 8.96945 8.98765 9.35542L11.5 12L13.9417 14.5702C14.3359 14.9852 14.9974 14.9852 15.3917 14.5702L16.0965 13.8282C16.474 13.4309 17.1009 13.4114 17.5023 13.7845L20.7217 16.7766C21.1437 17.1688 21.1478 17.8356 20.7308 18.233L19.3228 19.5747C17.7784 21.0465 15.5063 21.4579 13.5438 20.6213C8.83442 18.6136 5.0481 14.9144 2.93134 10.2531L2.81681 10.0008C1.7532 7.65864 2.44617 4.8923 4.48833 3.32808Z"
+                    stroke="#f0f0f0" stroke-width="2" />
+            </svg>
+            <span class="btn--contactMeText">Contact Me</span>
+        </a>
       </section>
     </main>
 
