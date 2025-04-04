@@ -19,7 +19,8 @@ $cf-white: #f0f0f0;
 $cf-dark: #292828;
 
 // font-size (mobile-first base: 1rem = 10px)
-$navlinkTextSize: 1rem;
+$navlinkTextSize: clamp(1.8rem, 6.3vw, 2rem);
+$navlinkTextSizeHover: clamp(2rem, 6.3vw, 2.2rem);
 $fs-h1: 3.2rem;  // 32px (Mobile) → 44.8px (Big Desk)
 $fs-h2: 2.6rem;  // 26px (Mobile) → 36.4px (Big Desk)
 $fs-h3: 2.2rem;  // 22px (Mobile) → 30.8px (Big Desk)
