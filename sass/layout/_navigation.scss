@@ -33,7 +33,6 @@
     gap: 5px;
     backface-visibility: hidden;
     transition: gap 0.3s;
-
     div {
       width: 3rem;
       height: 3px;
@@ -41,7 +40,6 @@
       backface-visibility: hidden;
       transition: transform 0.3s ease, opacity 0.3s ease;
     }
-
     &--active {
       div:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
@@ -66,7 +64,6 @@
   &__hamburger:hover {
     gap: 7px;
   }
-
   // Navigation list (hidden by default on mobile)
   &__list {
     display: none;
@@ -99,7 +96,6 @@
     }
   }
 }
-
 // Larger screens (750px and up)
 @media (min-width: 750px) {
   .nav {
@@ -110,7 +106,7 @@
     &__list {
       @include displayFlexRow;
       justify-content: flex-end;
-      gap: 5rem;
+      gap: 1rem;
       background: transparent;
       border-top: none;
       height: 2rem;
@@ -120,4 +116,9 @@
       position: static;
     }
   }
+}
+.navlinkText {
+  width: 10rem;
+  height: 3rem;
+  transition: all .3s ease;
 }

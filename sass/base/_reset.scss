@@ -58,7 +58,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: $cp-dark;
-  // box-sizing
   box-sizing: inherit;
 }
 
@@ -83,6 +82,7 @@ input,
 button,
 textarea,
 select {
+  color: inherit;
   font: inherit;
   background: transparent;
   border: none;

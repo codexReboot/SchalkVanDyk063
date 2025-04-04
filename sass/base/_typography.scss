@@ -72,7 +72,6 @@
 //   font-style: normal;
 // }
 
-
 // <weight>: Use a value from 400 to 900
 .alegreya-900 {
   font-family: "Alegreya", serif;
@@ -80,7 +79,6 @@
   font-weight: 900;
   font-style: normal;
 }
-
 // <weight>: Use a value from 400 to 700
 .caveat-400 {
   font-family: "Caveat", serif;
@@ -88,43 +86,36 @@
   font-weight: 400;
   font-style: normal;
 }
-
 .sedgwick-ave-regular {
   font-family: "Sedgwick Ave", serif;
   font-weight: 400;
   font-style: normal;
 }
-
 .lato-regular {
   font-family: "Lato", serif;
   font-weight: 400;
   font-style: normal;
 }
-
 .lato-bold {
   font-family: "Lato", serif;
   font-weight: 700;
   font-style: normal;
 }
-
 .lato-black {
   font-family: "Lato", serif;
   font-weight: 900;
   font-style: normal;
 }
-
 .lalezar-regular {
   font-family: "Lalezar", serif;
   font-weight: 400;
   font-style: normal;
 }
-
 .contrail-one-regular {
   font-family: "Contrail One", serif;
   font-weight: 400;
   font-style: normal;
 }
-
 .league-gothic-400 {
   font-family: "League Gothic", serif;
   font-optical-sizing: auto;
@@ -133,14 +124,25 @@
   font-variation-settings:
     "wdth" 100;
 }
-
 .mochiy-pop-one-regular {
   font-family: "Mochiy Pop One", serif;
   font-weight: 400;
   font-style: normal;
 }
-
-.nav {
+.navlinkText {
   color: $cf-white;
-
+  font-family: "Contrail One", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(1.8rem, 6.3vw, 2rem);
+  letter-spacing: 1px;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
 }
+.navlinkText:hover {
+  color: $cf-blue;
+  font-size: clamp(1.2rem, 6.3vw, 2.2rem);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+  transform: translateY(-2px);
+}
+
