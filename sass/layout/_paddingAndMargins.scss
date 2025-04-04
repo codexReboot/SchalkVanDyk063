@@ -1,0 +1,28 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+// mobile first
+.nav {
+      padding: $mobile-padding;
+}
+
+// tablet portrait
+@include respond(tab-port) {
+  .nav {
+    padding: $tab-port-padding;
+  }
+}
+
+// tablet landscape
+@include respond(tab-land) {
+  .nav {
+    padding: $tab-land-padding;
+  }
+}
+
+// desktops and larger
+@include respond(desk) {
+      .nav {
+      padding: $desk-padding;
+      }
+}

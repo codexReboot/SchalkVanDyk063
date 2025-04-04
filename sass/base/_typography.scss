@@ -1,3 +1,4 @@
+@use "../abstracts/variables" as *;
 // Alegreya font
 // <weight>: Use a value from 400 to 900
 // <uniquifier>: Use a unique and descriptive class name
@@ -139,3 +140,7 @@
   font-style: normal;
 }
 
+.nav {
+  color: $cf-white;
+
+}
