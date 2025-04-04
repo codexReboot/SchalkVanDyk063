@@ -39,22 +39,28 @@
       height: 3px;
       background: $cp-white;
       backface-visibility: hidden;
-      transition: transform 0.3s ease, opacity 0.3s ease;
+      transition: all 0.3s ease;
     }
     &--active {
       div:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
+        background: $cp-red;
+        width:3.3rem;
+        height: 5px;
+        transform: translateY(10px) rotate(45deg);
       }
       div:nth-child(2) {
         opacity: 0;
       }
       div:nth-child(3) {
+        background: $cp-red;
+        width: 3.3rem;
+        height: 5px;
         transform: translateY(-8px) rotate(-45deg);
       }
     }
     &--active:hover {
       div:nth-child(1) {
-        transform: translateY(10px) rotate(45deg);
+        transform: translateY(12px) rotate(45deg);
       }
 
       div:nth-child(3) {
