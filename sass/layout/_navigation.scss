@@ -43,7 +43,7 @@
     }
     &--active {
       div:nth-child(1) {
-        background: rgba($cp-red, .35);
+        background: rgba($cp-red, 0.35);
         width: 3.3rem;
         height: 5px;
         transform: translateY(10px) rotate(45deg);
@@ -52,7 +52,7 @@
         opacity: 0;
       }
       div:nth-child(3) {
-        background: rgba($cp-red, .35);
+        background: rgba($cp-red, 0.35);
         width: 3.3rem;
         height: 5px;
         transform: translateY(-8px) rotate(-45deg);
@@ -102,9 +102,9 @@
   &__item {
     opacity: 0;
     transform: translateY(20rem);
-  }  
+  }
   &__link {
-    display:block;
+    display: block;
     width: 10rem;
     height: 3rem;
     transition: all 0.3s ease;
@@ -125,10 +125,16 @@
       border-top: none;
       height: 2rem;
       padding: 0;
+      visibility: visible;
       opacity: 1;
       transform: none;
       position: static;
+      z-index: 1100;
+    }
+    &__item {
+      visibility: visible;
+      opacity: 1;
+      transform: none;
     }
   }
 }
-

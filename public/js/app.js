@@ -5,7 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const hamburgerBars = document.querySelectorAll(".hamburgerBar");
   let isHamburgerBtnClicked = false; // Track if the hamburger button is clicked
   let hamburgerBtnStatus = true; // Initial state of the hamburger button
-  console.log("Hamburger button status:", hamburgerBtnStatus); // Log the initial state
+  let stopMenuAttach = false;
+  console.log("stopMenuAttach: ", stopMenuAttach); // Debugging line
   // toggle hamburger icon
   function toggleHamburgerIcon() {
     hamburger.classList.toggle("nav__hamburger--active");
@@ -14,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function showMenuItems() {
     setTimeout(() => {
       let delayIndex = 0;
-      for (const item of navItems) {
+      for (let item of navItems) {
         item.style.transition = `opacity ${2 + delayIndex}s, transform ${2 - delayIndex}s`; /* Transition for opening */
         item.style.transitionDelay = `${delayIndex}s`; // Delay for each item
         item.style.opacity = "1"; // Fade in each item
@@ -26,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // hide menu items on click
   function hideMenuItems() {
     let delayIndex = 0;
-    for (const item of [...navItems].reverse()) {
+    for (let item of [...navItems].reverse()) {
       item.style.transitionDelay = `${delayIndex}s`;
       item.style.opacity = "0";
       item.style.transform = "translateY(20rem)";
@@ -90,11 +91,41 @@ document.addEventListener("DOMContentLoaded", () => {
       closeMenuBg(); // Close the menu
     }
   });
-  // Close menu on link click (for mobile UX)
-  document.querySelectorAll(".nav__link").forEach((link) => {
-    link.addEventListener("click", () => {
+  // Function to check screen width and apply listeners if needed
+  function checkScreenAndAttach() {
+    if (window.innerWidth >= 750) {
+      stopMenuAttach = true;
+      console.log("stopMenuAttach: ", stopMenuAttach); // Debugging line
+      console.log("navList is row in navbar"); // Debugging line
+      console.log("screen width >= 750"); // Debugging line
+      navList.style.display = "flex"; // Ensure display is flex for larger screens
+      navList.style.transform = "scaleY(1)"; // Ensure scale is 1
+      navList.style.transition = "none"; // Remove transition for immediate effect
+      navList.style.opacity = "1"; // Ensure opacity is 1
+      navList.style.visibility = "visible"; // Ensure visibility
+      for (let item of navItems) {
+        item.style.opacity = "1"; // Reset opacity
+        item.style.transform = "translateY(0)"; // Reset transform
+        item.style.transition = "none"; // Remove transition for immediate effect
+      }
+    } else if (
+      navList.style.display === "flex" &&
+      !hamburger.classList.contains("nav__hamburger--active") &&
+      window.innerWidth < 750 &&
+      stopMenuAttach === true
+    ) {
+      stopMenuAttach = false;
+      console.log("stopMenuAttach: ", stopMenuAttach); // Debugging line
       isHamburgerBtnClicked = true; // Set the flag to true
-      closeMenuBg(); // Close the menu
-    });
+      openMenuBg();
+    } else if (window.innerWidth < 750) {
+      stopMenuAttach = false;
+    }
+  }
+  // Initial check on page load
+  checkScreenAndAttach();
+  // Re-check on window resize
+  window.addEventListener("resize", () => {
+    checkScreenAndAttach();
   });
 });
