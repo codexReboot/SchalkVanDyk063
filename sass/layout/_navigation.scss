@@ -8,7 +8,7 @@
   background: linear-gradient(to bottom, rgba($cp-darkBlue, 0.85), rgba($cp-darkBlue, 1));
   border-bottom: 1px solid rgba($cp-white, 0.65);
   box-shadow: 0px 8px 12px 8px rgba($cp-dark, 0.85);
-  height: 8.9rem;
+  height: 7rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -19,12 +19,12 @@
   }
   &__logo {
     display: block;
-    width: 7.5rem;
+    width: 13rem;
     height: auto;
     transition: width 0.3s;
   }
   &__logo:hover {
-    width: 8rem;
+    width: 13.5rem;
   }
   // Hamburger Button
   &__hamburger {
@@ -88,7 +88,7 @@
     height: 95vh;
     padding: 5rem 1rem 0;
     position: fixed;
-    top: 8.8rem;
+    top: 6.9rem;
     left: 0;
     visibility: hidden; /* Hide initially */
     opacity: 0;
