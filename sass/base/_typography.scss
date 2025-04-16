@@ -132,7 +132,7 @@
 .paragraph {
   color: $cp-white;
   font-family: "Lato", serif;
-  font-size: clamp(1.4rem, 4.5vw, 1.6rem);
+  font-size: clamp(1.6rem, 5.5vw, 1.8rem);
   font-weight: 400;
   font-style: normal;
   text-align: center;
@@ -146,6 +146,15 @@
   letter-spacing: 2px;
   text-align: center;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+  &--primary {
+    color: $cf-red;
+    font-size: calc($btnTextSize + 0.2rem);
+    font-weight: 600;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .65);
+  }
+  &--secondary {
+    font-weight: 500;
+  }
 }
 .navlinkText {
   color: $cf-white;

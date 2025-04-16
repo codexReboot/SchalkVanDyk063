@@ -32,9 +32,17 @@
     transform: translateY(-1px);
   }
   &--primary {
-    background-color: rgba($cp-white, 0.75);
+    background-color: rgba($cp-white, 0.45);
+    padding: 0.3em 1.25em;
+
+  }
+  &--primary:hover {
+    background-color: rgba($cp-white, 0.65);
   }
   &--secondary {
-    background-color: rgba($cp-darkBlue, 0.25);
+    background-color: rgba($cp-darkBlue, 0.45);
+  }
+  &--secondary:hover {
+    background-color: rgba($cp-blue, 0.35);
   }
 }
