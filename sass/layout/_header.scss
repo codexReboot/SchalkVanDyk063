@@ -3,12 +3,16 @@
 
 .header {
       position: relative;
+      background: url("/img/background/HeroAndFooterBgPortrait.webp");
+      background-size: cover;
+      background-position: left center;
+      background-repeat: no-repeat;
       padding: 1rem;
-      margin-top: 7rem;
 }
 .heroSection {
       @include displayFlexColumn;
       gap: 2rem;
+      margin-top: 2rem;
       &__headingAndCtaContainer {
             @include displayFlexColumn;
             gap: 2rem;
