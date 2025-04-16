@@ -12,14 +12,18 @@
 .heroSection {
       @include displayFlexColumn;
       gap: 2rem;
-      margin-top: 2rem;
+      width: min(100%, 45rem);
+      margin: 7rem auto 0;
       &__headingAndCtaContainer {
+            @include displayFlexColumn;
+            gap: 2rem;
+      }
+      &__ctaContainer {
             @include displayFlexColumn;
             gap: 2rem;
       }
       &__ctaButtonContainer {
             @include displayFlexColumn;
-            gap: 1rem;
-            padding: 1rem;
+            gap: 2rem;
       }
 }
