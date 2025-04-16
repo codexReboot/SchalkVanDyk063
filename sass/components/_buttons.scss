@@ -1,0 +1,40 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+.btn {
+  @include displayFlexRow;
+  gap: 0.25rem;
+  background-color: $cp-darkBlue;
+  border-top: 2px solid $cp-darkGrey;
+  border-left: 2px solid $cp-grey;
+  border-bottom: 2px solid $cp-lightGrey;
+  border-right: 2px solid $cp-light;
+  border-radius: 0.45rem;
+  box-shadow: $bs-btn;
+  width: fit-content;
+  padding: 0.25em 1em;
+  margin: 0 auto;
+  cursor: pointer;
+  backface-visibility: hidden;
+  transition: all 0.2s;
+  &:link,
+  &:visited {
+    text-decoration: none;
+    transform: translateY(0px);
+  }
+  &:hover {
+    box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.55);
+    transform: translateY(-2px);
+  }
+  &:active {
+    border-bottom: 2px solid $cp-grey;
+    border-right: 2px solid $cp-grey;
+    box-shadow: 0 0 12px 3px rgba(0, 0, 0, 0.35);
+    transform: translateY(-1px);
+  }
+  &--primary {
+    background-color: rgba($cp-white, 0.75);
+  }
+  &--secondary {
+    background-color: rgba($cp-darkBlue, 0.25);
+  }
+}

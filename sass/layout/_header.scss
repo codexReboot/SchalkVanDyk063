@@ -3,8 +3,19 @@
 
 .header {
       position: relative;
+      padding: 1rem;
+      margin-top: 7rem;
 }
 .heroSection {
       @include displayFlexColumn;
       gap: 2rem;
+      &__headingAndCtaContainer {
+            @include displayFlexColumn;
+            gap: 2rem;
+      }
+      &__ctaButtonContainer {
+            @include displayFlexColumn;
+            gap: 1rem;
+            padding: 1rem;
+      }
 }

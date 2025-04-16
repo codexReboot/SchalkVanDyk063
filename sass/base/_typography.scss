@@ -129,6 +129,24 @@
   font-weight: 400;
   font-style: normal;
 }
+.paragraph {
+  color: $cp-white;
+  font-family: "Lato", serif;
+  font-size: clamp(1.4rem, 4.5vw, 1.6rem);
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+.btn {
+  color: $cf-white;
+  font-family: "Contrail One", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: $btnTextSize;
+  letter-spacing: 2px;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+}
 .navlinkText {
   color: $cf-white;
   font-family: "Contrail One", serif;
