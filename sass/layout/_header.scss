@@ -2,32 +2,91 @@
 @use "../abstracts/mixins" as *;
 
 .header {
-      position: relative;
-      background: url("/img/background/HeroAndFooterBgPortrait.webp");
-      background-size: cover;
-      background-position: left center;
-      background-repeat: no-repeat;
-      padding: 1rem;
+  position: relative;
+  background: url("/img/background/HeroAndFooterBgPortrait.webp");
+  background-size: cover;
+  background-position: left center;
+  background-repeat: no-repeat;
+  padding: 1rem 1rem 3rem;
 }
 .heroSection {
-      @include displayFlexColumn;
-      gap: 2rem;
-      width: min(100%, 45rem);
-      margin: 7rem auto 0;
-      &__headingH1 {
-            @include displayFlexColumn;
-            gap: 1;
-      }
-      &__headingAndCtaContainer {
-            @include displayFlexColumn;
-            gap: 2rem;
-      }
-      &__ctaContainer {
-            @include displayFlexColumn;
-            gap: 2rem;
-      }
-      &__ctaButtonContainer {
-            @include displayFlexColumn;
-            gap: 2rem;
-      }
+  @include displayFlexColumn;
+  gap: 0;
+  width: min(100%, 45rem);
+  margin: 3rem auto 0;
+  &__logoImage {
+    display: block;
+    width: clamp(16rem, 70vw, 40rem);
+    height: auto;
+  }
+  &__headingAndCtaContainer {
+    @include displayFlexColumn;
+    gap: 2rem;
+    margin-top: -3rem;
+  }
+  &__headingIntro,
+  &__ctaIntroParagraph {
+    width: min(95%, 32rem);
+  }
+  &__ctaContainer {
+    @include displayFlexColumn;
+    gap: 1rem;
+  }
+  &__ctaButtonContainer {
+    @include displayFlexColumn;
+    gap: 1.75rem;
+  }
+  @media (min-width: 400px) {
+    &__headingIntro,
+    &__ctaIntroParagraph {
+      width: min(95%, 35rem);
+    }
+  }
+  @media (min-width: 450px) {
+    &__headingIntro,
+    &__ctaIntroParagraph {
+      width: min(95%, 40rem);
+    }
+  }
+//   @media (min-width: 500px) {
+//     &__headingIntro,
+//     &__ctaIntroParagraph {
+//       width: min(95%, 42rem);
+//     }
+//   }
+}
+.headingH1 {
+  @include displayFlexColumn;
+  gap: clamp(1.25rem, 4.5vw, 1.75rem);
+  &__primaryHeading {
+    @include displayFlexColumn;
+    gap: 0;
+    position: relative;
+  }
+  &__title {
+    @include displayFlexRow;
+    gap: 0;
+  }
+  &__subtitle {
+    position: absolute;
+    top: min(18vw, 6rem);
+    left: 0;
+    right: 0;
+  }
+  &__letterS {
+    margin-bottom: 0rem;
+  }
+  &__lettersTheRest {
+    margin-bottom: -1.25rem;
+  }
+  @media (min-width: 350px) {
+    &__subtitle {
+      top: min(18vw, 7.5rem);
+    }
+  }
+  @media (min-width: 450px) {
+    &__subtitle {
+      top: min(18vw, 8.5rem);
+    }
+  }
 }
