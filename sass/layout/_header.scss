@@ -48,12 +48,6 @@
       width: min(95%, 40rem);
     }
   }
-//   @media (min-width: 500px) {
-//     &__headingIntro,
-//     &__ctaIntroParagraph {
-//       width: min(95%, 42rem);
-//     }
-//   }
 }
 .headingH1 {
   @include displayFlexColumn;
