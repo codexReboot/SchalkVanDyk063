@@ -1,0 +1,22 @@
+@use "../abstracts/variables" as *;
+.sectionDivider {
+  width: 100%;
+  height: 15rem;
+  position: absolute;
+  bottom: -5rem;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  &__color1 {
+    fill: url(#gradientBlue);
+      // fill: yellow;
+  }
+  &__color2 {
+//     fill: url(#gradientWhite);
+      fill: $cp-white;
+  }
+  &__color3 {
+//     fill: url(#gradientDarkBlue);
+      fill:$cp-blue;
+  }
+}
