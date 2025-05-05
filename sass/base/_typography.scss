@@ -154,6 +154,29 @@
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
   }
 }
+.headingH2 {
+  color: $cf-blue;
+  font-family: "Alegreya", serif;
+  font-size: clamp(2.4rem, 8vw, 4.5rem);
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: 4px;
+  text-align: left;
+  text-shadow: 2px 2px 1px rgba($cp-darkBlue, 1);
+  text-transform: uppercase;
+}
+.headingH2Tagline {
+  color: $cf-red;
+  font-family: "Caveat", serif;
+  font-optical-sizing: auto;
+  font-size: clamp(1.4rem, 5vw, 3.3rem);
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 1px;
+  line-height: 1;
+  text-align: left;
+  text-shadow: 1px 1px 1px rgba($cp-darkBlue, .65);
+}
 .paragraph {
   color: $cf-white;
   font-family: "Lato", serif;

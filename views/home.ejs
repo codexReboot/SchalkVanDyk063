@@ -60,7 +60,6 @@
         viewBox="0 0 1440 1000"
         preserveAspectRatio="none"
         xmlns="http://www.w3.org/2000/svg"
-        style="width: 100%; height: 200px"
       >
         <g transform="scale(1, -1) translate(0, -1000)">
           <path class="sectionDivider__color3" fill="none" d="M0,600 C420,900 1020,200 1440,600 L1440,0 L0,0 Z" />
@@ -84,10 +83,12 @@
       </svg>
     </header>
     <main class="main">
-      <section class="main__aboutSection">
-        <h2 class="aboutSection__headingH2 headingH2 headingH2--about">About</h2>
-        <hr class="aboutSection__hr hr hr--aboutSection" />
-        <p class="aboutSection__headingH2Tagline headingH2Tagline headingH2Tagline--about">get to know me</p>
+      <section class="main__aboutSection aboutSection">
+        <div class="aboutSection__sectionHeading sectionHeading">
+          <h2 class="aboutSection__headingH2 sectionHeading__headingH2 headingH2 headingH2--about">About</h2>
+          <hr class="aboutSection__hr sectionHeading__hr hr hr--aboutSection" />
+          <p class="aboutSection__headingH2Tagline sectionHeading__headingH2Tagline headingH2Tagline headingH2Tagline--about">get to know me</p>
+        </div>
         <div class="aboutSection__aboutContentContainer">
           <p class="aboutSection__paragraph paragraph paragraph--about">
             I reside in a small town called Modimolle in the southern part of Limpopo.
@@ -119,10 +120,12 @@
           </a>
         </div>
       </section>
-      <section class="main__servicesSection">
-        <h2 class="servicesSection__headingH2 headingH2 headingH2-services">Services</h2>
-        <hr class="servicesSection__hr hr hr--servicesSection" />
-        <p class="servicesSection_headingH2Tagline headingH2Tagline headingH2Tagline--services">how i can help you</p>
+      <section class="main__servicesSection servicesSection">
+        <div class="servicesSection__sectionHeading sectionHeading">
+          <h2 class="servicesSection__headingH2 sectionHeading__headingH2 headingH2 headingH2--services">Services</h2>
+          <hr class="servicesSection__hr sectionHeading__hr hr hr--servicesSection" />
+          <p class="servicesSection__headingH2Tagline sectionHeading__headingH2Tagline headingH2Tagline headingH2Tagline--services">how can I help you</p>
+        </div>
         <div class="servicesSection__servicesContentContainer">
           <h3 class="servicesSection__headingH3 headingH3 headingH3--servicesSection">Services Overview</h3>
           <p class="servicesSection__paragraph paragraph paragraph--servicesSection">
@@ -617,12 +620,12 @@
           </div>
         </div>
       </section>
-      <section class="main__portfolioSection">
-        <h2 class="portfolioSection__headingH2 headingH2 headingH2--portfolioSection">Portfolio</h2>
-        <hr class="portfolioSection__hr hr--portfolioSection" />
-        <p class="portfolioSection__headingH2Tagline headingH2Tagline headingH2Tagline--portfolioSection">
-          check out my work
-        </p>
+      <section class="main__portfolioSection portfolioSection">
+        <div class="portfolioSection__sectionHeading sectionHeading">
+          <h2 class="portfolioSection__headingH2 sectionHeading__headingH2 headingH2 headingH2--portfolio">Portfolio</h2>
+          <hr class="portfolioSection__hr sectionHeading__hr hr hr--portfolioSection" />
+          <p class="portfolioSection__headingH2Tagline sectionHeading__headingH2Tagline headingH2Tagline headingH2Tagline--portfolio">check out my work</p>
+        </div>
         <div class="portfolioSection__portfolioContentContainer">
           <article class="portfolioSection__card card card--portfolio">
             <h3 class="card__headingH3 headingH3 headingH3--portfolioCard">Protea Apteek</h3>
@@ -688,9 +691,11 @@
         </div>
       </section>
       <section class="main__skillsSection skillsSection">
-        <h2 class="skillsSection__headingH2 headingH2 headingH2--skillsSection">Skills</h2>
-        <hr class="skillsSection__hr hr--skillsSection" />
-        <p class="skillsSection__headingH2Tagline headingH2Tagline headingH2Tagline--skillsSection">what I do</p>
+        <div class="skillsSection__sectionHeading sectionHeading">
+          <h2 class="skillsSection__headingH2 sectionHeading__headingH2 headingH2 headingH2--skills">Skills</h2>
+          <hr class="skillsSection__hr sectionHeading__hr hr hr--skillsSection" />
+          <p class="skillsSection__headingH2Tagline sectionHeading__headingH2Tagline headingH2Tagline headingH2Tagline--skills">what I do</p>
+        </div>
         <div class="skillsSection__skillsContentContainer">
           <article class="skillsSection__skills">
             <h3 class="skillsSection__headingH3 headingH3 headingH3--skillsSection">
@@ -820,12 +825,12 @@
     </main>
 
     <aside class="sidebar">
-      <section class="sidebar__contactSection">
-        <h2 class="sidebar__headingH2 headingH2 headingH2--contact">Contact</h2>
-        <hr class="sidebar__hr hr hr--contact" />
-        <p class="sidebar__headingH2Tagline headingH2Tagline headingH2Tagline--contact">
-          Get in Touch – Let’s Build Something Great Together!
-        </p>
+      <section class="sidebar__contactSection contactSection">
+        <div class="contactSection__sectionHeading sectionHeading">
+          <h2 class="contactSection__headingH2 sectionHeading__headingH2 headingH2 headingH2--contact">Contact</h2>
+          <hr class="contactSection__hr sectionHeading__hr hr hr--contactSection" />
+          <p class="contactSection__headingH2Tagline sectionHeading__headingH2Tagline headingH2Tagline headingH2Tagline--contact">get in touch now</p>
+        </div>
         <div class="sidebar__contactContentContainer">
           <address class="sidebar__addressDetailsContainer">
             <svg
@@ -893,11 +898,11 @@
         </div>
       </section>
       <section class="sidebar__socialMediaSection">
-        <h2 class="sidebar__headingH2 headingH2 headingH2--socialMedia">Social Media</h2>
-        <hr class="sidebar__hr hr hr--socialMedia" />
-        <p class="sidebar__headingH2Tagline headingH2Tagline headingH2Tagline--socialMedia">
-          Stay Connected – Follow, Engage, and Grow with Me!
-        </p>
+        <div class="socialMediaSection__sectionHeading sectionHeading">
+          <h2 class="socialMediaSection__headingH2 sectionHeading__headingH2 headingH2 headingH2--socialMedia">Social Media</h2>
+          <hr class="socialMediaSection__hr sectionHeading__hr hr hr--socialMediaSection" />
+          <p class="socialMediaSection__headingH2Tagline sectionHeading__headingH2Tagline headingH2Tagline headingH2Tagline--socialMedia">follow, engage, & learn</p>
+        </div>
         <div class="sidebar__socialMediaContentContainer">
           <div class="footer__socialMediaItemContainer">
             <svg
