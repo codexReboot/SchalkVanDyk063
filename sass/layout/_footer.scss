@@ -11,4 +11,18 @@
     background-position: center;
     background-repeat: no-repeat;
   }
+  &__navlist {
+    @include displayFlexColumn;
+    gap: 1rem;
+    padding: 5rem 0;
+  }
+  &__navitem {
+    @include displayFlexColumn;
+    width: 100%;
+    height: 2rem;
+  }
+  &__navlink {
+    backface-visibility: hidden;;
+    transition: font-size .3s;
+  }
 }
