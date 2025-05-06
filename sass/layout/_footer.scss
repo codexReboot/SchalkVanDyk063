@@ -2,7 +2,9 @@
 @use "../abstracts/mixins" as *;
 
 .footer {
-  padding: 1rem;
+  background-color: $cp-dark;
+  position: relative;
+  padding: 0 2rem 1rem;
   &__logoContainer {
     background: url("/img/background/HeroAndFooterBgLandscape.webp");
     background-size: cover;
