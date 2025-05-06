@@ -1,3 +1,9 @@
 .main {
-      padding: 1rem;
+  &__aboutSection,
+  &__servicesSection,
+  &__portfolioSection,
+  &__skillsSection {
+    position: relative;
+    padding: 0 0 20rem;
+  }
 }

@@ -1,3 +1,7 @@
 .sidebar {
-      padding: 1rem;
+  &__contactSection,
+  &__socialMediaSection {
+    position: relative;
+    padding: 0 0 15rem;
+  }
 }
