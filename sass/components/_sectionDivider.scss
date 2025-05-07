@@ -19,4 +19,14 @@
   &--about, &--services, &--portfolio, &--skills, &--contact {
     bottom: 0rem;
   }
+  &--footer {
+    top: -15rem;
+    transform: rotate(180deg);
+  }
+  &__footerColorRed {
+    fill: rgba($cp-dark, .75);
+  }
+  &__footerColorBlue {
+    fill: rgba($cp-dark, .97);
+  }
 }
