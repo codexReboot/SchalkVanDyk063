@@ -196,9 +196,6 @@
     text-align: left;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
   }
-  &--footerAddressDetails:hover, &--footerContactDetails:hover, &--footerSocialMedia:hover {
-    color: $cp-blue;
-  }
 }
 .btn {
   color: $cf-white;

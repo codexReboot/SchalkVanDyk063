@@ -64,6 +64,9 @@
   }
   &__addressDetailsItemContainer:hover, &__contactDetailsItemContainer:hover {
     transform: scale(1.1);
+    .footer__footerAddressDetailsText, .footer__footerContactDetailsText {
+      color: $cf-blue;
+    }
   }
   &__footerAddressDetailsText, &__footerContactDetailsText {
     width: 18rem;
@@ -84,6 +87,9 @@
   }
   &__socialMediaItemContainer:hover {
     transform: scale(1.1);
+    .footer__footerSocialMediaText {
+      color: $cf-blue;
+    }
   }
   &__footerSocialMediaText {
     width:fit-content;
