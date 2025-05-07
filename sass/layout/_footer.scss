@@ -9,11 +9,22 @@
     @include displayFlexColumn;
     gap: 1.75rem;
   }
+  &__figure {
+    @include displayFlexColumn;
+  }
+  &__serviceAreasContainer {
+    @include displayFlexColumn;
+    gap: 1.75rem;
+  }
+  &__serviceAreasList {
+    @include displayFlexRow;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
   &__navContainer {
     @include displayFlexRow;
     justify-content: center;
     gap: 2rem;
-    padding: 3rem 0 0;
   }
   &__navlist {
     @include displayFlexColumn;
