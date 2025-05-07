@@ -1,0 +1,11 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.icon {
+      display: block;
+      width: 3.5rem;
+      height: 3.5rem;
+      &--contactDetailsIconColor {
+            fill: $cp-blue;
+      }
+}
