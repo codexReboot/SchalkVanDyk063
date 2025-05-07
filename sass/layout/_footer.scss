@@ -11,18 +11,85 @@
     background-position: center;
     background-repeat: no-repeat;
   }
+  &__navContainer {
+    @include displayFlexRow;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem 0 0;
+  }
   &__navlist {
     @include displayFlexColumn;
+    align-items: flex-start;
     gap: 1rem;
-    padding: 5rem 0;
+    width: fit-content;
+    padding: 3rem 0 0;
   }
   &__navitem {
     @include displayFlexColumn;
-    width: 100%;
+    gap: 1.5rem;
+    width: fit-content;
     height: 2rem;
   }
   &__navlink {
     backface-visibility: hidden;;
     transition: font-size .3s;
+  }
+  &__addressAndContactAndSocialMediaContainer {
+    @include displayFlexColumn;
+
+  }
+  &__addressAndContactDetailsContainer {
+    @include displayFlexColumn;
+    align-items: flex-start;
+    gap: 1.5rem;
+    width: fit-content;
+    padding: 3rem 0 0;
+  }
+    &__addressDetailsContainer {
+    @include displayFlexColumn;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+  &__contactDetailsContainer {
+    @include displayFlexColumn;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+  &__addressDetailsItemContainer, &__contactDetailsItemContainer {
+    @include displayFlexRow;
+    justify-content: flex-start;
+    gap: .75rem;
+    width: fit-content;
+    transition: transform .3s;
+  }
+  &__addressDetailsItemContainer:hover, &__contactDetailsItemContainer:hover {
+    transform: scale(1.1);
+  }
+  &__footerAddressDetailsText {
+    width: 18rem;
+  }
+  &__socialMediaLinksContainer {
+    @include displayFlexColumn;
+    align-items: flex-start;
+    width:fit-content;
+    gap: 1.5rem;
+    padding: 3rem 0 0;
+  }
+  &__socialMediaItemContainer {
+    @include displayFlexRow;
+    width: fit-content;
+    gap: .75rem;
+    transition: transform .3s;
+  }
+  &__socialMediaItemContainer:hover {
+    transform: scale(1.1);
+  }
+  &__footerSocialMediaText {
+    width:fit-content;
+  }
+  &__copyrightAndDeveloperContainer {
+    @include displayFlexColumn;
+    gap: 1rem;
+    padding: 3rem 0 0;
   }
 }

@@ -33,48 +33,78 @@
       </li>
     </ul>
   </nav>
-  <div class="addressAndContactAndSocialMediaContainer">
-    <div class="addressAndContactContainer">
-      <address class="footer__addressDetailsContainer">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <div class="footer__addressAndContactAndSocialMediaContainer">
+    <div class="footer__addressAndContactDetailsContainer">
+      <address class="footer__addressDetailsItemContainer">
+        <svg
+          class="footer__streetAddressIcon icon icon--contactDetailsIcon icon--streetAddressIcon"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
+            class="icon--contactDetailsIconColor"
             fill-rule="evenodd"
             clip-rule="evenodd"
             d="M24 5C24 2.23858 21.7614 0 19 0H5C2.23858 0 0 2.23858 0 5V19C0 21.7614 2.23858 24 5 24H19C21.7614 24 24 21.7614 24 19V5ZM19 10.5833C19 15.9852 13.9421 19.2485 12.4251 20.1057C12.1584 20.2564 11.8416 20.2564 11.5749 20.1057C10.0579 19.2485 5 15.9852 5 10.5833C5 6.39517 8.13401 3 12 3C15.866 3 19 6.39517 19 10.5833ZM15 10.5833C15 12.3783 13.6569 13.8333 12 13.8333C10.3431 13.8333 9 12.3783 9 10.5833C9 8.78841 10.3431 7.33333 12 7.33333C13.6569 7.33333 15 8.78841 15 10.5833Z"
             fill="black"
           />
         </svg>
-        <p class="footer__streetAddress paragraph paragraph__footer">25 Steve Tshwete Street, Modimolle, 0510</p>
+        <p class="footer__footerAddressDetailsText paragraph paragraph--footer paragraph--footerAddressDetails">
+          25 Steve Tshwete Street, Modimolle, 0510
+        </p>
       </address>
       <div class="footer__contactDetailsContainer">
         <div class="footer__contactDetailsItemContainer">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg
+            class="footer__mobilePhoneIcon icon icon--contactDetailsIcon icon--mobilePHoneIcon"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
             <path
+              class="icon--contactDetailsIconColor"
               fill-rule="evenodd"
               clip-rule="evenodd"
               d="M5 0C2.23858 0 0 2.23859 0 5V19C0 21.7614 2.23858 24 5 24H19C21.7614 24 24 21.7614 24 19V5C24 2.23859 21.7614 0 19 0H5ZM6.29289 3.70709L5.67962 4.32037C3.56827 6.43173 3.33072 9.77429 5.12226 12.163L6.02857 13.3714C7.33622 15.115 8.88504 16.6638 10.6286 17.9714L11.837 18.8777C14.2257 20.6693 17.5683 20.4317 19.6796 18.3204L20.2929 17.7071C20.6834 17.3166 20.6834 16.6834 20.2929 16.2929L17.7071 13.7071C17.3166 13.3166 16.6834 13.3166 16.2929 13.7071L14.5005 15.4995C14.2016 15.7984 13.745 15.8725 13.3669 15.6835C11.1814 14.5907 9.40929 12.8186 8.31654 10.6331C8.1275 10.255 8.2016 9.7984 8.50048 9.49951L10.2929 7.70709C10.6834 7.31659 10.6834 6.68341 10.2929 6.29291L7.70711 3.70709C7.31658 3.31659 6.68342 3.31659 6.29289 3.70709Z"
               fill="black"
             />
           </svg>
-          <p class="footer__mobileNumber paragraph paragraph__footer">082 550 3872</p>
+          <p class="footer__footerContactDetailsText paragraph paragraph--footer paragraph--footerContactDetails">
+            082 550 3872
+          </p>
         </div>
         <div class="footer__contactDetailsItemContainer">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg
+            class="footer__emailAddressIcon icon icon--contactDetailsIcon icon--emailAddressIcon"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
             <path
+              class="icon--contactDetailsIconColor"
               fill-rule="evenodd"
               clip-rule="evenodd"
               d="M5 0C2.23857 0 0 2.23859 0 5V19C0 21.7614 2.23857 24 5 24H19C21.7614 24 24 21.7614 24 19V5C24 2.23859 21.7614 0 19 0H5ZM4 11C4 10.3174 4 9.71716 4.01234 9.18698L10.94 13.5168C11.5885 13.9221 12.4115 13.9221 13.06 13.5168L19.9877 9.18698C20 9.71716 20 10.3174 20 11V13C20 15.8284 20 17.2426 19.1213 18.1213C18.2426 19 16.8284 19 14 19H10C7.17157 19 5.75735 19 4.87868 18.1213C4 17.2426 4 15.8284 4 13V11ZM4.53 7.15201C4.4388 7.095 4.34195 7.0545 4.24297 7.02969C4.37296 6.55618 4.57245 6.18491 4.87868 5.87869C5.75735 5 7.17157 5 10 5H14C16.8284 5 18.2426 5 19.1213 5.87869C19.4276 6.18491 19.627 6.55618 19.757 7.02969C19.6969 7.04477 19.6375 7.06564 19.5797 7.09247C19.5424 7.1098 19.5058 7.12964 19.47 7.15201L12 11.8207L4.53 7.15201Z"
               fill="black"
             />
           </svg>
-          <p class="footer__emailAddress paragraph paragraph__footer">schalk@schalkvandyk.com</p>
+          <p class="footer__footerContactDetailsText paragraph paragraph--footer paragraph--footerContactDetails">
+            schalk@schalkvandyk.com
+          </p>
         </div>
       </div>
     </div>
     <div class="footer__socialMediaLinksContainer">
       <div class="footer__socialMediaItemContainer">
         <svg
-          class="footer__socialMediaIcon"
+          class="footer__socialMediaIcon icon icon--socialMediaIcon icon--linkedinIcon"
           width="24"
           height="24"
           viewBox="0 0 24 24"
@@ -87,11 +117,11 @@
             fill="white"
           />
         </svg>
-        <p class="footer__linkedin paragraph paragraph__footer">Linkedin</p>
+        <p class="footer__footerSocialMediaText paragraph paragraph--footer paragraph--footerSocialMedia">Linkedin</p>
       </div>
       <div class="footer__socialMediaItemContainer">
         <svg
-          class="footer__socialMediaIcon"
+          class="footer__socialMediaIcon icon icon--socialMediaIcon icon--githubIcon"
           width="24"
           height="24"
           viewBox="0 0 24 24"
@@ -106,11 +136,11 @@
             fill="white"
           />
         </svg>
-        <p class="footer__github paragraph paragraph__footer">Github</p>
+        <p class="footer__footerSocialMediaText paragraph paragraph--footer paragraph--footerSocialMedia">Github</p>
       </div>
       <div class="footer__socialMediaItemContainer">
         <svg
-          class="footer__socialMediaIcon"
+          class="footer__socialMediaIcon icon icon--socialMediaIcon icon--facebookIcon"
           width="24"
           height="24"
           viewBox="0 0 24 24"
@@ -123,11 +153,11 @@
             fill="white"
           />
         </svg>
-        <p class="footer__facebook paragraph paragraph__footer">Facebook</p>
+        <p class="footer__footerSocialMediaText paragraph paragraph--footer paragraph--footerSocialMedia">Facebook</p>
       </div>
       <div class="footer__socialMediaItemContainer">
         <svg
-          class="footer__socialMediaIcon"
+          class="footer__socialMediaIcon icon icon--socialMediaIcon icon--instagramIcon"
           width="24"
           height="24"
           viewBox="0 0 24 24"
@@ -157,11 +187,11 @@
             </linearGradient>
           </defs>
         </svg>
-        <p class="footer__instagram paragraph paragraph__footer">Instagram</p>
+        <p class="footer__footerSocialMediaText paragraph paragraph--footer paragraph--footerSocialMedia">Instagram</p>
       </div>
       <div class="footer__socialMediaItemContainer">
         <svg
-          class="footer__socialMediaIcon"
+          class="footer__socialMediaIcon icon icon--socialMediaIcon icon--xIcon"
           width="24"
           height="24"
           viewBox="0 0 24 24"
@@ -173,7 +203,7 @@
             fill="black"
           />
         </svg>
-        <p class="footer__x paragraph paragraph__footer">X</p>
+        <p class="footer__footerSocialMediaText paragraph paragraph--footer paragraph--footerSocialMedia">X</p>
       </div>
     </div>
   </div>
