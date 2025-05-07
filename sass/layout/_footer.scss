@@ -97,7 +97,28 @@
   }
   &__copyrightAndDeveloperContainer {
     @include displayFlexColumn;
-    gap: 1rem;
+    gap: 1.75rem;
     padding: 3rem 0 0;
+  }
+  &__legalContainer {
+    @include displayFlexColumn;
+    gap: .75rem;
+  }
+  &__footerTermsText, &__footerPoppiText {
+    transition: all .3s;
+  }
+  &__footerTermsText:hover, &__footerPoppiText:hover {
+    color: $cf-blue;
+    text-decoration: underline 1px solid $cf-blue;
+    transform: scale(1.1);
+  }
+  &__developerDetailsContainer {
+    @include displayFlexColumn;
+    gap: .25rem;
+    backface-visibility: hidden;
+    transition: transform .3s;
+  }
+  &__developerDetailsContainer:hover {
+    transform: scale(1.05);
   }
 }
