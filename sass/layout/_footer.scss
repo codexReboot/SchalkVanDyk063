@@ -20,8 +20,8 @@
   &__navlist {
     @include displayFlexColumn;
     align-items: flex-start;
-    gap: 1rem;
-    width: fit-content;
+    gap: 1.75rem;
+    width: 9rem;
     padding: 3rem 0 0;
   }
   &__navitem {
@@ -65,8 +65,9 @@
   &__addressDetailsItemContainer:hover, &__contactDetailsItemContainer:hover {
     transform: scale(1.1);
   }
-  &__footerAddressDetailsText {
+  &__footerAddressDetailsText, &__footerContactDetailsText {
     width: 18rem;
+    transition: color .3s;
   }
   &__socialMediaLinksContainer {
     @include displayFlexColumn;
@@ -86,6 +87,7 @@
   }
   &__footerSocialMediaText {
     width:fit-content;
+    transition: color .3s;
   }
   &__copyrightAndDeveloperContainer {
     @include displayFlexColumn;
