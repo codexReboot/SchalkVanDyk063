@@ -1,4 +1,5 @@
 const appState = {
+  copyrightDate: document.querySelector(".footer__copyrightDate"),
   navbar: document.querySelector(".nav"),
   navLogo: document.querySelector(".nav__logo"),
   hamburger: document.querySelector(".nav__hamburger"),
