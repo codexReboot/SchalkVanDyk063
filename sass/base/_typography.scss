@@ -188,7 +188,8 @@
   text-shadow: 1px 1px 1px rgba($cp-darkBlue, 1);
   text-transform: uppercase;
   &--footerHeadingH3 {
-    font-size: clamp(1.6rem, 4.5vw, 1.8rem);
+    color: blue;
+    font-size: clamp(1.8rem, 4.5vw, 2rem);
   }
 }
 .headingH4 {

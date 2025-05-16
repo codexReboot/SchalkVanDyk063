@@ -5,11 +5,13 @@
   "description": "Welcome to SchalkVanDyk063, a new project about codexReboot",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start-server": "node index.js",
     "sass": "sass --watch sass/main.scss:public/css/style.css",
     "server": "nodemon index.js --watch -ext js,html,ejs",
     "browser-sync": "node bs.js",
-    "dev": "npm-run-all --parallel server sass browser-sync"
+    "dev": "npm-run-all --parallel server sass browser-sync",
+    "open": "google-chrome http://localhost:3000 &",
+    "start": "npm-run-all --parallel dev open"
   },
   "keywords": [
     "web design",
@@ -33,7 +35,7 @@
     "express": "^4.21.2"
   },
   "devDependencies": {
-    "browser-sync": "^3.0.3",
+    "browser-sync": "^3.0.4",
     "nodemon": "^3.1.9",
     "npm-run-all": "^4.1.5",
     "sass": "^1.85.0"
