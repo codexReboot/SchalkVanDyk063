@@ -4,7 +4,7 @@
 .logo {
   &--footer {
     display: block;
-    width: 10rem;
+    width: clamp(27rem, 100vw, 30rem);
     height: auto;
   }
   &--designerAndDeveloperLogo {
@@ -37,5 +37,3 @@
     transform: rotate(-5deg);
   }
 }
-
-
