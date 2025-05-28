@@ -1,7 +1,19 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
 .sidebar {
   &__contactSection,
   &__socialMediaSection {
     position: relative;
     padding: 0 2rem 15rem;
+  }
+}
+
+.socialMediaSection {
+  @include displayFlexColumn;
+  gap: 2rem;
+  &__socialMediaCardContainer {
+    @include displayFlexColumn;
+    gap: 2rem;
   }
 }

@@ -228,6 +228,12 @@
     letter-spacing: 0px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
   }
+  &--socialMediaSection {
+    color: $cf-dark;
+  }
+  &--socialMediaCard {
+    color: $cf-dark;
+  }
   &--footerLogoBylineText,
   &--footerServicesIntroText,
   &--footerServicesText,
