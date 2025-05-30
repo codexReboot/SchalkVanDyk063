@@ -203,9 +203,15 @@
   letter-spacing: 1px;
   line-height: 1.2;
   text-align: center;
-  text-decoration: underline 1px solid rgba($cf-white, 0.65);
-  text-underline-offset: 0.3rem;
-  text-shadow: 1px 1px 1px rgba($cp-darkBlue, 0.65);
+  &--socialMediaCard {
+    color: rgba($cf-darkRed, 0.95);
+    font-size: clamp(2rem, 6vw, 2.2rem);
+    font-family: "Lalezar", serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px rgba($cf-white, 0.95);
+    text-transform: uppercase;
+  }
   &--footerHeadingH4 {
     color: rgba($cf-blue, 0.75);
     font-weight: 900;
