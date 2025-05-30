@@ -1,7 +1,7 @@
 @use "../abstracts/variables" as *;
 .sectionHeading {
   width: 100%;
-  margin-top: 1rem;
+  margin-top: 2rem;
   &__hr {
     // border: none;
     height: 0.08rem; /* starting height on the left */
@@ -22,6 +22,6 @@
   }
   &__headingH2Tagline {
     padding-left: clamp(7rem, 20vw, 14rem);
-    margin-top: 1rem;
+    margin-top: 0.5rem;
   }
 }

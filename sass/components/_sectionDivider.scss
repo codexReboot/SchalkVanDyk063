@@ -7,16 +7,11 @@
   left: 0;
   right: 0;
   z-index: 100;
-  &__color1 {
-    fill: url(#gradientBlue);
-  }
-  &__color2 {
-      fill: $cp-white;
-  }
-  &__color3 {
-      fill:$cp-blue;
-  }
-  &--about, &--services, &--portfolio, &--skills, &--contact {
+  &--about,
+  &--services,
+  &--portfolio,
+  &--skills,
+  &--contact {
     bottom: 0rem;
   }
   &--footer {
@@ -24,9 +19,9 @@
     transform: rotate(180deg);
   }
   &__footerColorRed {
-    fill: rgba($cp-dark, .75);
+    fill: rgba($cp-dark, 0.75);
   }
   &__footerColorBlue {
-    fill: rgba($cp-dark, .97);
+    fill: rgba($cp-dark, 0.97);
   }
 }
