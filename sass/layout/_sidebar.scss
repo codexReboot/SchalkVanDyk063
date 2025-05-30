@@ -12,8 +12,13 @@
 .socialMediaSection {
   @include displayFlexColumn;
   gap: 2rem;
+  &__socialMediaContentContainer {
+    @include displayFlexColumn;
+    gap: 3rem;
+  }
   &__socialMediaCardContainer {
     @include displayFlexColumn;
-    gap: 2rem;
+    gap: 5rem;
+    width: min(100%, 45rem);
   }
 }
