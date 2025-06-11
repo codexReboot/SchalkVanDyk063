@@ -5,66 +5,67 @@
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
-  margin: 0;
-  padding: 0;
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
 }
 
 // Remove list styles for ul, ol
 ul,
 ol {
-  list-style: none;
+	list-style: none;
 }
 
 // Improve text rendering and responsiveness with a base font size
 html {
-  /* Mobile-first base font size */
-  font-size: 62.5%; /* Makes 1rem = 10px for easier scaling */
-  -webkit-text-size-adjust: 100%; /* Prevents iOS from auto-resizing text */
-  -moz-tab-size: 4; /* Sets tab width to 4 spaces in Firefox */
-  tab-size: 4; /* Sets tab width to 4 spaces in other browsers */
-  scroll-behavior: smooth;
-  box-sizing: border-box; 
+	/* Mobile-first base font size */
+	font-size: 62.5%; /* Makes 1rem = 10px for easier scaling */
+	-webkit-text-size-adjust: 100%; /* Prevents iOS from auto-resizing text */
+	-moz-tab-size: 4; /* Sets tab width to 4 spaces in Firefox */
+	tab-size: 4; /* Sets tab width to 4 spaces in other browsers */
+	scroll-behavior: smooth;
+	box-sizing: border-box;
 
-  @include respond(tab-port) {
-    /* 	11px / 16px *100 = 68.75% */
-    font-size: 68.75%; // 1rem = 11px
-  }
+	@include respond(tab-port) {
+		/* 	11px / 16px *100 = 68.75% */
+		font-size: 68.75%; // 1rem = 11px
+	}
 
-  @include respond(tab-land) {
-    /* 	12px / 16px *100 = 75% */
-    font-size: 75%; // 1rem = 12px
-  }
+	@include respond(tab-land) {
+		/* 	12px / 16px *100 = 75% */
+		font-size: 75%; // 1rem = 12px
+	}
 
-  @include respond(desk) {
-    /* 	13px / 16px *100 = 81.25% */
-    font-size: 81.25%; // 1rem = 13px
-  }
+	@include respond(desk) {
+		/* 	13px / 16px *100 = 81.25% */
+		font-size: 81.25%; // 1rem = 13px
+	}
 
-  @include respond(big-desk) {
-    /* 	14px / 16px *100 = 87.5% */
-    font-size: 87.5%; // 1rem = 14px
-  }
+	@include respond(big-desk) {
+		/* 	14px / 16px *100 = 87.5% */
+		font-size: 87.5%; // 1rem = 14px
+	}
 }
 
 // Set core body styles
 body {
-  // fonts reset
-  color: $cf-white;
-	font-family: 'Lato', sans-serif;
+	// fonts reset
+	color: $cf-white;
+	font-family: "Lato", sans-serif;
 	font-size: 1.6rem;
 	font-weight: 400;
 	line-height: 1.6;
-  text-rendering: optimizeSpeed;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: $cp-white;
+	text-rendering: optimizeSpeed;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: $cp-white;
 }
 
 // 5. Remove default styles from links
 a {
-  text-decoration: none;
-  color: inherit;
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
 }
 
 // 6. Reset images
@@ -72,9 +73,9 @@ img,
 svg,
 video,
 canvas {
-  display: block;
-  max-width: 100%;
-  height: auto;
+	display: block;
+	max-width: 100%;
+	height: auto;
 }
 
 // 7. Reset forms
@@ -82,23 +83,23 @@ input,
 button,
 textarea,
 select {
-  color: inherit;
-  font: inherit;
-  background: transparent;
-  border: none;
-  outline: none;
+	color: inherit;
+	font: inherit;
+	background: transparent;
+	border: none;
+	outline: none;
 }
 
 // 8. Buttons
 button {
-  all: unset;
-  cursor: pointer;
+	all: unset;
+	cursor: pointer;
 }
 
 // 9. Improve table styles
 table {
-  border-collapse: collapse;
-  width: 100%;
+	border-collapse: collapse;
+	width: 100%;
 }
 
 // 10. Reset heading and typography elements
@@ -108,14 +109,14 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 900;
-  letter-spacing: 2px;
-  line-height: 1.2;
+	font-weight: 900;
+	letter-spacing: 2px;
+	line-height: 1.2;
 }
 
 // 11. Add focus styles for better accessibility
 *:focus-visible {
-  outline: 2px solid #007bff;
-  outline-offset: 1px;
-  transition: outline 0.2s ease-in-out;
+	outline: 2px solid #007bff;
+	outline-offset: 1px;
+	transition: outline 0.2s ease-in-out;
 }

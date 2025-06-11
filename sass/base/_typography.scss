@@ -73,260 +73,280 @@
 
 // <weight>: Use a value from 400 to 900
 .alegreya-900 {
-  font-family: "Alegreya", serif;
-  font-optical-sizing: auto;
-  font-weight: 900;
-  font-style: normal;
+	font-family: "Alegreya", serif;
+	font-optical-sizing: auto;
+	font-weight: 900;
+	font-style: normal;
 }
 // <weight>: Use a value from 400 to 700
 .caveat-400 {
-  font-family: "Caveat", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+	font-family: "Caveat", serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
 }
 .sedgwick-ave-regular {
-  font-family: "Sedgwick Ave", serif;
-  font-weight: 400;
-  font-style: normal;
+	font-family: "Sedgwick Ave", serif;
+	font-weight: 400;
+	font-style: normal;
 }
 .lato-regular {
-  font-family: "Lato", serif;
-  font-weight: 400;
-  font-style: normal;
+	font-family: "Lato", serif;
+	font-weight: 400;
+	font-style: normal;
 }
 .lato-bold {
-  font-family: "Lato", serif;
-  font-weight: 700;
-  font-style: normal;
+	font-family: "Lato", serif;
+	font-weight: 700;
+	font-style: normal;
 }
 .lato-black {
-  font-family: "Lato", serif;
-  font-weight: 900;
-  font-style: normal;
+	font-family: "Lato", serif;
+	font-weight: 900;
+	font-style: normal;
 }
 .lalezar-regular {
-  font-family: "Lalezar", serif;
-  font-weight: 400;
-  font-style: normal;
+	font-family: "Lalezar", serif;
+	font-weight: 400;
+	font-style: normal;
 }
 .contrail-one-regular {
-  font-family: "Contrail One", serif;
-  font-weight: 400;
-  font-style: normal;
+	font-family: "Contrail One", serif;
+	font-weight: 400;
+	font-style: normal;
 }
 .league-gothic-400 {
-  font-family: "League Gothic", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
+	font-family: "League Gothic", serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-variation-settings: "wdth" 100;
 }
 .mochiy-pop-one-regular {
-  font-family: "Mochiy Pop One", serif;
-  font-weight: 400;
-  font-style: normal;
+	font-family: "Mochiy Pop One", serif;
+	font-weight: 400;
+	font-style: normal;
 }
 .headingH1 {
-  text-align: center;
-  &__title {
-    color: $cf-blue;
-    font-family: "Alegreya", serif;
-    font-size: clamp(2.8rem, 10vw, 5.5rem);
-    font-weight: 900;
-    font-style: normal;
-    letter-spacing: 3px;
-    text-align: center;
-    text-shadow: 2px 2px 1px rgba(0, 0, 0, 1);
-  }
-  &__letterS {
-    color: rgba($cf-blue, 0.95);
-    font-size: clamp(5rem, 18vw, 9rem);
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
-  }
-  &__subtitle {
-    color: $cf-red;
-    font-size: clamp(1.6rem, 6.5vw, 3.6rem);
-    font-family: "Caveat", serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
-  }
+	text-align: center;
+	&__title {
+		color: $cf-blue;
+		font-family: "Alegreya", serif;
+		font-size: clamp(2.8rem, 10vw, 5.5rem);
+		font-weight: 900;
+		font-style: normal;
+		letter-spacing: 3px;
+		text-align: center;
+		text-shadow: 2px 2px 1px rgba(0, 0, 0, 1);
+	}
+	&__letterS {
+		color: rgba($cf-blue, 0.95);
+		font-size: clamp(5rem, 18vw, 9rem);
+		text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+	}
+	&__subtitle {
+		color: $cf-red;
+		font-size: clamp(1.6rem, 6.5vw, 3.6rem);
+		font-family: "Caveat", serif;
+		font-optical-sizing: auto;
+		font-weight: 700;
+		font-style: normal;
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+	}
 }
 .headingH2 {
-  color: $cf-blue;
-  font-family: "Alegreya", serif;
-  font-size: clamp(2.4rem, 8vw, 4.5rem);
-  font-weight: 900;
-  font-style: normal;
-  letter-spacing: 4px;
-  text-align: left;
-  text-shadow: 2px 2px 1px rgba($cp-darkBlue, 1);
-  text-transform: uppercase;
+	color: $cf-blue;
+	font-family: "Alegreya", serif;
+	font-size: clamp(2.4rem, 8vw, 4.5rem);
+	font-weight: 900;
+	font-style: normal;
+	letter-spacing: 4px;
+	text-align: left;
+	text-shadow: 2px 2px 1px rgba($cp-darkBlue, 1);
+	text-transform: uppercase;
 }
 .headingH2Tagline {
-  color: $cf-red;
-  font-family: "Caveat", serif;
-  font-optical-sizing: auto;
-  font-size: clamp(1.4rem, 5vw, 3.3rem);
-  font-style: normal;
-  font-weight: 900;
-  letter-spacing: 1px;
-  line-height: 1;
-  text-align: left;
-  text-shadow: 1px 1px 1px rgba($cp-darkBlue, 0.65);
+	color: $cf-red;
+	font-family: "Caveat", serif;
+	font-optical-sizing: auto;
+	font-size: clamp(1.4rem, 5vw, 3.3rem);
+	font-style: normal;
+	font-weight: 900;
+	letter-spacing: 1px;
+	line-height: 1;
+	text-align: left;
+	text-shadow: 1px 1px 1px rgba($cp-darkBlue, 0.65);
 }
 .headingH3 {
-  color: $cf-blue;
-  font-family: "Lato", serif;
-  font-size: clamp(1.8rem, 7vw, 2rem);
-  font-weight: 700;
-  font-style: normal;
-  letter-spacing: 2px;
-  text-align: center;
-  text-shadow: 1px 1px 1px rgba($cp-darkBlue, 1);
-  text-transform: uppercase;
-  &--footerHeadingH3 {
-    color: $cf-blue;
-    font-size: clamp(1.8rem, 4.5vw, 2rem);
-    font-weight: 900;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
-  }
+	color: $cf-blue;
+	font-family: "Lato", serif;
+	font-size: clamp(1.8rem, 7vw, 2rem);
+	font-weight: 700;
+	font-style: normal;
+	letter-spacing: 2px;
+	text-align: center;
+	text-shadow: 1px 1px 1px rgba($cp-darkBlue, 1);
+	text-transform: uppercase;
+	&--contactCta {
+		font-family: "Mochiy Pop One", serif;
+	}
+	&--footerHeadingH3 {
+		color: $cf-blue;
+		font-size: clamp(1.8rem, 4.5vw, 2rem);
+		font-weight: 900;
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+	}
 }
 .headingH4 {
-  color: rgba($cf-white, 0.75);
-  font-family: "Lato", serif;
-  font-size: clamp(1.6rem, 4.7vw, 1.7rem);
-  font-weight: 700;
-  font-style: normal;
-  letter-spacing: 1px;
-  line-height: 1.2;
-  text-align: center;
-  &--socialMediaCard {
-    color: rgba($cf-darkRed, 0.95);
-    font-size: clamp(2rem, 6vw, 2.2rem);
-    font-family: "Lalezar", serif;
-    font-weight: 400;
-    letter-spacing: 2px;
-    text-shadow: 1px 1px 1px rgba($cf-white, 0.95);
-    text-transform: uppercase;
-  }
-  &--footerHeadingH4 {
-    color: rgba($cf-blue, 0.75);
-    font-weight: 900;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
-    text-decoration: underline 1px solid rgba($cf-blue, 0.75);
-    text-underline-offset: 5px;
-  }
+	color: rgba($cf-white, 0.75);
+	font-family: "Lato", serif;
+	font-size: clamp(1.6rem, 4.7vw, 1.7rem);
+	font-weight: 700;
+	font-style: normal;
+	letter-spacing: 1px;
+	line-height: 1.2;
+	text-align: center;
+	&--socialMediaCard {
+		color: rgba($cf-darkRed, 0.95);
+		font-size: clamp(2rem, 6vw, 2.2rem);
+		font-family: "Lalezar", serif;
+		font-weight: 400;
+		letter-spacing: 2px;
+		text-shadow: 1px 1px 1px rgba($cf-white, 0.95);
+		text-transform: uppercase;
+	}
+	&--footerHeadingH4 {
+		color: rgba($cf-blue, 0.75);
+		font-weight: 900;
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+		text-decoration: underline 1px solid rgba($cf-blue, 0.75);
+		text-underline-offset: 5px;
+	}
 }
 .paragraph {
-  color: $cf-white;
-  font-family: "Lato", serif;
-  font-size: clamp(1.4rem, 5vw, 1.8rem);
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1.6;
-  text-align: center;
-  &--headingH1Intro,
-  &--ctaIntroParagraph {
-    line-height: 1.3;
-    letter-spacing: 0px;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
-  }
-  &--socialMediaSection {
-    color: $cf-dark;
-  }
-  &--socialMediaCard {
-    color: $cf-dark;
-  }
-  &--footerLogoBylineText,
-  &--footerServicesIntroText,
-  &--footerServicesText,
-  &--footerServiceAreaItemText {
-    color: rgba($cf-white, 0.85);
-    font-size: clamp(1.4rem, 4.5vw, 1.6rem);
-    line-height: 1.2;
-    text-align: center;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
-  }
-  &--footerLogoBylineText-And {
-    font-size: clamp(1.1rem, 4.5vw, 1.3rem);
-  }
-  &--footerServicesText {
-    font-weight: 700;
-  }
-  &--footerServiceAreaItemText {
-    font-size: clamp(1.2rem, 4.5vw, 1.4rem);
-    text-align: center;
-  }
-  &--footerAddressDetails,
-  &--footerContactDetails,
-  &--footerSocialMedia {
-    color: rgba($cf-white, 0.85);
-    font-size: clamp(1.4rem, 4.5vw, 1.6rem);
-    font-weight: 700;
-    line-height: 1.2;
-    text-align: left;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
-  }
-  &--copyright,
-  &--terms,
-  &--poppi,
-  &--developer {
-    color: rgba($cf-white, 0.85);
-    font-size: clamp(1.2rem, 4vw, 1.4rem);
-    line-height: 1.2;
-    text-align: center;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
-  }
+	color: $cf-white;
+	font-family: "Lato", serif;
+	font-size: clamp(1.4rem, 5vw, 1.8rem);
+	font-weight: 400;
+	font-style: normal;
+	line-height: 1.6;
+	text-align: center;
+	&--headingH1Intro,
+	&--ctaIntroParagraph {
+		line-height: 1.3;
+		letter-spacing: 0px;
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+	}
+	&--contactIntro,
+	&--contactCta {
+		color: $cf-dark;
+	}
+	&--contactDetails {
+		color: $cf-dark;
+		text-align: left;
+		line-height: 1.2;
+	}
+	&--contactDetails:hover {
+		color: $cf-blue;
+		font-weight: 700;
+		// text-shadow: 1px 1px 1px rgba(3, 3, 3, 0.7);
+	}
+	&--streetAddress {
+		text-align: center;
+	}
+	&--socialMediaSection {
+		color: $cf-dark;
+	}
+	&--socialMediaCard {
+		color: $cf-dark;
+	}
+	&--footerLogoBylineText,
+	&--footerServicesIntroText,
+	&--footerServicesText,
+	&--footerServiceAreaItemText {
+		color: rgba($cf-white, 0.85);
+		font-size: clamp(1.4rem, 4.5vw, 1.6rem);
+		line-height: 1.2;
+		text-align: center;
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+	}
+	&--footerLogoBylineText-And {
+		font-size: clamp(1.1rem, 4.5vw, 1.3rem);
+	}
+	&--footerServicesText {
+		font-weight: 700;
+	}
+	&--footerServiceAreaItemText {
+		font-size: clamp(1.2rem, 4.5vw, 1.4rem);
+		text-align: center;
+	}
+	&--footerAddressDetails,
+	&--footerContactDetails,
+	&--footerSocialMedia {
+		color: rgba($cf-white, 0.85);
+		font-size: clamp(1.4rem, 4.5vw, 1.6rem);
+		font-weight: 700;
+		line-height: 1.2;
+		text-align: left;
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+	}
+	&--copyright,
+	&--terms,
+	&--poppi,
+	&--developer {
+		color: rgba($cf-white, 0.85);
+		font-size: clamp(1.2rem, 4vw, 1.4rem);
+		line-height: 1.2;
+		text-align: center;
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+	}
 }
 .btn {
-  color: $cf-white;
-  font-family: "Contrail One", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: $btnTextSize;
-  letter-spacing: 2px;
-  text-align: center;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
-  &--primary {
-    color: $cf-red;
-    font-size: calc($btnTextSize + 0.2rem);
-    font-weight: 600;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.65);
-  }
-  &--secondary {
-    font-weight: 500;
-  }
+	color: $cf-white;
+	font-family: "Contrail One", serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: $btnTextSize;
+	letter-spacing: 2px;
+	text-align: center;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+	&--primary {
+		color: $cf-red;
+		font-size: calc($btnTextSize + 0.2rem);
+		font-weight: 600;
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.65);
+	}
+	&--secondary {
+		font-weight: 500;
+	}
 }
 .navlinkText {
-  color: $cf-white;
-  font-family: "Contrail One", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: $navlinkTextSize;
-  letter-spacing: 1px;
-  text-align: center;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
-  &--footerNavlinkText {
-    color: rgba($cf-white, 0.85);
-    font-family: "Lato", serif;
-    font-size: clamp(1.4rem, 4.5vw, 1.6rem);
-    font-weight: 700;
-    line-height: 1.3;
-    // text-decoration: underline 1px solid rgba($cf-white, 0.85);
-    // text-underline-offset: 0.5rem;
-  }
+	color: $cf-white;
+	font-family: "Contrail One", serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: $navlinkTextSize;
+	letter-spacing: 1px;
+	text-align: center;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+	&--footerNavlinkText {
+		color: rgba($cf-white, 0.85);
+		font-family: "Lato", serif;
+		font-size: clamp(1.4rem, 4.5vw, 1.6rem);
+		font-weight: 700;
+		line-height: 1.3;
+		// text-decoration: underline 1px solid rgba($cf-white, 0.85);
+		// text-underline-offset: 0.5rem;
+	}
 }
 .navlinkText:hover {
-  color: $cf-blue;
-  font-size: $navlinkTextSizeHover;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
-  transform: translateY(-2px);
+	color: $cf-blue;
+	font-size: $navlinkTextSizeHover;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+	transform: translateY(-2px);
 }
 .navlinkText--footerNavlinkText:hover {
-  color: $cf-blue;
-  font-size: clamp(1.6rem, 4.7vw, 1.8rem);
-  transform: translateY(0);
+	color: $cf-blue;
+	font-size: clamp(1.6rem, 4.7vw, 1.8rem);
+	transform: translateY(0);
 }

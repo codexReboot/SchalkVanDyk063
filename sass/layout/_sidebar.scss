@@ -2,23 +2,58 @@
 @use "../abstracts/mixins" as *;
 
 .sidebar {
-  &__contactSection,
-  &__socialMediaSection {
-    position: relative;
-    padding: 0 2rem 15rem;
-  }
+	&__contactSection,
+	&__socialMediaSection {
+		position: relative;
+		padding: 0 2rem 15rem;
+	}
+}
+
+.contactSection {
+	@include displayFlexColumn;
+	gap: 3rem;
+	&__contactContentContainer {
+		@include displayFlexColumn;
+		gap: 3rem;
+		width: min(100%, 45rem);
+	}
+	&__contactDetailsContainer,
+	&__contactCtaContainer {
+		@include displayFlexColumn;
+		gap: 1rem;
+	}
+	&__contactDetailsItemContainer,
+	&__addressDetailsContainer {
+		@include displayFlexRow;
+		gap: 0.75rem;
+		transition: all 0.3s;
+	}
+	&__contactDetailsItemContainer:hover,
+	&__addressDetailsContainer:hover {
+		transform: scale(1.05);
+	}
+	&__addressDetailsContainer {
+		align-items: flex-start;
+	}
+	&__pindropIcon {
+		margin-top: 0.25rem;
+	}
+	&__streetAddress {
+		margin-top: 0;
+		width: min(56vw, 21rem);
+	}
 }
 
 .socialMediaSection {
-  @include displayFlexColumn;
-  gap: 2rem;
-  &__socialMediaContentContainer {
-    @include displayFlexColumn;
-    gap: 3rem;
-  }
-  &__socialMediaCardContainer {
-    @include displayFlexColumn;
-    gap: 5rem;
-    width: min(100%, 45rem);
-  }
+	@include displayFlexColumn;
+	gap: 2rem;
+	&__socialMediaContentContainer {
+		@include displayFlexColumn;
+		gap: 3rem;
+	}
+	&__socialMediaCardContainer {
+		@include displayFlexColumn;
+		gap: 5rem;
+		width: min(100%, 45rem);
+	}
 }
