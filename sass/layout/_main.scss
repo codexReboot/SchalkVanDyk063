@@ -1,9 +1,27 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
 .main {
-  &__aboutSection,
-  &__servicesSection,
-  &__portfolioSection,
-  &__skillsSection {
-    position: relative;
-    padding: 0 2rem 20rem;
-  }
+	&__aboutSection,
+	&__servicesSection,
+	&__portfolioSection,
+	&__skillsSection {
+		position: relative;
+		padding: 0 2rem 20rem;
+	}
+}
+
+.aboutSection {
+	@include displayFlexColumn;
+	gap: 3rem;
+	background: url("/img/about/AboutMeBackgroundImage.webp");
+	background-position-x: center;
+	background-position-y: 8rem;
+	background-size: min(100vw, 30rem);
+	background-repeat: no-repeat;
+	&__aboutContentContainer {
+		@include displayFlexColumn;
+		gap: 2rem;
+		width: min(100%, 45rem);
+	}
 }

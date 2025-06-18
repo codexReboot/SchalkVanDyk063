@@ -5,6 +5,16 @@
 	display: block;
 	width: 2.8rem;
 	height: 2.8rem;
+	&--aboutPhoneIcon {
+		border-radius: 0.5rem;
+		box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 1);
+		margin-bottom: 0.25rem;
+		width: 2rem;
+		height: 2rem;
+	}
+	&--aboutPhoneIconColor {
+		fill: $cp-white;
+	}
 	&--contactIconColor {
 		fill: $cp-blue;
 	}

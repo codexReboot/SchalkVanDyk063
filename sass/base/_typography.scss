@@ -237,6 +237,9 @@
 		letter-spacing: 0px;
 		text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
 	}
+	&--about {
+		color: $cf-dark;
+	}
 	&--contactIntro,
 	&--contactCta {
 		color: $cf-dark;
@@ -308,6 +311,7 @@
 	font-style: normal;
 	font-size: $btnTextSize;
 	letter-spacing: 2px;
+	line-height: 1;
 	text-align: center;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
 	&--primary {
