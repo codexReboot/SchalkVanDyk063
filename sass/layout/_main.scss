@@ -25,3 +25,46 @@
 		width: min(100%, 45rem);
 	}
 }
+
+.skillsSection {
+	@include displayFlexColumn;
+	gap: 3rem;
+	&__skillsContentContainer {
+		@include displayFlexColumn;
+		gap: 3rem;
+		width: min(100%, 45rem);
+	}
+	&__skills,
+	&__tech {
+		@include displayFlexColumn;
+		gap: 2rem;
+	}
+	&__skillsCardContainer {
+		@include displayFlexColumn;
+		gap: 2rem;
+	}
+	&__techStackContainer {
+		@include displayFlexRow;
+		align-items: flex-end;
+		column-gap: 3rem;
+		row-gap: 4rem;
+		flex-wrap: wrap;
+	}
+	&__techStackIconWrapper {
+		@include displayFlexColumn;
+		justify-content: flex-end;
+		position: relative;
+	}
+	&__techStackIconShadow {
+		position: absolute;
+		bottom: -2.5rem; /* Adjust vertical offset */
+		left: 50%;
+		transform: translateX(-50%);
+		width: 60px; /* Oval width */
+		height: 15px; /* Oval height */
+		background: rgba(0, 0, 0, 0.2); /* Shadow color */
+		border-radius: 50%;
+		filter: blur(5px);
+		z-index: -1; /* Push behind the icon */
+	}
+}

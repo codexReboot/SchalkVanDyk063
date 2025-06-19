@@ -48,6 +48,9 @@
 	&--about {
 		margin-top: 1rem;
 	}
+	&--skills {
+		margin-top: 2rem;
+	}
 	&--contactCta,
 	&--socialMediaCard {
 		@include displayFlexRow;

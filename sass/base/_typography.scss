@@ -157,7 +157,7 @@
 .headingH2 {
 	color: $cf-blue;
 	font-family: "Alegreya", serif;
-	font-size: clamp(2.4rem, 8vw, 4.5rem);
+	font-size: clamp(2.6rem, 8vw, 4.5rem);
 	font-weight: 900;
 	font-style: normal;
 	letter-spacing: 4px;
@@ -180,13 +180,14 @@
 .headingH3 {
 	color: $cf-blue;
 	font-family: "Lato", serif;
-	font-size: clamp(1.8rem, 7vw, 2rem);
+	font-size: clamp(1.4rem, 4.7vw, 2.5rem);
 	font-weight: 700;
 	font-style: normal;
 	letter-spacing: 2px;
 	text-align: center;
 	text-shadow: 1px 1px 1px rgba($cp-darkBlue, 1);
 	text-transform: uppercase;
+	&--skillsSection,
 	&--contactCta {
 		font-family: "Mochiy Pop One", serif;
 	}
@@ -206,6 +207,7 @@
 	letter-spacing: 1px;
 	line-height: 1.2;
 	text-align: center;
+	&--skillsCard,
 	&--socialMediaCard {
 		color: rgba($cf-darkRed, 0.95);
 		font-size: clamp(2rem, 6vw, 2.2rem);
@@ -237,7 +239,8 @@
 		letter-spacing: 0px;
 		text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
 	}
-	&--about {
+	&--about,
+	&--skillsSection {
 		color: $cf-dark;
 	}
 	&--contactIntro,
@@ -260,6 +263,7 @@
 	&--socialMediaSection {
 		color: $cf-dark;
 	}
+	&--skillsCardDescription,
 	&--socialMediaCard {
 		color: $cf-dark;
 	}
