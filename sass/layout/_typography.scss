@@ -1,0 +1,89 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.body {
+	@include displayFlexColumn;
+	min-height: 95vh;
+}
+.typographyContainer {
+	padding: 2rem;
+}
+
+// heading H1 - font-family: "Alegreya", serif; <weight>: Use a value from 400 to 900
+// heading H2- font-family: "Lalezar", sans-serif; <weight>: 400
+// heading H3 & H4 - font-family: "Oswald", sans-serif; <weight>: Use a value from 200 to 700
+// tag line - font-family: "Caveat", cursive; <weight>: Use a value from 400 to 700
+// body text - font-family: "Lato", sans-serif; normal & italic <weight>: 100, 300, 400, 700 & 900
+// button text - font-family: "Contrail One", sans-serif; <weight>: 400
+
+.heading,
+.paragraph,
+.btn {
+	&--H1 {
+		color: $cp-dark;
+		font-family: "Alegreya", serif;
+		font-size: clamp(2.8rem, 4.5vw, 3rem);
+		font-weight: 900;
+		letter-spacing: 3px;
+		line-height: 1.2;
+		text-align: center;
+		margin-bottom: 1rem;
+	}
+	&--H2 {
+		color: $cp-dark;
+		font-family: "Lalezar", serif;
+		font-size: clamp(2.6rem, 6vw, 2.8rem);
+		font-weight: 400;
+		letter-spacing: 2px;
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 1rem;
+	}
+	&--tag {
+		color: $cp-dark;
+		font-family: "Caveat", cursive;
+		font-size: clamp(1.4rem, 4.5vw, 1.6rem);
+		font-weight: 400;
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 1rem;
+	}
+	&--H3 {
+		color: $cp-dark;
+		font-family: "Oswald", sans-serif;
+		font-size: clamp(1.8rem, 5.5vw, 2rem);
+		font-weight: 500;
+		letter-spacing: 1px;
+		line-height: 1.4;
+		text-align: center;
+		margin-bottom: 1rem;
+	}
+	&--H4 {
+		color: $cp-dark;
+		font-family: "Oswald", sans-serif;
+		font-size: clamp(1.6rem, 5vw, 1.8rem);
+		font-weight: 400;
+		letter-spacing: 1px;
+		line-height: 1.4;
+		text-align: center;
+		margin-bottom: 1rem;
+	}
+	&--body {
+		color: $cp-dark;
+		font-family: "Lato", serif;
+		font-size: clamp(1.4rem, 4.5vw, 1.6rem);
+		font-weight: 400;
+		line-height: 1.6;
+		text-align: center;
+		margin-bottom: 1rem;
+	}
+	&--btnText {
+		color: $cp-white;
+		font-family: "Contrail One", serif;
+		font-size: clamp(1.6rem, 5vw, 1.8rem);
+		font-weight: 400;
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 1rem;
+	}
+}

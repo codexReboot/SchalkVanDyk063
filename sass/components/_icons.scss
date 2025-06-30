@@ -6,6 +6,7 @@
 	width: 2.8rem;
 	height: 2.8rem;
 	&--aboutPhoneIcon,
+	&--servicesPhoneIcon,
 	&--skillsPhoneIcon {
 		border-radius: 0.5rem;
 		box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 1);
@@ -13,6 +14,17 @@
 		width: 2rem;
 		height: 2rem;
 	}
+	&--enterBtnIcon {
+		width: 2.5rem;
+		height: auto;
+	}
+	&--enterBtnIconColorWhite {
+		stroke: rgba($cp-white, 0.75);
+	}
+	&--enterBtnIconColorRed {
+		stroke: rgba($cp-white, 1);
+	}
+	&--servicesCardIcon,
 	&--skillsCardSvgIcon {
 		width: min(25vw, 10rem);
 		height: min(25vw, 10rem);

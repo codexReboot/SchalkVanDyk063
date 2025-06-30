@@ -26,6 +26,17 @@
 	}
 }
 
+.servicesSection {
+	@include displayFlexColumn;
+	gap: 3rem;
+	&__servicesCardContainer {
+		@include displayFlexColumn;
+		gap: 3rem;
+		padding: 1rem;
+		margin: 3rem 0rem;
+	}
+}
+
 .skillsSection {
 	@include displayFlexColumn;
 	gap: 3rem;

@@ -18,10 +18,15 @@ app.use(express.static(path.join(__dirname, "public")));
 
 // Example route using res.render()
 app.get("/", (req, res) => {
-  res.render("home", { title: "Home", message: "Hello, world!" });
+	res.render("home", { title: "Home", message: "Hello, world!" });
+});
+
+// Typography
+app.get("/typography", (req, res) => {
+	res.render("typography", { title: "Home", message: "Hello, world!" });
 });
 
 // Start server
 app.listen(PORT, () => {
-  console.log(`Server running at http://localhost:${PORT}`);
+	console.log(`Server running at http://localhost:${PORT}`);
 });

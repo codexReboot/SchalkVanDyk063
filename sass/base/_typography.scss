@@ -1,132 +1,11 @@
 @use "../abstracts/variables" as *;
-// Alegreya font
-// <weight>: Use a value from 400 to 900
-// <uniquifier>: Use a unique and descriptive class name
-// .alegreya-<uniquifier> {
-//       font-family: "Alegreya", serif;
-//       font-optical-sizing: auto;
-//       font-weight: <weight>;
-//       font-style: normal;
-//     }
 
-// Caveat font
-// <weight>: Use a value from 400 to 700
-// <uniquifier>: Use a unique and descriptive class name
-// .caveat-<uniquifier> {
-//       font-family: "Caveat", serif;
-//       font-optical-sizing: auto;
-//       font-weight: <weight>;
-//       font-style: normal;
-//     }
+// heading H1 - font-family: "Alegreya", serif; <weight>: Use a value from 400 to 900
+// heading H2- font-family: "Lalezar", sans-serif; <weight>: 400
+// heading H3 & H4 - font-family: "Oswald", sans-serif; <weight>: Use a value from 200 to 700
+// body text - font-family: "Lato", sans-serif; normal & italic <weight>: 100, 300, 400, 700 & 900
+// button text - font-family: "Contrail One", sans-serif; <weight>: 400
 
-// Sedgwick Ave font
-// .sedgwick-ave-regular {
-//       font-family: "Sedgwick Ave", serif;
-//       font-weight: 400;
-//       font-style: normal;
-//     }
-
-// .lato-regular {
-//   font-family: "Lato", serif;
-//   font-weight: 400;
-//   font-style: normal;
-// }
-
-// .lato-bold {
-//   font-family: "Lato", serif;
-//   font-weight: 700;
-//   font-style: normal;
-// }
-
-// .lato-black {
-//   font-family: "Lato", serif;
-//   font-weight: 900;
-//   font-style: normal;
-// }
-
-// .lalezar-regular {
-//       font-family: "Lalezar", serif;
-//       font-weight: 400;
-//       font-style: normal;
-//     }
-
-// .contrail-one-regular {
-//       font-family: "Contrail One", serif;
-//       font-weight: 400;
-//       font-style: normal;
-//     }
-
-// .league-gothic-<uniquifier> {
-//   font-family: "League Gothic", serif;
-//   font-optical-sizing: auto;
-//   font-weight: 400;
-//   font-style: normal;
-//   font-variation-settings:
-//     "wdth" 100;
-// }
-
-// .mochiy-pop-one-regular {
-//   font-family: "Mochiy Pop One", serif;
-//   font-weight: 400;
-//   font-style: normal;
-// }
-
-// <weight>: Use a value from 400 to 900
-.alegreya-900 {
-	font-family: "Alegreya", serif;
-	font-optical-sizing: auto;
-	font-weight: 900;
-	font-style: normal;
-}
-// <weight>: Use a value from 400 to 700
-.caveat-400 {
-	font-family: "Caveat", serif;
-	font-optical-sizing: auto;
-	font-weight: 400;
-	font-style: normal;
-}
-.sedgwick-ave-regular {
-	font-family: "Sedgwick Ave", serif;
-	font-weight: 400;
-	font-style: normal;
-}
-.lato-regular {
-	font-family: "Lato", serif;
-	font-weight: 400;
-	font-style: normal;
-}
-.lato-bold {
-	font-family: "Lato", serif;
-	font-weight: 700;
-	font-style: normal;
-}
-.lato-black {
-	font-family: "Lato", serif;
-	font-weight: 900;
-	font-style: normal;
-}
-.lalezar-regular {
-	font-family: "Lalezar", serif;
-	font-weight: 400;
-	font-style: normal;
-}
-.contrail-one-regular {
-	font-family: "Contrail One", serif;
-	font-weight: 400;
-	font-style: normal;
-}
-.league-gothic-400 {
-	font-family: "League Gothic", serif;
-	font-optical-sizing: auto;
-	font-weight: 400;
-	font-style: normal;
-	font-variation-settings: "wdth" 100;
-}
-.mochiy-pop-one-regular {
-	font-family: "Mochiy Pop One", serif;
-	font-weight: 400;
-	font-style: normal;
-}
 .headingH1 {
 	text-align: center;
 	&__title {
@@ -155,14 +34,14 @@
 	}
 }
 .headingH2 {
-	color: $cf-blue;
-	font-family: "Alegreya", serif;
+	color: $cf-darkBlue;
+	font-family: "Lalezar", sans-serif;
 	font-size: clamp(2.6rem, 8vw, 4.5rem);
 	font-weight: 900;
 	font-style: normal;
 	letter-spacing: 4px;
 	text-align: left;
-	text-shadow: 2px 2px 1px rgba($cp-darkBlue, 1);
+	text-shadow: 1.5px 1.5px 1px rgba($cp-dark, 0.45);
 	text-transform: uppercase;
 }
 .headingH2Tagline {
@@ -179,44 +58,26 @@
 }
 .headingH3 {
 	color: $cf-blue;
-	font-family: "Lato", serif;
-	font-size: clamp(1.4rem, 4.7vw, 2.5rem);
-	font-weight: 700;
+	font-family: "Oswald", sans-serif;
+	font-size: clamp(1.8rem, 4.7vw, 2rem);
+	font-weight: 900;
 	font-style: normal;
 	letter-spacing: 2px;
 	text-align: center;
-	text-shadow: 1px 1px 1px rgba($cp-darkBlue, 1);
-	text-transform: uppercase;
-	&--skillsSection,
-	&--contactCta {
-		font-family: "Mochiy Pop One", serif;
-	}
-	&--footerHeadingH3 {
-		color: $cf-blue;
-		font-size: clamp(1.8rem, 4.5vw, 2rem);
-		font-weight: 900;
-		text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
-	}
+	text-shadow: 1px 1px 1px rgba($cp-dark, 0.45);
+	text-transform: capitalize;
 }
 .headingH4 {
-	color: rgba($cf-white, 0.75);
-	font-family: "Lato", serif;
-	font-size: clamp(1.6rem, 4.7vw, 1.7rem);
-	font-weight: 700;
+	color: rgba($cf-red, 0.95);
+	font-family: "Oswald", sans-serif;
+	font-size: clamp(1.6rem, 4.5vw, 1.8rem);
+	font-weight: 900;
 	font-style: normal;
 	letter-spacing: 1px;
 	line-height: 1.2;
 	text-align: center;
-	&--skillsCard,
-	&--socialMediaCard {
-		color: rgba($cf-darkRed, 0.95);
-		font-size: clamp(2rem, 6vw, 2.2rem);
-		font-family: "Lalezar", serif;
-		font-weight: 400;
-		letter-spacing: 2px;
-		text-shadow: 1px 1px 1px rgba($cf-white, 0.95);
-		text-transform: uppercase;
-	}
+	text-shadow: 1px 1px 1px rgba($cp-dark, 0.45);
+	text-transform: uppercase;
 	&--footerHeadingH4 {
 		color: rgba($cf-blue, 0.75);
 		font-weight: 900;
@@ -240,6 +101,7 @@
 		text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
 	}
 	&--about,
+	&--servicesSection,
 	&--skillsSection {
 		color: $cf-dark;
 	}
@@ -255,7 +117,6 @@
 	&--contactDetails:hover {
 		color: $cf-blue;
 		font-weight: 700;
-		// text-shadow: 1px 1px 1px rgba(3, 3, 3, 0.7);
 	}
 	&--streetAddress {
 		text-align: center;
@@ -263,6 +124,7 @@
 	&--socialMediaSection {
 		color: $cf-dark;
 	}
+	&--servicesCard,
 	&--skillsCardDescription,
 	&--socialMediaCard {
 		color: $cf-dark;
@@ -317,12 +179,12 @@
 	letter-spacing: 2px;
 	line-height: 1;
 	text-align: center;
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+	text-shadow: 1px 1px 1px rgba($cp-dark, 0.45);
 	&--primary {
 		color: $cf-red;
 		font-size: calc($btnTextSize + 0.2rem);
 		font-weight: 600;
-		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.65);
+		text-shadow: 1px 1px 1px rgba($cp-dark, 0.65);
 	}
 	&--secondary {
 		font-weight: 500;

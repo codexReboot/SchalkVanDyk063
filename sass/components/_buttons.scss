@@ -3,7 +3,7 @@
 
 .btn {
 	@include displayFlexRow;
-	gap: 0.5rem;
+	gap: 0.75rem;
 	background-color: $cp-darkBlue;
 	border-top: 2px solid $cp-darkGrey;
 	border-left: 2px solid $cp-grey;
@@ -54,7 +54,7 @@
 	&--contactCta,
 	&--socialMediaCard {
 		@include displayFlexRow;
-		gap: 0.5rem;
+		gap: 0.75rem;
 		background-color: rgba($cp-blue, 1);
 		box-shadow: 0 0 12px 2px rgba($cp-dark, 0.45);
 		margin-top: 1rem;

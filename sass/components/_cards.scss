@@ -1,15 +1,11 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
+.servicesCard,
 .skillsCard,
 .socialMediaCard {
 	@include displayFlexColumn;
-	gap: 2rem;
-	// background-color: rgba($cp-grey, 0.3);
-	// border: 1px solid rgba($cp-dark, 0.15);
-	// border-radius: 0.5rem;
-	// box-shadow: 0 0 20px 2px rgba($cp-dark, 0.35);
-	padding: 2rem;
+	gap: 1.25rem;
 	width: min(100%, 35rem);
 	&__contentContainer {
 		@include displayFlexColumn;
@@ -18,23 +14,6 @@
 	&__hr {
 		background-color: $cp-darkBlue;
 		width: 100%;
+		margin: 0.25rem 0;
 	}
 }
-
-// .socialMediaCard {
-// 	@include displayFlexColumn;
-// 	gap: 2rem;
-// 	// background-color: rgba($cp-grey, 0.3);
-// 	// border: 1px solid rgba($cp-dark, 0.15);
-// 	// border-radius: 0.5rem;
-// 	// box-shadow: 0 0 20px 2px rgba($cp-dark, 0.35);
-// 	padding: 5rem 2rem 4rem;
-// 	&__socialMediaTextContentContainer {
-// 		@include displayFlexColumn;
-// 		gap: 1rem;
-// 	}
-// 	&__rightArrowIcon {
-// 		margin-bottom: 0.55rem;
-// 		transform: scale(1.5);
-// 	}
-// }
