@@ -78,6 +78,17 @@
 	text-align: center;
 	text-shadow: 1px 1px 1px rgba($cp-dark, 0.45);
 	text-transform: uppercase;
+	&--socialMediaCard {
+		text-align: left;
+		margin-top: 1rem;
+		background: linear-gradient(to right, $cp-blue, $cp-darkBlue 20%, $cp-darkRed 75%, $cp-red 90%); /* Define your gradient */
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		/* Optional for Firefox */
+		background-clip: text;
+		color: transparent;
+		text-shadow: none;
+	}
 	&--footerHeadingH4 {
 		color: rgba($cf-blue, 0.75);
 		font-weight: 900;
@@ -128,6 +139,10 @@
 	&--skillsCardDescription,
 	&--socialMediaCard {
 		color: $cf-dark;
+	}
+	&--socialMediaCard {
+		text-align: left;
+		line-height: 1.6;
 	}
 	&--footerLogoBylineText,
 	&--footerServicesIntroText,

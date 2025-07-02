@@ -2,8 +2,7 @@
 @use "../abstracts/mixins" as *;
 
 .servicesCard,
-.skillsCard,
-.socialMediaCard {
+.skillsCard {
 	@include displayFlexColumn;
 	gap: 1.25rem;
 	width: min(100%, 35rem);
@@ -15,5 +14,25 @@
 		background-color: $cp-darkBlue;
 		width: 100%;
 		margin: 0.25rem 0;
+	}
+}
+
+.socialMediaCard {
+	width: min(100%, 35rem);
+	&__socialMediaCardIcon {
+		float: left;
+		padding-right: 1.75rem;
+	}
+	&__socialMediaCardHeadingContainer {
+		@include displayFlexRow;
+		justify-content: flex-start;
+		gap: 0.5rem;
+	}
+	&__hr {
+		background: linear-gradient(to right, $cp-darkBlue 10%, transparent 80%);
+		max-width: 100%;
+		height: 1px;
+		margin: 0.25rem 0;
+		border: none;
 	}
 }
