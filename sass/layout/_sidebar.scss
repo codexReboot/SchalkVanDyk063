@@ -31,6 +31,10 @@
 	&__contactDetailsItemContainer:hover,
 	&__addressDetailsContainer:hover {
 		transform: scale(1.05);
+		.paragraph--contactDetails {
+			font-weight: 700;
+			color: rgba($cp-dark, 0.85);
+		}
 	}
 	&__addressDetailsContainer {
 		align-items: flex-start;

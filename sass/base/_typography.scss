@@ -57,14 +57,13 @@
 	text-shadow: 1px 1px 1px rgba($cp-darkBlue, 0.65);
 }
 .headingH3 {
-	color: $cf-blue;
+	color: rgba($cp-darkBlue, 0.9);
 	font-family: "Oswald", sans-serif;
 	font-size: clamp(1.8rem, 4.7vw, 2rem);
 	font-weight: 900;
 	font-style: normal;
 	letter-spacing: 2px;
 	text-align: center;
-	text-shadow: 1px 1px 1px rgba($cp-dark, 0.45);
 	text-transform: capitalize;
 }
 .headingH4 {
@@ -124,10 +123,6 @@
 		color: $cf-dark;
 		text-align: left;
 		line-height: 1.2;
-	}
-	&--contactDetails:hover {
-		color: $cf-blue;
-		font-weight: 700;
 	}
 	&--streetAddress {
 		text-align: center;
