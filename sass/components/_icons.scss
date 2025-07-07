@@ -41,6 +41,12 @@
 	&--contactIconColor {
 		fill: $cp-darkRed;
 	}
+	&--contactPageIcon {
+		margin-bottom: 0.5rem;
+	}
+	&--contactPageIconColor {
+		fill: $cp-white;
+	}
 	&--contactDetailsIconColor {
 		fill: $cp-blue;
 	}
