@@ -46,6 +46,14 @@
 		margin-top: 0;
 		width: min(56vw, 21rem);
 	}
+	&__contactSectionCta {
+		margin-top: 3rem;
+		padding: 3rem 2rem;
+		background-color: rgba($cp-blue, 0.03); /* or a subtle accent */
+		border-radius: 1rem;
+		text-align: center;
+		box-shadow: 0px 0px 24px 4px rgba($cp-dark, 0.1);
+	}
 }
 
 .socialMediaSection {
