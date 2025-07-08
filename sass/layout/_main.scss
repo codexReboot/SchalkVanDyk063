@@ -24,6 +24,14 @@
 		gap: 2rem;
 		width: min(100%, 45rem);
 	}
+	&__aboutSectionCta {
+		margin-top: 3rem;
+		padding: 3rem 2rem;
+		background-color: rgba($cp-darkBlue, 0.15); /* or a subtle accent */
+		border-radius: 1rem;
+		text-align: center;
+		box-shadow: 0px 0px 24px 4px rgba($cp-dark, 0.1);
+	}
 }
 
 .servicesSection {
@@ -81,7 +89,7 @@
 	&__skillsSectionCta {
 		margin-top: 5rem;
 		padding: 3rem 2rem;
-		background-color: rgba($cp-blue, 0.03); /* or a subtle accent */
+		background-color: rgba($cp-darkBlue, 0.15); /* or a subtle accent */
 		border-radius: 1rem;
 		text-align: center;
 		box-shadow: 0px 0px 24px 4px rgba($cp-dark, 0.1);

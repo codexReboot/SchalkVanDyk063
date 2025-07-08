@@ -45,10 +45,12 @@
 	&--contactIconColor {
 		fill: $cp-darkRed;
 	}
+	&--aboutBtnIcon,
 	&--projectsBtnIcon,
 	&--contactPageIcon {
 		margin-bottom: 0.5rem;
 	}
+	&--aboutBtnIconColor,
 	&--projectsBtnIconColor,
 	&--contactPageIconColor {
 		fill: $cp-white;
