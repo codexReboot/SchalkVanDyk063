@@ -15,7 +15,6 @@
 	padding: 0.5em 1em;
 	margin: 0 auto;
 	cursor: pointer;
-	backface-visibility: hidden;
 	transition: all 0.2s;
 	&:link,
 	&:visited {
@@ -47,6 +46,20 @@
 	}
 	&--about {
 		margin-top: 1rem;
+	}
+	&--servicesCard {
+		// border: none;
+		// box-shadow: none;
+
+		background: linear-gradient(to bottom right, rgba($cp-white, 0.95), rgba($cp-white, 0.65) 35%, rgba($cp-white, 0.35) 85%), url("/img/background/HeroAndFooterBgLandscape.webp");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding: 0.5em 0.5rem;
+		width: 100%;
+		height: min(25vw, 10rem);
+	}
+	&--servicesCard:hover {
 	}
 	&--skills {
 		margin-top: 2rem;

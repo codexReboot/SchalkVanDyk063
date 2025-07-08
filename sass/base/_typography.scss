@@ -77,6 +77,10 @@
 	text-align: center;
 	text-shadow: 1px 1px 1px rgba($cp-dark, 0.45);
 	text-transform: uppercase;
+	&--servicesCard {
+		text-shadow: 1px 1px 1px rgba($cp-dark, 1);
+		text-align: left;
+	}
 	&--socialMediaCard {
 		text-align: left;
 		margin-top: 1rem;
