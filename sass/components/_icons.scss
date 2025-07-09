@@ -29,6 +29,11 @@
 		width: clamp(2.6rem, 9.8vw, 3.5rem);
 		height: auto;
 	}
+	&--servicesCardLinkIconColor {
+		fill: rgba($cp-darkRed, 1);
+		stroke: rgba($cp-white, 0.65);
+		stroke-width: 0.35px;
+	}
 	&--skillsCardSvgIcon {
 		width: min(25vw, 10rem);
 		height: min(25vw, 10rem);

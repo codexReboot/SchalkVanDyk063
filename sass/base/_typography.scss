@@ -78,7 +78,7 @@
 	text-shadow: 1px 1px 1px rgba($cp-dark, 0.45);
 	text-transform: uppercase;
 	&--servicesCard {
-		text-shadow: 1px 1px 1px rgba($cp-dark, 1);
+		text-shadow: 1px 1px 1px rgba($cp-white, 0.45), 2px 2px 1px rgba($cp-dark, 0.25);
 		text-align: left;
 	}
 	&--socialMediaCard {
