@@ -2,9 +2,12 @@
 @use "../abstracts/mixins" as *;
 
 .footer {
+	@include displayFlexColumn;
+	gap: 3rem;
 	background-color: $cp-dark;
 	position: relative;
 	padding: 0 2rem 1rem;
+	width: 100%;
 	&__logoContainer {
 		@include displayFlexColumn;
 		gap: 1.75rem;
@@ -89,7 +92,9 @@
 	}
 	&__addressAndContactAndSocialMediaContainer {
 		@include displayFlexColumn;
+		gap: 1.5rem;
 		padding: 3rem 0 0;
+		width: min(100%, 45rem);
 	}
 	&__addressAndContactDetailsContainer {
 		@include displayFlexColumn;
@@ -117,6 +122,9 @@
 		width: fit-content;
 		transition: transform 0.3s;
 	}
+	&__addressDetailsItemContainer {
+		align-items: flex-start;
+	}
 	&__addressDetailsItemContainer:hover,
 	&__contactDetailsItemContainer:hover {
 		transform: scale(1.1);
@@ -132,34 +140,21 @@
 		gap: 0.75rem;
 		transition: color 0.3s;
 	}
-	&__socialMediaLinksContainer {
+	&__socialMediaFooterContainer {
 		@include displayFlexColumn;
 		align-items: center;
-		width: fit-content;
+		width: min(100%, 45rem);
 		gap: 1.5rem;
-		padding: 3rem 0 0;
+		padding: 5rem 0 0;
 	}
-	&__socialMediaItemContainer {
+	&__socialMediaLinksContainer {
 		@include displayFlexRow;
-		width: fit-content;
-		gap: 0.75rem;
-		transition: transform 0.3s;
-	}
-	&__socialMediaItemContainer:hover {
-		transform: scale(1.1);
-		.footer__footerSocialMediaText {
-			color: $cf-blue;
-		}
-	}
-	&__footerSocialMediaText {
-		@include displayFlexRow;
-		gap: 0.5rem;
-		width: fit-content;
-		transition: color 0.3s;
+		justify-content: space-around;
+		width: 100%;
 	}
 	&__copyrightAndDeveloperContainer {
 		@include displayFlexColumn;
-		gap: 1.75rem;
+		gap: 1.5rem;
 		padding: 3rem 0 0;
 	}
 	&__legalContainer {
