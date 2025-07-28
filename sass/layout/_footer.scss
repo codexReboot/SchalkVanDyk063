@@ -2,187 +2,188 @@
 @use "../abstracts/mixins" as *;
 
 .footer {
-  background-color: $cp-dark;
-  position: relative;
-  padding: 0 2rem 1rem;
-  &__logoContainer {
-    @include displayFlexColumn;
-    gap: 1.75rem;
-  }
-  &__figure {
-    @include displayFlexColumn;
-  }
-  &__linebreakLogoByline {
-    display: none;
-    @media (min-width: 294px) {
-      display: block;
-    }
-  }
-  &__servicesContainer {
-    @include displayFlexColumn;
-    gap: 2rem;
-  }
-  &__servicesDetailsContainer {
-    @include displayFlexColumn;
-    gap: 2.75rem;
-    width: min(100%, 35rem);
-  }
-  &__servicesArticleContainer {
-    @include displayFlexColumn;
-    gap: 2rem;
-  }
-  &__servicesList {
-    @include displayFlexColumn;
-    gap: 1.75rem;
-  }
-  &__footerRightArrow {
-    @include displayFlexColumn;
-    padding-bottom: 0.35rem;
-    transform: scale(1.5);
-  }
-  &__footerServicesText {
-    @include displayFlexRow;
-    gap: 0.5rem;
-    transition: all 0.3s;
-  }
-  &__footerServicesText:hover {
-    color: $cf-blue;
-    transform: scale(1.1);
-  }
-  &__servicesAreasList {
-    @include displayFlexRow;
-    flex-wrap: wrap;
-    row-gap: 1.75rem;
-    column-gap: 1rem;
-  }
-  &__linebreakFooterServicesAreaItemText {
-    display: none;
-  }
-  &__footerServiceAreaItemText {
-    @include displayFlexRow;
-    // justify-content: flex-start;
-    // min-width: 11rem;
-  }
-  &__navContainer {
-    @include displayFlexColumn;
-    gap: 1.25rem;
-    padding: 3rem 0 0;
-  }
-  &__navlist {
-    @include displayFlexColumn;
-    align-items: center;
-    gap: 1.75rem;
-    width: 11rem;
-  }
-  &__navitem {
-    @include displayFlexColumn;
-    gap: 1.5rem;
-    width: fit-content;
-    height: 2rem;
-  }
-  &__navlink {
-    @include displayFlexRow;
-    gap: 0.5rem;
-    backface-visibility: hidden;
-    transition: all 0.3s;
-  }
-  &__addressAndContactAndSocialMediaContainer {
-    @include displayFlexColumn;
-    padding: 3rem 0 0;
-  }
-  &__addressAndContactDetailsContainer {
-    @include displayFlexColumn;
-    align-items: center;
-    gap: 1.5rem;
-    width: 100%;
-  }
-  &__addressDetailsContainer {
-    @include displayFlexColumn;
-    align-items: flex-start;
-    gap: 1.5rem;
-    width: 100%;
-  }
-  &__contactDetailsContainer {
-    @include displayFlexColumn;
-    align-items: center;
-    gap: 1.5rem;
-    width: 100%;
-  }
-  &__addressDetailsItemContainer,
-  &__contactDetailsItemContainer {
-    @include displayFlexRow;
-    justify-content: flex-start;
-    gap: 0.75rem;
-    width: fit-content;
-    transition: transform 0.3s;
-  }
-  &__addressDetailsItemContainer:hover,
-  &__contactDetailsItemContainer:hover {
-    transform: scale(1.1);
-    .footer__footerAddressDetailsText,
-    .footer__footerContactDetailsText {
-      color: $cf-blue;
-    }
-  }
-  &__footerAddressDetailsText,
-  &__footerContactDetailsText {
-    @include displayFlexRow;
-    align-items: flex-start;
-    gap: 0.75rem;
-    transition: color 0.3s;
-  }
-  &__socialMediaLinksContainer {
-    @include displayFlexColumn;
-    align-items: center;
-    width: fit-content;
-    gap: 1.5rem;
-    padding: 3rem 0 0;
-  }
-  &__socialMediaItemContainer {
-    @include displayFlexRow;
-    width: fit-content;
-    gap: 0.75rem;
-    transition: transform 0.3s;
-  }
-  &__socialMediaItemContainer:hover {
-    transform: scale(1.1);
-    .footer__footerSocialMediaText {
-      color: $cf-blue;
-    }
-  }
-  &__footerSocialMediaText {
-    @include displayFlexRow;
-    gap: 0.5rem;
-    width: fit-content;
-    transition: color 0.3s;
-  }
-  &__copyrightAndDeveloperContainer {
-    @include displayFlexColumn;
-    gap: 1.75rem;
-    padding: 3rem 0 0;
-  }
-  &__legalContainer {
-    @include displayFlexColumn;
-    gap: 0.75rem;
-  }
-  &__footerTermsText,
-  &__footerPoppiText {
-    @include displayFlexRow;
-    gap: 0.5rem;
-    transition: all 0.3s;
-  }
-  &__footerTermsText:hover,
-  &__footerPoppiText:hover {
-    color: $cf-blue;
-    transform: scale(1.1);
-  }
-  &__developerDetailsContainer {
-    @include displayFlexColumn;
-    gap: 0.25rem;
-    backface-visibility: hidden;
-    transition: transform 0.3s;
-  }
-  &__developerDetailsContainer:hover {
-    transform: scale(1.05);
-  }
+	background-color: $cp-dark;
+	position: relative;
+	padding: 0 2rem 1rem;
+	&__logoContainer {
+		@include displayFlexColumn;
+		gap: 1.75rem;
+	}
+	&__figure {
+		@include displayFlexColumn;
+	}
+	&__linebreakLogoByline {
+		display: none;
+		@media (min-width: 294px) {
+			display: block;
+		}
+	}
+	&__servicesContainer {
+		@include displayFlexColumn;
+		gap: 2rem;
+	}
+	&__servicesDetailsContainer {
+		@include displayFlexColumn;
+		gap: 2.75rem;
+		width: min(100%, 35rem);
+	}
+	&__servicesArticleContainer {
+		@include displayFlexColumn;
+		gap: 2rem;
+	}
+	&__servicesList {
+		@include displayFlexColumn;
+		gap: 1.75rem;
+	}
+	&__footerRightArrow {
+		@include displayFlexColumn;
+		padding-bottom: 0.35rem;
+		transform: scale(1.5);
+	}
+	&__footerServicesText {
+		@include displayFlexRow;
+		gap: 0.5rem;
+		transition: all 0.3s;
+	}
+	&__footerServicesText:hover {
+		color: $cf-blue;
+		transform: scale(1.1);
+		will-change: auto;
+	}
+	&__servicesAreasList {
+		@include displayFlexRow;
+		flex-wrap: wrap;
+		row-gap: 1.75rem;
+		column-gap: 1rem;
+	}
+	&__linebreakFooterServicesAreaItemText {
+		display: none;
+	}
+	&__footerServiceAreaItemText {
+		@include displayFlexRow;
+		// justify-content: flex-start;
+		// min-width: 11rem;
+	}
+	&__navContainer {
+		@include displayFlexColumn;
+		gap: 1.25rem;
+		padding: 3rem 0 0;
+	}
+	&__navlist {
+		@include displayFlexColumn;
+		align-items: center;
+		gap: 1.75rem;
+		width: 11rem;
+	}
+	&__navitem {
+		@include displayFlexColumn;
+		gap: 1.5rem;
+		width: fit-content;
+		height: 2rem;
+	}
+	&__navlink {
+		@include displayFlexRow;
+		gap: 0.5rem;
+		backface-visibility: hidden;
+		transition: all 0.3s;
+	}
+	&__addressAndContactAndSocialMediaContainer {
+		@include displayFlexColumn;
+		padding: 3rem 0 0;
+	}
+	&__addressAndContactDetailsContainer {
+		@include displayFlexColumn;
+		align-items: center;
+		gap: 1.5rem;
+		width: 100%;
+	}
+	&__addressDetailsContainer {
+		@include displayFlexColumn;
+		align-items: flex-start;
+		gap: 1.5rem;
+		width: 100%;
+	}
+	&__contactDetailsContainer {
+		@include displayFlexColumn;
+		align-items: center;
+		gap: 1.5rem;
+		width: 100%;
+	}
+	&__addressDetailsItemContainer,
+	&__contactDetailsItemContainer {
+		@include displayFlexRow;
+		justify-content: flex-start;
+		gap: 0.75rem;
+		width: fit-content;
+		transition: transform 0.3s;
+	}
+	&__addressDetailsItemContainer:hover,
+	&__contactDetailsItemContainer:hover {
+		transform: scale(1.1);
+		.footer__footerAddressDetailsText,
+		.footer__footerContactDetailsText {
+			color: $cf-blue;
+		}
+	}
+	&__footerAddressDetailsText,
+	&__footerContactDetailsText {
+		@include displayFlexRow;
+		align-items: flex-start;
+		gap: 0.75rem;
+		transition: color 0.3s;
+	}
+	&__socialMediaLinksContainer {
+		@include displayFlexColumn;
+		align-items: center;
+		width: fit-content;
+		gap: 1.5rem;
+		padding: 3rem 0 0;
+	}
+	&__socialMediaItemContainer {
+		@include displayFlexRow;
+		width: fit-content;
+		gap: 0.75rem;
+		transition: transform 0.3s;
+	}
+	&__socialMediaItemContainer:hover {
+		transform: scale(1.1);
+		.footer__footerSocialMediaText {
+			color: $cf-blue;
+		}
+	}
+	&__footerSocialMediaText {
+		@include displayFlexRow;
+		gap: 0.5rem;
+		width: fit-content;
+		transition: color 0.3s;
+	}
+	&__copyrightAndDeveloperContainer {
+		@include displayFlexColumn;
+		gap: 1.75rem;
+		padding: 3rem 0 0;
+	}
+	&__legalContainer {
+		@include displayFlexColumn;
+		gap: 0.75rem;
+	}
+	&__footerTermsText,
+	&__footerPoppiText {
+		@include displayFlexRow;
+		gap: 0.5rem;
+		transition: all 0.3s;
+	}
+	&__footerTermsText:hover,
+	&__footerPoppiText:hover {
+		color: $cf-blue;
+		transform: scale(1.1);
+	}
+	&__developerDetailsContainer {
+		@include displayFlexColumn;
+		gap: 0.25rem;
+		backface-visibility: hidden;
+		transition: transform 0.3s;
+	}
+	&__developerDetailsContainer:hover {
+		transform: scale(1.05);
+	}
 }

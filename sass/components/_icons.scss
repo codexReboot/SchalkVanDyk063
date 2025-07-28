@@ -56,7 +56,6 @@
 		margin-bottom: 0.5rem;
 	}
 	&--aboutBtnIconColor,
-	&--projectsBtnIconColor,
 	&--contactPageIconColor {
 		fill: $cp-white;
 	}
@@ -72,5 +71,14 @@
 		margin-top: 1rem;
 		width: 1.5rem;
 		height: auto;
+	}
+
+	// project cards button icon
+	&--projectCardBtnIcon {
+		width: 1.8rem;
+		height: auto;
+	}
+	&--projectCardBtnIconColor {
+		stroke: $cp-blue;
 	}
 }

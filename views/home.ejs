@@ -614,76 +614,342 @@
 					</defs>
 				</svg>
 			</section>
-
+			<!-- Portfolio Section -->
 			<section class="main__portfolioSection portfolioSection">
 				<div class="portfolioSection__sectionHeading sectionHeading">
-					<h2 class="portfolioSection__headingH2 sectionHeading__headingH2 headingH2 headingH2--portfolio">Portfolio</h2>
+					<h2 class="portfolioSection__headingH2 sectionHeading__headingH2 headingH2 headingH2--portfolio">Projects</h2>
 					<hr class="portfolioSection__hr sectionHeading__hr hr hr--portfolioSection" />
 					<p class="portfolioSection__headingH2Tagline sectionHeading__headingH2Tagline headingH2Tagline headingH2Tagline--portfolio">check out my work</p>
 				</div>
 				<div class="portfolioSection__portfolioContentContainer">
-					<article class="portfolioSection__card card card--portfolio">
-						<h3 class="card__headingH3 headingH3 headingH3--portfolioCard">Protea Apteek</h3>
-						<hr class="card__hr hr hr--portfolioCard" />
-						<p class="card__paragraph paragraph paragraph--portfolioCard">A website for Protea Pharmacy in Nylstroom (Modimolle) showcasing their products, services and team.</p>
-						<div class="cta cta--portfolioCard">
-							<a
-								class="card__btn btn btn-primary btn-primary--portfolioCard"
-								href="https://svdwebtech.github.io/proteaPharmacy041/"
-								target="_blank">
-								<svg
-									class="btn__icon icon icon--portfolioCardBtn"
-									width="24"
-									height="24"
-									viewBox="0 0 24 24"
-									fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M14 10L10 14"
-										stroke="#c1121f"
-										stroke-width="2"
-										stroke-linecap="round"
-										stroke-linejoin="round" />
-									<path
-										d="M16.7059 13.1765L19.0588 10.8235C20.6832 9.19916 20.6832 6.56554 19.0588 4.94118V4.94118C17.4345 3.31681 14.8008 3.31681 13.1765 4.94118L10.8235 7.29412M7.29412 10.8235L4.94118 13.1765C3.31681 14.8008 3.31681 17.4345 4.94118 19.0588V19.0588C6.56554 20.6832 9.19916 20.6832 10.8235 19.0588L13.1765 16.7059"
-										stroke="#c1121f"
-										stroke-width="2"
-										stroke-linecap="round" />
-								</svg>
-								<span class="btn__paragraph paragraph paragraph--btn">View</span>
-							</a>
-							<a
-								class="card__btn btn btn-secondaryBtn- btn-secondary--portfolioCard"
-								href="https://github.com/SVDwebtech/proteaPharmacy041/blob/master/README.md"
-								target="_blank">
-								<svg
-									class="btn__icon icon icon--portfolioCardBtn"
-									width="24"
-									height="24"
-									viewBox="0 0 24 24"
-									fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M20 12V12C20 10.1144 20 9.17157 19.4142 8.58579C18.8284 8 17.8856 8 16 8H14.6569C13.8394 8 13.4306 8 13.0631 7.84776C12.6955 7.69552 12.4065 7.40649 11.8284 6.82843L11.1716 6.17157C10.5935 5.59351 10.3045 5.30448 9.93694 5.15224C9.5694 5 9.16065 5 8.34315 5H8C6.11438 5 5.17157 5 4.58579 5.58579C4 6.17157 4 7.11438 4 9V15C4 16.8856 4 17.8284 4.58579 18.4142C5.17157 19 6.11438 19 8 19H11"
-										stroke="#f0f0f0"
-										stroke-width="2" />
-									<circle
-										cx="16.5"
-										cy="16.5"
-										r="2.5"
-										stroke="#f0f0f0"
-										stroke-width="2" />
-									<path
-										d="M19.5 19.5L21 21"
-										stroke="#f0f0f0"
-										stroke-width="2"
-										stroke-linecap="round" />
-								</svg>
-								<span class="btn__paragraph paragraph paragraph--btn">Info</span>
-							</a>
+					<h3 class="portfolioSection__headingH3 headingH3 headingH3--portfolioSection">Real-World Solutions, Personal Experiments, <br />and Client Work</h3>
+					<p class="portfolioSection__introParagraph paragraph paragraph--portfolioSection">
+						Explore a curated selection of projects I’ve worked on — from client solutions to personal experiments. These projects reflect my problem-solving skills, technical range, and
+						commitment to building clean, effective digital experiences.
+					</p>
+					<div class="portfolioSection__projectCardsContainer">
+						<!-- project: protea -->
+						<div class="portfolioSection__ projectCard projectCard">
+							<div class="project-image">
+								<img
+									class=""
+									src="./img/portfolio/proteaapteekPortfolioThumbnailX750.webp"
+									alt="" />
+							</div>
+							<div class="overlay"></div>
+							<div class="info-popup">
+								<button class="close-btn">X</button>
+								<h4 class="projectCard__headingH4 headingH4 headingH4--projectCard">Protea Pharmacy</h4>
+								<p class="projectCard__info-popupParagraph paragraph paragraph--projectDesc">Single-page website for a local pharmacy.</p>
+								<ul class="projectCard__projectFeatures">
+									<li class="projectCard__projectFeaturesText paragraph paragraph--projectFeaturesText">✓ Responsive design with fast load times.</li>
+									<li class="projectCard__projectFeaturesText paragraph paragraph--projectFeaturesText">✓ Opens directions in Google Maps.</li>
+								</ul>
+								<p class="projectCard__info-popupParagraph paragraph paragraph--projectTech"><strong>Stack:</strong> HTML, SCSS & JavaScript</p>
+							</div>
+							<div class="project-actions">
+								<button class="action action--info btn--action info">
+									Info
+									<svg
+										class="btn__icon icon icon--projectCardBtnIcon"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											class="icon--projectCardBtnIconColor"
+											d="M20 12V12C20 10.1144 20 9.17157 19.4142 8.58579C18.8284 8 17.8856 8 16 8H14.6569C13.8394 8 13.4306 8 13.0631 7.84776C12.6955 7.69552 12.4065 7.40649 11.8284 6.82843L11.1716 6.17157C10.5935 5.59351 10.3045 5.30448 9.93694 5.15224C9.5694 5 9.16065 5 8.34315 5H8C6.11438 5 5.17157 5 4.58579 5.58579C4 6.17157 4 7.11438 4 9V15C4 16.8856 4 17.8284 4.58579 18.4142C5.17157 19 6.11438 19 8 19H11"
+											stroke="#f0f0f0"
+											stroke-width="2" />
+										<circle
+											class="icon--projectCardBtnIconColor"
+											cx="16.5"
+											cy="16.5"
+											r="2.5"
+											stroke="#f0f0f0"
+											stroke-width="2" />
+										<path
+											class="icon--projectCardBtnIconColor"
+											d="M19.5 19.5L21 21"
+											stroke="#f0f0f0"
+											stroke-width="2"
+											stroke-linecap="round" />
+									</svg>
+								</button>
+								<a
+									class="action action--view btn--action view"
+									href="https://proteaapteek.co.za"
+									target="_blank"
+									rel="noopener">
+									View
+									<svg
+										class="btn__icon icon icon--projectCardBtnIcon"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											class="icon--projectCardBtnIconColor"
+											d="M14 10L10 14"
+											stroke="#c1121f"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+										<path
+											class="icon--projectCardBtnIconColor"
+											d="M16.7059 13.1765L19.0588 10.8235C20.6832 9.19916 20.6832 6.56554 19.0588 4.94118V4.94118C17.4345 3.31681 14.8008 3.31681 13.1765 4.94118L10.8235 7.29412M7.29412 10.8235L4.94118 13.1765C3.31681 14.8008 3.31681 17.4345 4.94118 19.0588V19.0588C6.56554 20.6832 9.19916 20.6832 10.8235 19.0588L13.1765 16.7059"
+											stroke="#c1121f"
+											stroke-width="2"
+											stroke-linecap="round" />
+									</svg>
+								</a>
+							</div>
 						</div>
-					</article>
+
+						<!-- project: witkop -->
+						<div class="portfolioSection__ projectCard projectCard">
+							<div class="project-image">
+								<img
+									class=""
+									src="./img/portfolio/witkopHuntingSafarisPortfolioThumbnailX750.webp"
+									alt="" />
+							</div>
+							<div class="overlay"></div>
+							<div class="info-popup">
+								<button class="close-btn">X</button>
+								<h4 class="projectCard__headingH4 headingH4 headingH4--projectCard">Witkop Hunting Safaris</h4>
+								<p class="projectCard__info-popupParagraph paragraph paragraph--projectDesc">Fast single-page website and great UX.</p>
+								<ul class="projectCard__projectFeatures">
+									<li class="projectCard__projectFeaturesText paragraph paragraph--projectFeaturesText">✓ Popup packages avoid page reloads.</li>
+									<li class="projectCard__projectFeaturesText paragraph paragraph--projectFeaturesText">✓ In-page, downloadable documents.</li>
+								</ul>
+								<p class="projectCard__info-popupParagraph paragraph paragraph--projectTech"><strong>Stack:</strong> HTML, SCSS & JavaScript</p>
+							</div>
+							<div class="project-actions">
+								<button class="action btn--action info">
+									Info
+									<svg
+										class="btn__icon icon icon--projectCardBtnIcon"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											class="icon--projectCardBtnIconColor"
+											d="M20 12V12C20 10.1144 20 9.17157 19.4142 8.58579C18.8284 8 17.8856 8 16 8H14.6569C13.8394 8 13.4306 8 13.0631 7.84776C12.6955 7.69552 12.4065 7.40649 11.8284 6.82843L11.1716 6.17157C10.5935 5.59351 10.3045 5.30448 9.93694 5.15224C9.5694 5 9.16065 5 8.34315 5H8C6.11438 5 5.17157 5 4.58579 5.58579C4 6.17157 4 7.11438 4 9V15C4 16.8856 4 17.8284 4.58579 18.4142C5.17157 19 6.11438 19 8 19H11"
+											stroke="#f0f0f0"
+											stroke-width="2" />
+										<circle
+											class="icon--projectCardBtnIconColor"
+											cx="16.5"
+											cy="16.5"
+											r="2.5"
+											stroke="#f0f0f0"
+											stroke-width="2" />
+										<path
+											class="icon--projectCardBtnIconColor"
+											d="M19.5 19.5L21 21"
+											stroke="#f0f0f0"
+											stroke-width="2"
+											stroke-linecap="round" />
+									</svg>
+								</button>
+								<a
+									class="action btn--action view"
+									href="https://witkophuntingsafaris.com"
+									target="_blank"
+									rel="noopener">
+									View
+									<svg
+										class="btn__icon icon icon--projectCardBtnIcon"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											class="icon--projectCardBtnIconColor"
+											d="M14 10L10 14"
+											stroke="#c1121f"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+										<path
+											class="icon--projectCardBtnIconColor"
+											d="M16.7059 13.1765L19.0588 10.8235C20.6832 9.19916 20.6832 6.56554 19.0588 4.94118V4.94118C17.4345 3.31681 14.8008 3.31681 13.1765 4.94118L10.8235 7.29412M7.29412 10.8235L4.94118 13.1765C3.31681 14.8008 3.31681 17.4345 4.94118 19.0588V19.0588C6.56554 20.6832 9.19916 20.6832 10.8235 19.0588L13.1765 16.7059"
+											stroke="#c1121f"
+											stroke-width="2"
+											stroke-linecap="round" />
+									</svg>
+								</a>
+							</div>
+						</div>
+
+						<!-- project: isanti -->
+						<div class="portfolioSection__ projectCard projectCard">
+							<div class="project-image">
+								<img
+									class=""
+									src="./img/portfolio/isantiGuestFarmPortfolioThumbnailX750.webp"
+									alt="" />
+							</div>
+							<div class="overlay"></div>
+							<div class="info-popup">
+								<button class="close-btn">X</button>
+								<h4 class="projectCard__headingH4 headingH4 headingH4--projectCard">Isanti Guest Farm</h4>
+								<p class="projectCard__info-popupParagraph paragraph paragraph--projectDesc">Website with great testimonial section.</p>
+								<ul class="projectCard__projectFeatures">
+									<li class="projectCard__projectFeaturesText paragraph paragraph--projectFeaturesText">✓ Live Google Reviews auto-update.</li>
+									<li class="projectCard__projectFeaturesText paragraph paragraph--projectFeaturesText">✓ One-click Google Review link.</li>
+								</ul>
+								<p class="projectCard__info-popupParagraph paragraph paragraph--projectTech"><strong>Stack:</strong> HTML, SCSS & JavaScript</p>
+							</div>
+							<div class="project-actions">
+								<button class="action btn--action info">
+									Info
+									<svg
+										class="btn__icon icon icon--projectCardBtnIcon"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											class="icon--projectCardBtnIconColor"
+											d="M20 12V12C20 10.1144 20 9.17157 19.4142 8.58579C18.8284 8 17.8856 8 16 8H14.6569C13.8394 8 13.4306 8 13.0631 7.84776C12.6955 7.69552 12.4065 7.40649 11.8284 6.82843L11.1716 6.17157C10.5935 5.59351 10.3045 5.30448 9.93694 5.15224C9.5694 5 9.16065 5 8.34315 5H8C6.11438 5 5.17157 5 4.58579 5.58579C4 6.17157 4 7.11438 4 9V15C4 16.8856 4 17.8284 4.58579 18.4142C5.17157 19 6.11438 19 8 19H11"
+											stroke="#f0f0f0"
+											stroke-width="2" />
+										<circle
+											class="icon--projectCardBtnIconColor"
+											cx="16.5"
+											cy="16.5"
+											r="2.5"
+											stroke="#f0f0f0"
+											stroke-width="2" />
+										<path
+											class="icon--projectCardBtnIconColor"
+											d="M19.5 19.5L21 21"
+											stroke="#f0f0f0"
+											stroke-width="2"
+											stroke-linecap="round" />
+									</svg>
+								</button>
+								<a
+									class="action btn--action view"
+									href="https://isantiguestfarm.co.za"
+									target="_blank"
+									rel="noopener">
+									View
+									<svg
+										class="btn__icon icon icon--projectCardBtnIcon"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											class="icon--projectCardBtnIconColor"
+											d="M14 10L10 14"
+											stroke="#c1121f"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+										<path
+											class="icon--projectCardBtnIconColor"
+											d="M16.7059 13.1765L19.0588 10.8235C20.6832 9.19916 20.6832 6.56554 19.0588 4.94118V4.94118C17.4345 3.31681 14.8008 3.31681 13.1765 4.94118L10.8235 7.29412M7.29412 10.8235L4.94118 13.1765C3.31681 14.8008 3.31681 17.4345 4.94118 19.0588V19.0588C6.56554 20.6832 9.19916 20.6832 10.8235 19.0588L13.1765 16.7059"
+											stroke="#c1121f"
+											stroke-width="2"
+											stroke-linecap="round" />
+									</svg>
+								</a>
+							</div>
+						</div>
+
+						<!-- project: arkwood -->
+						<div class="portfolioSection__ projectCard projectCard">
+							<div class="project-image">
+								<img
+									class=""
+									src="./img/portfolio/arkwoodProductsPortfolioThumbnailX750.webp"
+									alt="" />
+							</div>
+							<div class="overlay"></div>
+							<div class="info-popup">
+								<button class="close-btn">X</button>
+								<h4 class="projectCard__headingH4 headingH4 headingH4--projectCard">Arkwood Products</h4>
+								<p class="projectCard__info-popupParagraph paragraph paragraph--projectDesc">Website offering tap-to-chat on WhatsApp.</p>
+								<ul class="projectCard__projectFeatures">
+									<li class="projectCard__projectFeaturesText paragraph paragraph--projectFeaturesText">✓ One-tap WhatsApp conversation starter.</li>
+									<li class="projectCard__projectFeaturesText paragraph paragraph--projectFeaturesText">✓ Optimized for speed and responsiveness.</li>
+								</ul>
+								<p class="projectCard__info-popupParagraph paragraph paragraph--projectTech"><strong>Stack:</strong> HTML, SCSS & JavaScript</p>
+							</div>
+							<div class="project-actions">
+								<button class="action btn--action info">
+									Info
+									<svg
+										class="btn__icon icon icon--projectCardBtnIcon"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											class="icon--projectCardBtnIconColor"
+											d="M20 12V12C20 10.1144 20 9.17157 19.4142 8.58579C18.8284 8 17.8856 8 16 8H14.6569C13.8394 8 13.4306 8 13.0631 7.84776C12.6955 7.69552 12.4065 7.40649 11.8284 6.82843L11.1716 6.17157C10.5935 5.59351 10.3045 5.30448 9.93694 5.15224C9.5694 5 9.16065 5 8.34315 5H8C6.11438 5 5.17157 5 4.58579 5.58579C4 6.17157 4 7.11438 4 9V15C4 16.8856 4 17.8284 4.58579 18.4142C5.17157 19 6.11438 19 8 19H11"
+											stroke="#f0f0f0"
+											stroke-width="2" />
+										<circle
+											class="icon--projectCardBtnIconColor"
+											cx="16.5"
+											cy="16.5"
+											r="2.5"
+											stroke="#f0f0f0"
+											stroke-width="2" />
+										<path
+											class="icon--projectCardBtnIconColor"
+											d="M19.5 19.5L21 21"
+											stroke="#f0f0f0"
+											stroke-width="2"
+											stroke-linecap="round" />
+									</svg>
+								</button>
+								<a
+									class="action btn--action view"
+									href="https://arkwoodproducts.co.za"
+									target="_blank"
+									rel="noopener">
+									View
+									<svg
+										class="btn__icon icon icon--projectCardBtnIcon"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											class="icon--projectCardBtnIconColor"
+											d="M14 10L10 14"
+											stroke="#c1121f"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+										<path
+											class="icon--projectCardBtnIconColor"
+											d="M16.7059 13.1765L19.0588 10.8235C20.6832 9.19916 20.6832 6.56554 19.0588 4.94118V4.94118C17.4345 3.31681 14.8008 3.31681 13.1765 4.94118L10.8235 7.29412M7.29412 10.8235L4.94118 13.1765C3.31681 14.8008 3.31681 17.4345 4.94118 19.0588V19.0588C6.56554 20.6832 9.19916 20.6832 10.8235 19.0588L13.1765 16.7059"
+											stroke="#c1121f"
+											stroke-width="2"
+											stroke-linecap="round" />
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
 				</div>
+				<!-- Section Divider -->
 				<svg
 					class="sectionDivider sectionDivider--portfolio"
 					viewBox="0 0 1440 1000"
