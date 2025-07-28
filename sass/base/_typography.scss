@@ -222,7 +222,6 @@
 	}
 	&--terms,
 	&--poppi {
-		color: rgba($cf-blue, 0.95);
 		text-decoration: 1px underline;
 		text-underline-offset: 3px;
 	}
@@ -268,24 +267,18 @@
 	letter-spacing: 1px;
 	text-align: center;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+	transition: all 0.3s;
 	&--footerNavlinkText {
 		color: rgba($cf-white, 0.85);
 		font-family: "Lato", serif;
 		font-size: clamp(1.4rem, 4.5vw, 1.6rem);
 		font-weight: 700;
 		line-height: 1.3;
-		// text-decoration: underline 1px solid rgba($cf-white, 0.85);
-		// text-underline-offset: 0.5rem;
+		transition: all 0.3s;
 	}
 }
 .navlinkText:hover {
 	color: $cf-blue;
-	font-size: $navlinkTextSizeHover;
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
-	transform: translateY(-2px);
-}
-.navlinkText--footerNavlinkText:hover {
-	color: $cf-blue;
-	font-size: clamp(1.6rem, 4.7vw, 1.8rem);
-	transform: translateY(0);
+	transform: scale(1.1);
+	will-change: transform;
 }
