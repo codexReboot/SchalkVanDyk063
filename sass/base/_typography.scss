@@ -219,6 +219,12 @@
 		text-align: center;
 		text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
 	}
+	&--terms,
+	&--poppi {
+		color: rgba($cf-blue, 0.95);
+		text-decoration: 1px underline;
+		text-underline-offset: 3px;
+	}
 	@media (min-width: 400px) {
 		&--projectDesc,
 		&--projectFeaturesText,
