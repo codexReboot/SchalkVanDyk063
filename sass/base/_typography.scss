@@ -32,6 +32,10 @@
 		font-style: normal;
 		text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
 	}
+	&--popia {
+		color: rgba($cf-white, 0.95);
+		text-align: left;
+	}
 }
 .headingH2 {
 	color: $cf-darkBlue;
@@ -43,6 +47,12 @@
 	text-align: left;
 	text-shadow: 1.5px 1.5px 1px rgba($cp-dark, 0.45);
 	text-transform: uppercase;
+	&--popia {
+		color: rgba($cf-darkBlue, 0.85);
+		font-size: clamp(2rem, 7vw, 2.2rem);
+		font-weight: 900;
+		text-transform: uppercase;
+	}
 }
 .headingH2Tagline {
 	color: $cf-red;
@@ -225,6 +235,15 @@
 		text-decoration: 1px underline;
 		text-underline-offset: 3px;
 	}
+	// popia page
+	&--popia {
+		color: rgba($cf-dark, 0.85);
+		text-align: left;
+	}
+	&--popiaHeader {
+		color: rgba($cf-white, 0.85);
+		text-align: left;
+	}
 	@media (min-width: 400px) {
 		&--projectDesc,
 		&--projectFeaturesText,
@@ -256,6 +275,10 @@
 		color: $cf-blue;
 		font-size: clamp(1.4rem, 4.5vw, 1.6rem);
 		letter-spacing: 1px;
+	}
+	&--returnHomeBtn {
+		color: $cf-darkBlue;
+		font-weight: 700;
 	}
 }
 .navlinkText {

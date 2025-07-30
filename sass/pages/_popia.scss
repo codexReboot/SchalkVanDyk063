@@ -1,0 +1,44 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+.popia {
+	&__body {
+		color: rgba($cf-dark, 1);
+	}
+	&__header {
+		background-color: $cp-dark;
+		padding: 10rem 1rem 5rem;
+		.paragraph--popiaHeader {
+			margin-left: 0rem;
+		}
+	}
+	&__main {
+		@include displayFlexColumn;
+		gap: 3rem;
+		padding: 5rem 1rem 10rem;
+	}
+	&__section {
+		width: 100%;
+	}
+	&__headingH1 {
+		align-items: flex-start;
+	}
+	&__headingH2 {
+		@include displayFlexRow;
+		justify-content: flex-start;
+		align-items: flex-start;
+		margin-bottom: 0.75rem;
+		span {
+			text-decoration: 3px underline;
+			text-underline-offset: 3px;
+		}
+	}
+	&__paragraph {
+		margin-left: 3rem;
+	}
+	&__list {
+		display: block;
+		list-style: square;
+		list-style-position: outside;
+		padding-left: 2.25rem;
+	}
+}

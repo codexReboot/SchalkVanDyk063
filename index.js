@@ -21,6 +21,11 @@ app.get("/", (req, res) => {
 	res.render("home", { title: "Home", message: "Hello, world!" });
 });
 
+// popia
+app.get("/popia", (req, res) => {
+	res.render("popia", { title: "Home", message: "Hello, world!" });
+});
+
 // Typography
 app.get("/typography", (req, res) => {
 	res.render("typography", { title: "Home", message: "Hello, world!" });

@@ -83,4 +83,12 @@
 	&--socialMediaCard:hover {
 		background-color: rgba($cp-darkBlue, 1);
 	}
+	&--returnHomeBtn {
+		background-color: rgba($cp-white, 0.95);
+		margin: 0;
+		position: sticky;
+		top: 0;
+		float: right;
+		z-index: 1000;
+	}
 }
