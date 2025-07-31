@@ -80,6 +80,11 @@
 		text-shadow: 0 0 3px rgba(black, 1);
 		text-transform: uppercase;
 	}
+	&--popia {
+		color: rgba($cf-darkBlue, 0.95);
+		font-size: clamp(1.8rem, 4.7vw, 2rem);
+		font-weight: 700;
+	}
 }
 .headingH4 {
 	color: rgba($cf-red, 0.95);
@@ -252,6 +257,12 @@
 		}
 	}
 }
+.logoText {
+	&--popia {
+		color: rgba($cf-white, 0.85);
+		font-size: clamp(1.4rem, 4.5vw, 1.6rem);
+	}
+}
 .btn {
 	color: $cf-white;
 	font-family: "Contrail One", serif;
@@ -276,9 +287,12 @@
 		font-size: clamp(1.4rem, 4.5vw, 1.6rem);
 		letter-spacing: 1px;
 	}
-	&--returnHomeBtn {
+	&--returnTopBtn {
 		color: $cf-darkBlue;
 		font-weight: 700;
+		span {
+			transform: scale(1.1);
+		}
 	}
 }
 .navlinkText {

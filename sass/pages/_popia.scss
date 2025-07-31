@@ -11,34 +11,68 @@
 			margin-left: 0rem;
 		}
 	}
+	.nav__logo {
+		transition: trasnform 0.2s;
+		will-change: transform;
+	}
+	&__figure {
+		margin-bottom: 3rem;
+		transition: all 0.2s;
+		transform-origin: left;
+		will-change: transform;
+	}
+	&__homeLink {
+		transition: all 0.2s;
+		will-change: transform;
+	}
+	&__homeLink:hover,
+	&__homeLink:hover &__figure {
+		transform: scale(1.05);
+	}
+	&__logoImage {
+		display: block;
+		width: 15rem;
+		height: auto;
+	}
 	&__main {
 		@include displayFlexColumn;
 		gap: 3rem;
-		padding: 5rem 1rem 10rem;
+		padding: 5rem 1rem 15rem;
+		position: relative;
 	}
 	&__section {
 		width: 100%;
+		position: relative;
 	}
 	&__headingH1 {
 		align-items: flex-start;
 	}
-	&__headingH2 {
+	&__headingH2,
+	&__headingH3 {
 		@include displayFlexRow;
 		justify-content: flex-start;
 		align-items: flex-start;
-		margin-bottom: 0.75rem;
+		margin-bottom: 0.85rem;
 		span {
 			text-decoration: 3px underline;
 			text-underline-offset: 3px;
+			margin-left: 1.75rem;
+		}
+	}
+	&__headingH3 {
+		margin-bottom: 0.15rem;
+		span {
+			text-decoration: none;
+			margin-left: 0.45rem;
 		}
 	}
 	&__paragraph {
-		margin-left: 3rem;
+		margin-left: 4.75rem;
 	}
 	&__list {
 		display: block;
 		list-style: square;
 		list-style-position: outside;
-		padding-left: 2.25rem;
+		padding-left: 2rem;
 	}
 }
