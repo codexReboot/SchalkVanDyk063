@@ -288,10 +288,10 @@
 		letter-spacing: 1px;
 	}
 	&--returnTopBtn {
-		color: $cf-darkBlue;
-		font-weight: 700;
+		color: $cf-white;
+		font-weight: 900;
 		span {
-			transform: scale(1.1);
+			transform: scale(2);
 		}
 	}
 }

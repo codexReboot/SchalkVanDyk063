@@ -86,12 +86,15 @@
 	&--returnTopBtn {
 		@include displayFlexRow;
 		align-self: flex-end;
-		background-color: rgba($cp-white, 0.95);
+		background-color: rgba($cp-dark, 0.95);
+		padding: 1rem;
+		padding-left: 1.15rem;
 		margin: 0;
-		opacity: 0;
+		opacity: 1;
 		position: sticky;
 		top: 90vh;
 		right: 5rem;
+		float: right;
 		z-index: 1000;
 	}
 }
