@@ -31,6 +31,11 @@ app.get("/paia", (req, res) => {
 	res.render("paia");
 });
 
+// terms
+app.get("/terms", (req, res) => {
+	res.render("terms");
+});
+
 // Typography
 app.get("/typography", (req, res) => {
 	res.render("typography", { title: "Home", message: "Hello, world!" });
