@@ -8,7 +8,8 @@
 	&__header {
 		background-color: $cp-dark;
 		padding: 10rem 1rem 5rem;
-		.paragraph--popiaHeader {
+		.paragraph--popiaHeader,
+		.paragraph--paiaHeader {
 			margin-left: 0rem;
 		}
 	}
@@ -37,12 +38,15 @@
 	}
 	&__main {
 		@include displayFlexColumn;
-		gap: 3rem;
+		gap: 5rem;
 		padding: 5rem 1rem 15rem;
 	}
 	&__section {
 		width: 100%;
 		position: relative;
+	}
+	&__subsection {
+		margin-bottom: 2rem;
 	}
 	&__headingH1 {
 		align-items: flex-start;
@@ -59,8 +63,11 @@
 			margin-left: 1.75rem;
 		}
 	}
+	&__headingH2 {
+		margin-bottom: 1.25rem;
+	}
 	&__headingH3 {
-		margin-bottom: 0.15rem;
+		margin-bottom: 0.45rem;
 		span {
 			text-decoration: none;
 			margin-left: 0.45rem;

@@ -32,7 +32,8 @@
 		font-style: normal;
 		text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
 	}
-	&--popia {
+	&--popia,
+	&--paia {
 		color: rgba($cf-white, 0.95);
 		text-align: left;
 	}
@@ -47,7 +48,8 @@
 	text-align: left;
 	text-shadow: 1.5px 1.5px 1px rgba($cp-dark, 0.45);
 	text-transform: uppercase;
-	&--popia {
+	&--popia,
+	&--paia {
 		color: rgba($cf-darkBlue, 0.85);
 		font-size: clamp(2rem, 7vw, 2.2rem);
 		font-weight: 900;
@@ -80,8 +82,9 @@
 		text-shadow: 0 0 3px rgba(black, 1);
 		text-transform: uppercase;
 	}
-	&--popia {
-		color: rgba($cf-darkBlue, 0.95);
+	&--popia,
+	&--paia {
+		color: rgba($cf-darkBlue, 0.75);
 		font-size: clamp(1.8rem, 4.7vw, 2rem);
 		font-weight: 700;
 	}
@@ -240,12 +243,14 @@
 		text-decoration: 1px underline;
 		text-underline-offset: 3px;
 	}
-	// popia page
-	&--popia {
+	// popia & paia
+	&--popia,
+	&--paia {
 		color: rgba($cf-dark, 0.85);
 		text-align: left;
 	}
-	&--popiaHeader {
+	&--popiaHeader,
+	&--paiaHeader {
 		color: rgba($cf-white, 0.85);
 		text-align: left;
 	}
@@ -258,7 +263,8 @@
 	}
 }
 .logoText {
-	&--popia {
+	&--popia,
+	&--paia {
 		color: rgba($cf-white, 0.85);
 		font-size: clamp(1.4rem, 4.5vw, 1.6rem);
 	}
