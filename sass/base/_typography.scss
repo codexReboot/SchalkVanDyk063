@@ -33,7 +33,8 @@
 		text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
 	}
 	&--popia,
-	&--paia {
+	&--paia,
+	&--terms {
 		color: rgba($cf-white, 0.95);
 		text-align: left;
 	}
@@ -49,7 +50,8 @@
 	text-shadow: 1.5px 1.5px 1px rgba($cp-dark, 0.45);
 	text-transform: uppercase;
 	&--popia,
-	&--paia {
+	&--paia,
+	&--terms {
 		color: rgba($cf-darkBlue, 0.85);
 		font-size: clamp(2rem, 7vw, 2.2rem);
 		font-weight: 900;
@@ -83,7 +85,8 @@
 		text-transform: uppercase;
 	}
 	&--popia,
-	&--paia {
+	&--paia,
+	&--terms {
 		color: rgba($cf-darkBlue, 0.75);
 		font-size: clamp(1.8rem, 4.7vw, 2rem);
 		font-weight: 700;
@@ -245,12 +248,14 @@
 	}
 	// popia & paia
 	&--popia,
-	&--paia {
+	&--paia,
+	&--termsandconditions {
 		color: rgba($cf-dark, 0.85);
 		text-align: left;
 	}
 	&--popiaHeader,
-	&--paiaHeader {
+	&--paiaHeader,
+	&--termsHeader {
 		color: rgba($cf-white, 0.85);
 		text-align: left;
 	}
@@ -264,7 +269,8 @@
 }
 .logoText {
 	&--popia,
-	&--paia {
+	&--paia,
+	&--terms {
 		color: rgba($cf-white, 0.85);
 		font-size: clamp(1.4rem, 4.5vw, 1.6rem);
 	}

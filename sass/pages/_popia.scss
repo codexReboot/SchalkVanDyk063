@@ -1,7 +1,8 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 .popia,
-.paia {
+.paia,
+.terms {
 	&__body {
 		color: rgba($cf-dark, 1);
 	}
