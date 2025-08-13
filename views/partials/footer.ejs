@@ -120,29 +120,7 @@
 			</div>
 		</article>
 	</div>
-	<nav class="footer__navContainer">
-		<h3 class="footer__footerHeadingH3 headingH3 headingH3--footerHeadingH3">Start Exploring</h3>
-		<ul class="footer__navlist">
-			<li class="footer__navitem paragraph paragraph__navitem">
-				<a class="footer__navlink navlinkText navlinkText--footerNavlinkText" href="#">Home <span class="footer__footerRightArrow">&rarr;</span></a>
-			</li>
-			<li class="footer__navitem paragraph paragraph__navitem">
-				<a class="footer__navlink navlinkText navlinkText--footerNavlinkText" href="#">About <span class="footer__footerRightArrow">&rarr;</span></a>
-			</li>
-			<li class="footer__navitem paragraph paragraph__navitem">
-				<a class="footer__navlink navlinkText navlinkText--footerNavlinkText" href="#">Services <span class="footer__footerRightArrow">&rarr;</span></a>
-			</li>
-			<li class="footer__navitem paragraph paragraph__navitem">
-				<a class="footer__navlink navlinkText navlinkText--footerNavlinkText" href="#">Portfolio <span class="footer__footerRightArrow">&rarr;</span></a>
-			</li>
-			<li class="footer__navitem paragraph paragraph__navitem">
-				<a class="footer__navlink navlinkText navlinkText--footerNavlinkText" href="#">Skills <span class="footer__footerRightArrow">&rarr;</span></a>
-			</li>
-			<li class="footer__navitem paragraph paragraph__navitem">
-				<a class="footer__navlink navlinkText navlinkText--footerNavlinkText" href="#">Contact <span class="footer__footerRightArrow">&rarr;</span></a>
-			</li>
-		</ul>
-	</nav>
+	<%- include('footer-homepage-nav') %>
 	<div class="footer__addressAndContactAndSocialMediaContainer">
 		<h3 class="footer__footerHeadingH3 headingH3 headingH3--footerHeadingH3">Get in Touch</h3>
 		<div class="footer__addressAndContactDetailsContainer">
@@ -251,15 +229,7 @@
 				Copyright - <span>&copy;</span> <span class="footer__copyrightDate copyrightDate">2020</span> Schalk van Dyk <br class="footer__linebreakAllrights" />All rights reserved
 			</p>
 		</div>
-		<div class="footer__legalContainer">
-			<p class="footer__footerTermsText paragraph paragraph--terms">Terms & Conditions</p>
-			<p class="footer__footerPoppiText paragraph paragraph--poppi">
-				<a href="/popia">Privacy Policy</a>
-			</p>
-			<p class="footer__footerPoppiText paragraph paragraph--poppi">
-				<a href="/paia">PAIA Manual</a>
-			</p>
-		</div>
+		<%- include('footer-legal-nav') %>
 		<div class="footer__developerDetailsContainer">
 			<p class="footer__developer paragraph paragraph--footer paragraph--developer">designed and developed by:</p>
 			<img

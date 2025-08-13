@@ -233,7 +233,9 @@
 	}
 	&--copyright,
 	&--terms,
+	&--termsandconditions,
 	&--poppi,
+	&--paia,
 	&--developer {
 		color: rgba($cf-white, 0.85);
 		font-size: clamp(1.2rem, 4vw, 1.4rem);
@@ -242,15 +244,17 @@
 		text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
 	}
 	&--terms,
-	&--poppi {
+	&--termsandconditions,
+	&--poppi,
+	&--paia {
 		text-decoration: 1px underline;
 		text-underline-offset: 3px;
 	}
 	// popia & paia
-	&--popia,
+	&--poppi,
 	&--paia,
 	&--termsandconditions {
-		color: rgba($cf-dark, 0.85);
+		color: rgba($cf-white, 0.85);
 		text-align: left;
 	}
 	&--popiaHeader,
