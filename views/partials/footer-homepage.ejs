@@ -120,8 +120,8 @@
 			</div>
 		</article>
 	</div>
-	<% const footerNavPartials = { home: 'footer-homepage-nav', popia: 'footer-popiapage-nav', paia: 'footer-paiapage-nav', terms: 'footer-termspage-nav', }; const footerPartial =
-	footerNavPartials[currentPage] || 'footer-homepage-nav'; %> <%- include(footerPartial) %>
+	<% const footerNavPartials = { home: 'homeFooterNav', popia: 'popiaFooterNav', paia: 'paiaFooterNav', terms: 'termsFooterNav' }; const footerPartial = footerNavPartials[currentPage] ||
+	'homeFooterNav'; %> <%- include(footerPartial) %>
 	<div class="footer__addressAndContactAndSocialMediaContainer">
 		<h3 class="footer__footerHeadingH3 headingH3 headingH3--footerHeadingH3">Get in Touch</h3>
 		<div class="footer__addressAndContactDetailsContainer">
@@ -230,7 +230,7 @@
 				Copyright - <span>&copy;</span> <span class="footer__copyrightDate copyrightDate">2020</span> Schalk van Dyk <br class="footer__linebreakAllrights" />All rights reserved
 			</p>
 		</div>
-		<%- include('footer-legal-nav') %>
+		<%- include('legalFooterNav') %>
 		<div class="footer__developerDetailsContainer">
 			<p class="footer__developer paragraph paragraph--footer paragraph--developer">designed and developed by:</p>
 			<img
