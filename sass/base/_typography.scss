@@ -263,6 +263,10 @@
 		color: rgba($cf-white, 0.85);
 		text-align: left;
 	}
+	&--legalClause {
+		color: rgba($cp-dark, 0.85);
+		text-align: left;
+	}
 	@media (min-width: 400px) {
 		&--projectDesc,
 		&--projectFeaturesText,

@@ -120,7 +120,8 @@
 			</div>
 		</article>
 	</div>
-	<%- include('footer-homepage-nav') %>
+	<% const footerNavPartials = { home: 'footer-homepage-nav', popia: 'footer-popiapage-nav', paia: 'footer-paiapage-nav', terms: 'footer-termspage-nav', }; const footerPartial =
+	footerNavPartials[currentPage] || 'footer-homepage-nav'; %> <%- include(footerPartial) %>
 	<div class="footer__addressAndContactAndSocialMediaContainer">
 		<h3 class="footer__footerHeadingH3 headingH3 headingH3--footerHeadingH3">Get in Touch</h3>
 		<div class="footer__addressAndContactDetailsContainer">

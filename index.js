@@ -16,24 +16,24 @@ app.set("views", path.join(__dirname, "views"));
 // Serve static files from the "public" folder
 app.use(express.static(path.join(__dirname, "public")));
 
-// Example route using res.render()
+// Home page
 app.get("/", (req, res) => {
-	res.render("home", { title: "Home", message: "Hello, world!" });
+	res.render("home", { currentPage: "home" });
 });
 
-// popia
+// Popia page
 app.get("/popia", (req, res) => {
-	res.render("popia", { title: "Home", message: "Hello, world!" });
+	res.render("popia", { currentPage: "popia" });
 });
 
-// paia
+// Paia page
 app.get("/paia", (req, res) => {
-	res.render("paia");
+	res.render("paia", { currentPage: "paia" });
 });
 
-// terms
+// Terms page
 app.get("/terms", (req, res) => {
-	res.render("terms");
+	res.render("terms", { currentPage: "terms" });
 });
 
 // Typography
