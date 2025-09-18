@@ -153,6 +153,13 @@
 		justify-content: space-around;
 		width: 100%;
 	}
+	&__socialMediaIcon {
+		transition: transform 300ms;
+	}
+	&__socialMediaIcon:hover {
+		transform-origin: center;
+		transform: scale(1.1);
+	}
 	&__copyrightAndDeveloperContainer {
 		@include displayFlexColumn;
 		gap: 1.5rem;
