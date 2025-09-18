@@ -190,6 +190,7 @@
 		border: none;
 	}
 	&:hover {
+		transform-origin: bottom left;
 		transform: scale(1.05);
 	}
 }
