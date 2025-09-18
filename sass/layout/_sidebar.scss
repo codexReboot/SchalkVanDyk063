@@ -68,5 +68,8 @@
 		@include displayFlexColumn;
 		gap: 5rem;
 		width: min(100%, 45rem);
+		a {
+			margin: 0 auto;
+		}
 	}
 }

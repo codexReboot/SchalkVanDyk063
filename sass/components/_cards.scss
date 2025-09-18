@@ -171,6 +171,8 @@
 }
 .socialMediaCard {
 	width: min(100%, 35rem);
+	margin: 0 auto;
+	transition: transform 300ms;
 	&__socialMediaCardIcon {
 		float: left;
 		padding-right: 1.75rem;
@@ -186,5 +188,8 @@
 		height: 1px;
 		margin: 0.25rem 0;
 		border: none;
+	}
+	&:hover {
+		transform: scale(1.05);
 	}
 }
