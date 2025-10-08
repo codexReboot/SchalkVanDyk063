@@ -193,9 +193,7 @@
 		line-height: 1.2;
 		text-align: left;
 	}
-	&--projectTech,
-	&--projectFeaturesText {
-	}
+
 	&--socialMediaCard {
 		text-align: left;
 		line-height: 1.6;
@@ -334,8 +332,7 @@
 		transition: all 0.3s;
 	}
 }
-.navlinkText:hover {
-	color: $cf-blue;
-	transform: scale(1.1);
-	will-change: transform;
-}
+// .navlinkText:hover {
+// 	color: $cf-blue;
+// 	transform: scale(1.1);
+// }

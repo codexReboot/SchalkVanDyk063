@@ -21,38 +21,67 @@
 			display: block;
 		}
 	}
+
 	&__servicesContainer {
 		@include displayFlexColumn;
 		gap: 2rem;
 	}
+
 	&__servicesDetailsContainer {
 		@include displayFlexColumn;
 		gap: 2.75rem;
 		width: min(100%, 35rem);
 	}
+
 	&__servicesArticleContainer {
 		@include displayFlexColumn;
 		gap: 2rem;
 	}
+
 	&__servicesList {
 		@include displayFlexColumn;
-		gap: 1.75rem;
+		gap: 0.25rem;
 	}
-	&__footerRightArrow {
-		@include displayFlexColumn;
-		padding-bottom: 0.35rem;
-		transform: scale(1.5);
-	}
+
+	///////////////////////////////////////////////////////////////////
+	/// Footer Services Text with Arrow
+
 	&__footerServicesText {
+		min-height: 4rem;
 		@include displayFlexRow;
+		align-items: center;
 		gap: 0.5rem;
-		transition: all 0.3s;
+		backface-visibility: hidden;
+		will-change: color, transform;
+		transform-origin: center;
+		transition: color 0.3s ease, transform 0.3s ease;
+		position: relative;
+		cursor: pointer;
 	}
-	&__footerServicesText:hover {
+
+	// Hover and focus: scale the entire parent
+	&__footerServicesText:hover,
+	&__footerServicesText:focus {
 		color: $cf-blue;
 		transform: scale(1.1);
-		will-change: auto;
+		outline: none;
 	}
+
+	// Arrow: only translate slightly on hover/focus
+	&__footerRightArrow {
+		display: inline-block;
+		margin-bottom: 0.45rem; // keeps visual alignment
+		transition: transform 0.3s ease;
+		transform: none; // remove pre-scaling
+	}
+
+	&__footerServicesText:hover .footer__footerRightArrow,
+	&__footerServicesText:focus .footer__footerRightArrow {
+		transform: translateX(0.15rem);
+	}
+
+	///////////////////////////////////////////////////////////////////
+
 	&__servicesAreasList {
 		@include displayFlexRow;
 		flex-wrap: wrap;
@@ -67,6 +96,7 @@
 		// justify-content: flex-start;
 		// min-width: 11rem;
 	}
+
 	&__navContainer {
 		@include displayFlexColumn;
 		gap: 1.25rem;
@@ -75,21 +105,53 @@
 	&__navlist {
 		@include displayFlexColumn;
 		align-items: center;
-		gap: 1.75rem;
+		gap: 1rem;
 		width: 11rem;
 	}
 	&__navitem {
 		@include displayFlexColumn;
-		gap: 1.5rem;
-		width: fit-content;
-		height: 2rem;
 	}
+
 	&__navlink {
 		@include displayFlexRow;
 		gap: 0.25rem;
+		align-items: center;
 		backface-visibility: hidden;
-		transition: all 0.3s;
+		will-change: color, transform;
+		transform-origin: bottom;
+		transition: color 0.3s ease, transform 0.3s ease;
 	}
+
+	// Hover and focus together
+	&__navlink:hover,
+	&__navlink:focus {
+		color: $cf-blue;
+		transform: scale(1.08);
+		outline: none; // remove default outline
+		position: relative; // for pseudo-element focus cue
+	}
+
+	// Optional: subtle focus underline using pseudo-element
+	&__navlink:focus::after {
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: -2px; // just below text
+		width: 100%;
+		height: 2px;
+		background-color: $cf-blue;
+		border-radius: 1px;
+		transform: scaleX(0);
+		transform-origin: bottom;
+		transition: transform 0.3s ease;
+	}
+
+	// Animate the pseudo-element on focus
+	&__navlink:focus::after {
+		transform: scaleX(1);
+	}
+	///////////////////////////////////////////////////////////////////
+
 	&__addressAndContactAndSocialMediaContainer {
 		@include displayFlexColumn;
 		gap: 1.5rem;
@@ -120,27 +182,77 @@
 		justify-content: flex-start;
 		gap: 0.75rem;
 		width: fit-content;
-		transition: all 0.3s;
 	}
 	&__addressDetailsItemContainer {
 		align-items: flex-start;
 	}
-	&__addressDetailsItemContainer:hover,
-	&__contactDetailsItemContainer:hover {
-		transform: scale(1.1);
-		.footer__footerAddressDetailsText,
-		.footer__footerContactDetailsText {
-			color: $cf-blue;
-			will-change: all;
-		}
+	// Container already flex-column
+	&__footerContactLinks {
+		backface-visibility: hidden;
+		will-change: color, transform;
+		transform-origin: center;
+		transition: color 0.3s ease, transform 0.3s ease;
+		position: relative; // for optional focus pseudo-element
+		display: flex;
+		align-items: center;
+		gap: 0.75rem;
+		cursor: pointer;
 	}
+
+	// Hover and focus together
+	&__footerContactLinks:hover,
+	&__footerContactLinks:focus {
+		transform: scale(1.08);
+		outline: none; // remove default outline
+	}
+
+	// Change text color on hover/focus
+	&__footerContactLinks:hover .paragraph--footerAddressDetails,
+	&__footerContactLinks:hover .paragraph--footerContactDetails,
+	&__footerContactLinks:focus .paragraph--footerAddressDetails,
+	&__footerContactLinks:focus .paragraph--footerContactDetails {
+		color: $cf-blue;
+	}
+
+	// Optional: subtle underline pseudo-element for focus
+	&__footerContactLinks:focus::after {
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: -2px;
+		width: 100%;
+		height: 2px;
+		background-color: $cf-blue;
+		border-radius: 1px;
+		transform: scaleX(0);
+		transform-origin: left;
+		transition: transform 0.3s ease;
+	}
+
+	&__footerContactLinks:focus::after {
+		transform: scaleX(1);
+	}
+
+	// Icon scaling in sync with link
+	.icon--footerContactDetailsIcon {
+		transition: transform 0.3s ease;
+	}
+
+	&__footerContactLinks:hover .icon--footerContactDetailsIcon,
+	&__footerContactLinks:focus .icon--footerContactDetailsIcon {
+		transform: scale(1.08); // matches parent scale
+	}
+
 	&__footerAddressDetailsText,
 	&__footerContactDetailsText {
 		@include displayFlexRow;
 		align-items: flex-start;
 		gap: 0.75rem;
-		transition: color 0.3s;
+		// transform-origin: center;
+		// transition: color 0.3s, transform 0.3s;
 	}
+
+	///////////////////////////////////////////////////////////////////
 	&__socialMediaFooterContainer {
 		@include displayFlexColumn;
 		align-items: center;
@@ -165,28 +277,64 @@
 		gap: 1.5rem;
 		padding: 3rem 0 0;
 	}
+
 	&__legalContainer {
 		@include displayFlexColumn;
 		gap: 0.75rem;
+		align-items: center; // optional, aligns text consistently
 	}
+
 	&__footerTermsText,
-	&__footerPoppiText {
+	&__footerPoppiText,
+	&__footerPaiaText {
 		@include displayFlexRow;
-		gap: 0.5rem;
-		transition: all 0.3s;
+		align-items: center;
+		gap: 0.25rem; // match nav spacing
+		backface-visibility: hidden;
+		will-change: color, transform;
+		transform-origin: center;
+		transition: color 0.3s ease, transform 0.3s ease;
+		position: relative; // for pseudo-element focus cue
 	}
+
+	// Hover and focus (keyboard)
 	&__footerTermsText:hover,
-	&__footerPoppiText:hover {
+	&__footerTermsText:focus,
+	&__footerPoppiText:hover,
+	&__footerPoppiText:focus,
+	&__footerPaiaText:hover,
+	&__footerPaiaText:focus {
 		color: $cf-blue;
-		transform: scale(1.1);
+		transform: scale(1.08);
+		outline: none;
 	}
+
+	// Subtle focus underline using pseudo-element
+	&__footerTermsText:focus::after,
+	&__footerPoppiText:focus::after,
+	&__footerPaiaText:focus::after {
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: -2px; // just below text
+		width: 100%;
+		height: 2px;
+		background-color: $cf-blue;
+		border-radius: 1px;
+		transform: scaleX(0);
+		transform-origin: left;
+		transition: transform 0.3s ease;
+	}
+
+	// Animate pseudo-element on focus
+	&__footerTermsText:focus::after,
+	&__footerPoppiText:focus::after,
+	&__footerPaiaText:focus::after {
+		transform: scaleX(1);
+	}
+
 	&__developerDetailsContainer {
 		@include displayFlexColumn;
 		gap: 0.25rem;
-		backface-visibility: hidden;
-		transition: transform 0.3s;
-	}
-	&__developerDetailsContainer:hover {
-		transform: scale(1.05);
 	}
 }
