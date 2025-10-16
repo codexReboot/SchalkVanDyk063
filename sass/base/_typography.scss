@@ -1,4 +1,5 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
 // heading H1 - font-family: "Alegreya", serif; <weight>: Use a value from 400 to 900
 // heading H2- font-family: "Lalezar", sans-serif; <weight>: 400
@@ -208,6 +209,9 @@
 		text-align: center;
 		text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
 	}
+	&--footerServicesIntroText {
+		line-height: 1.8;
+	}
 	&--footerLogoBylineText-And {
 		font-size: clamp(1.1rem, 4.5vw, 1.3rem);
 	}
@@ -228,6 +232,9 @@
 		text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
 		text-decoration: 1px underline;
 		text-underline-offset: 3px;
+	}
+	&--footerAddressDetails {
+		text-align: center;
 	}
 	&--copyright,
 	&--terms,
@@ -270,6 +277,29 @@
 		&--projectFeaturesText,
 		&--projectTech {
 			font-size: clamp(1.4rem, 3.5vw, 1.6rem);
+		}
+	}
+	@include respond(tab-land) {
+		&--footerLogoBylineText {
+			font-size: clamp(3.4rem, 4.5vw, 3.6rem);
+			font-weight: 700;
+			text-align: left;
+			.paragraph--footerLogoBylineText-And {
+				font-size: clamp(3.2rem, 4.5vw, 3.4rem);
+			}
+		}
+		&--footerServicesIntroText {
+			font-size: clamp(1.4rem, 4.5vw, 1.6rem);
+			font-weight: 400;
+			line-height: 1.6;
+			text-align: left;
+		}
+		&--footerServiceAreaItemText {
+			font-size: clamp(1.4rem, 4.5vw, 1.6rem);
+			font-weight: 400;
+		}
+		&--footerServicesText {
+			font-size: clamp(1.4rem, 4.5vw, 1.6rem);
 		}
 	}
 }

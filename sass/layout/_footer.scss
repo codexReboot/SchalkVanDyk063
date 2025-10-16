@@ -33,9 +33,15 @@
 		width: min(100%, 35rem);
 	}
 
+	&__servicesDetailsInnerContainer {
+		@include displayFlexColumn;
+		gap: 2.75rem;
+	}
+
 	&__servicesArticleContainer {
 		@include displayFlexColumn;
 		gap: 2rem;
+		width: 100%;
 	}
 
 	&__servicesList {
@@ -176,6 +182,12 @@
 		gap: 1.5rem;
 		width: 100%;
 	}
+	&__contactDetailsContainer > :first-child {
+		margin-right: 2rem;
+	}
+	&__contactDetailsContainer > :nth-child(2) {
+		margin-left: 1rem;
+	}
 	&__addressDetailsItemContainer,
 	&__contactDetailsItemContainer {
 		@include displayFlexRow;
@@ -188,6 +200,7 @@
 	}
 	// Container already flex-column
 	&__footerContactLinks {
+		margin-right: 1.45rem;
 		backface-visibility: hidden;
 		will-change: color, transform;
 		transform-origin: center;
@@ -197,6 +210,9 @@
 		align-items: center;
 		gap: 0.75rem;
 		cursor: pointer;
+		.footer__contactDetailsContainer:last-child {
+			margin-left: 3rem;
+		}
 	}
 
 	// Hover and focus together
@@ -255,7 +271,6 @@
 	///////////////////////////////////////////////////////////////////
 	&__socialMediaFooterContainer {
 		@include displayFlexColumn;
-		align-items: center;
 		width: min(100%, 45rem);
 		gap: 1.5rem;
 		padding: 5rem 0 0;
@@ -271,6 +286,11 @@
 	&__socialMediaIcon:hover {
 		transform-origin: center;
 		transform: scale(1.1);
+	}
+	&__legalAndCreditsWrapper {
+		width: 100%;
+		@include displayFlexColumn;
+		gap: 1.5rem;
 	}
 	&__copyrightAndDeveloperContainer {
 		@include displayFlexColumn;
@@ -336,5 +356,203 @@
 	&__developerDetailsContainer {
 		@include displayFlexColumn;
 		gap: 0.25rem;
+	}
+	&__linebreakDeveloper {
+		display: none;
+	}
+
+	@include respond(tab-port) {
+		&__servicesDetailsContainer {
+			width: min(100%, 55rem);
+		}
+		&__navContainer {
+			gap: 3rem;
+		}
+		&__addressAndContactAndSocialMediaContainer {
+			width: min(100%, 55rem);
+			gap: 3rem;
+		}
+		&__socialMediaFooterContainer {
+			width: min(100%, 55rem);
+			gap: 3rem;
+		}
+		&__socialMediaLinksContainer {
+			justify-content: center;
+			gap: 5rem;
+		}
+		&__copyrightAndDeveloperContainer {
+			width: min(100%, 55rem);
+			gap: 3rem;
+		}
+		&__copyright {
+			@include displayFlexColumn;
+			gap: 0.25rem;
+		}
+		&__linebreakAllrights {
+			display: none;
+		}
+		&__footerLegalNav {
+			width: 100%;
+		}
+		&__legalContainer {
+			width: min(100%, 55rem);
+			@include displayFlexColumn;
+			justify-content: center;
+			gap: 1rem;
+		}
+		&__developerDetailsContainer {
+			@include displayFlexRow;
+			gap: 0.75rem;
+		}
+	}
+
+	@include respond(tab-land) {
+		padding: 0 5rem 3cm;
+		&__logoContainer {
+			align-items: flex-start;
+		}
+		&__figure {
+			margin-top: 5rem;
+			align-items: flex-start;
+		}
+		&__servicesContainer {
+			align-items: flex-start;
+		}
+		&__servicesDetailsContainer {
+			@include displayFlexRow;
+			align-items: flex-start;
+			gap: 3rem;
+			width: 100%;
+		}
+		&__servicesDetailsInnerContainer {
+			flex: 1 0 25%;
+			@include displayFlexColumn;
+			align-items: flext-start;
+			gap: 3rem;
+		}
+		&__servicesArticleContainer {
+			flex: 1 0 30%;
+			align-items: flex-start;
+			gap: 0;
+		}
+		&__footerServicesIntroText {
+			margin-top: 0.75rem;
+		}
+		&__servicesList {
+			align-items: flex-start;
+			gap: 0;
+		}
+		&__servicesAreasList {
+			justify-content: flex-start;
+			row-gap: 1rem;
+			margin-top: 0.85rem;
+		}
+		&__footerServicesText {
+			transform-origin: left center;
+		}
+		&__footerServicesText:hover,
+		&__footerServicesText:focus {
+			transform-origin: left center;
+		}
+		&__navContainer {
+			width: 100%;
+			align-items: flex-start;
+			gap: 1.5rem;
+		}
+		&__navlist {
+			width: 100%;
+			@include displayFlexRow;
+			justify-content: flex-start;
+			gap: 4rem;
+		}
+		&__navlink {
+			transform-origin: center left;
+		}
+		&__navlink:hover {
+			transform-origin: center left;
+		}
+		&__addressAndContactAndSocialMediaContainer {
+			width: 100%;
+			align-items: flex-start;
+			gap: 2rem;
+		}
+		&__addressAndContactDetailsContainer {
+			@include displayFlexColumn;
+			align-items: flex-start;
+			gap: 1rem;
+		}
+		&__linebreakFooterAddress {
+			display: none;
+		}
+		&__contactDetailsContainer {
+			width: fit-content;
+			@include displayFlexColumn;
+			align-items: flex-start;
+			gap: 1rem;
+		}
+		&__contactDetailsContainer > :nth-child(2) {
+			margin-left: 0rem;
+		}
+		&__contactDetailsItemContainer {
+			width: min(240px, fit-content);
+			align-items: flex-start;
+		}
+		&__footerContactLinks {
+			transform-origin: left;
+		}
+		&__socialMediaFooterContainer {
+			width: 100%;
+			align-items: flex-start;
+			gap: 2rem;
+		}
+		&__socialMediaLinksContainer {
+			width: 100%;
+			justify-content: flex-start;
+			gap: 10rem;
+		}
+		&__copyrightAndDeveloperContainer {
+			width: 100%;
+			align-items: flex-start;
+			gap: 1.75rem;
+		}
+		&__legalAndCreditsWrapper {
+			width: 100%;
+			@include displayFlexRow;
+			justify-content: space-between;
+			align-items: flex-start;
+		}
+		&__footerLegalNav {
+			flex: 1 0 15rem;
+		}
+		&__legalContainer {
+			margin: 0 auto;
+			@include displayFlexColumn;
+			align-items: center;
+		}
+		&__legalItem {
+			transform: translateX(50%);
+			margin-left: -12rem;
+		}
+		&__footerTermsText,
+		&__footerPoppiText,
+		&__footerPaiaText {
+			transform-origin: left;
+		}
+
+		&__copyrightDetailsContainer {
+			min-width: 25rem;
+		}
+		&__developerDetailsContainer {
+			min-width: 25rem;
+			@include displayFlexRow;
+			align-items: flex-start;
+		}
+		&__linebreakDeveloper {
+			display: block;
+		}
+		&__copyright {
+			@include displayFlexColumn;
+			align-items: flex-start;
+		}
 	}
 }

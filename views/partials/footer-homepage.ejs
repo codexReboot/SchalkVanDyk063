@@ -34,33 +34,35 @@
 		<article class="footer__servicesContainer">
 			<h3 class="footer_footerHeadingH3 headingH3 headingH3--footerHeadingH3">Empowering SA Online</h3>
 			<div class="footer__servicesDetailsContainer">
-				<article class="footer__servicesIntroContainer footer__servicesArticleContainer">
-					<h4 class="footer__footerHeadingH4 headingH4 headingH4--footerHeadingH4">Results Driven Solutions</h4>
-					<p class="footer__footerServicesIntroText paragraph paragraph--footer paragraph--footerServicesIntroText">
-						I offer web design & development, SEO, digital marketing, and graphic design solutions tailored to businesses across South Africa.
-					</p>
-				</article>
-				<article class="footer__servicesListContainer footer__servicesArticleContainer">
-					<h4 class="footer__footerHeadingH4 headingH4 headingH4--footerHeadingH4">Explore Our Services</h4>
-					<ul class="footer__servicesList">
-						<li class="footer__footerServicesText paragraph paragraph--footer paragraph--footerServicesText">
-							Graphic Design Solutions
-							<span class="footer__footerRightArrow">&rarr;</span>
-						</li>
-						<li class="footer__footerServicesText paragraph paragraph--footer paragraph--footerServicesText">
-							Website Design & Development
-							<span class="footer__footerRightArrow">&rarr;</span>
-						</li>
-						<li class="footer__footerServicesText paragraph paragraph--footer paragraph--footerServicesText">
-							Domain Registrations & Web Hosting
-							<span class="footer__footerRightArrow">&rarr;</span>
-						</li>
-						<li class="footer__footerServicesText paragraph paragraph--footer paragraph--footerServicesText">
-							Digital Online Marketing & SEO
-							<span class="footer__footerRightArrow">&rarr;</span>
-						</li>
-					</ul>
-				</article>
+				<div class="footer__servicesDetailsInnerContainer">
+					<article class="footer__servicesIntroContainer footer__servicesArticleContainer">
+						<h4 class="footer__footerHeadingH4 headingH4 headingH4--footerHeadingH4">Results Driven Solutions</h4>
+						<p class="footer__footerServicesIntroText paragraph paragraph--footer paragraph--footerServicesIntroText">
+							I offer web design & development, SEO, digital marketing, and graphic design solutions tailored to businesses across South Africa.
+						</p>
+					</article>
+					<article class="footer__servicesListContainer footer__servicesArticleContainer">
+						<h4 class="footer__footerHeadingH4 headingH4 headingH4--footerHeadingH4">Explore Our Services</h4>
+						<ul class="footer__servicesList">
+							<li class="footer__footerServicesText paragraph paragraph--footer paragraph--footerServicesText">
+								Graphic Design Solutions
+								<span class="footer__footerRightArrow">&rarr;</span>
+							</li>
+							<li class="footer__footerServicesText paragraph paragraph--footer paragraph--footerServicesText">
+								Website Design & Development
+								<span class="footer__footerRightArrow">&rarr;</span>
+							</li>
+							<li class="footer__footerServicesText paragraph paragraph--footer paragraph--footerServicesText">
+								Domain Registrations & Web Hosting
+								<span class="footer__footerRightArrow">&rarr;</span>
+							</li>
+							<li class="footer__footerServicesText paragraph paragraph--footer paragraph--footerServicesText">
+								Digital Online Marketing & SEO
+								<span class="footer__footerRightArrow">&rarr;</span>
+							</li>
+						</ul>
+					</article>
+				</div>
 				<article class="footer__servicesAreaContainer footer__servicesArticleContainer">
 					<h4 class="footer__footerHeadingH4 headingH4 headingH4--footerHeadingH4">Nationwide Service - No Limits</h4>
 					<ul class="footer__servicesAreasList">
@@ -258,20 +260,23 @@
 	</div>
 	<div class="footer__copyrightAndDeveloperContainer">
 		<h3 class="footer__footerHeadingH3 headingH3 headingH3--footerHeadingH3">Legal & Credits</h3>
-		<div class="footer__copyrightDetailsContainer">
-			<p class="footer__copyright paragraph paragraph--copyright">
-				Copyright - <span>&copy;</span> <span class="footer__copyrightDate copyrightDate">2020</span> Schalk van Dyk <br class="footer__linebreakAllrights" />All rights reserved
-			</p>
-		</div>
-		<%- include('legalFooterNav') %>
-		<div class="footer__developerDetailsContainer">
-			<p class="footer__developer paragraph paragraph--footer paragraph--developer">designed and developed by:</p>
-			<a href="/">
-				<img
-					class="footer__designerAndDeveloperLogo logo logo--designerAndDeveloperLogo"
-					src="../img/logo/codexRebootNavbarWideLogo.webp"
-					alt="Business logo of Schalk van Dyk t/a codexReboot - Web Designer and Developer of websites and web apps that drive traffic and boost sales." />
-			</a>
+		<div class="footer__legalAndCreditsWrapper">
+			<div class="footer__copyrightDetailsContainer">
+				<p class="footer__copyright paragraph paragraph--copyright">
+					<span class="footer__copyrightHolder">Copyright <span>&copy;</span> <span class="footer__copyrightDate copyrightDate">2020</span> Schalk van Dyk</span>
+					<br class="footer__linebreakAllrights" /><span class="footer__copyrightTerms">All rights reserved</span>
+				</p>
+			</div>
+			<%- include('legalFooterNav') %>
+			<div class="footer__developerDetailsContainer">
+				<p class="footer__developer paragraph paragraph--footer paragraph--developer">designed and <br class="footer__linebreakDeveloper" />developed by:</p>
+				<a href="/">
+					<img
+						class="footer__designerAndDeveloperLogo logo logo--designerAndDeveloperLogo"
+						src="../img/logo/codexRebootNavbarWideLogo.webp"
+						alt="Business logo of Schalk van Dyk t/a codexReboot - Web Designer and Developer of websites and web apps that drive traffic and boost sales." />
+				</a>
+			</div>
 		</div>
 	</div>
 </footer>
