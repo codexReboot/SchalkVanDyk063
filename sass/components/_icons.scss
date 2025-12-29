@@ -99,3 +99,14 @@
 		stroke: $cp-blue;
 	}
 }
+@include respond(tab-land) {
+	.icon {
+		&--footerContactDetailsIcon {
+			width: 2.2rem;
+			height: 2.2rem;
+		}
+		&--streetAddressIcon {
+			margin-bottom: 1rem;
+		}
+	}
+}

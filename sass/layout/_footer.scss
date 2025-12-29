@@ -167,7 +167,7 @@
 	&__addressAndContactDetailsContainer {
 		@include displayFlexColumn;
 		align-items: center;
-		gap: 1.5rem;
+		gap: 2rem;
 		width: 100%;
 	}
 	&__addressDetailsContainer {
@@ -179,7 +179,7 @@
 	&__contactDetailsContainer {
 		@include displayFlexColumn;
 		align-items: center;
-		gap: 1.5rem;
+		gap: 2rem;
 		width: 100%;
 	}
 	&__contactDetailsContainer > :first-child {
@@ -207,7 +207,7 @@
 		transition: color 0.3s ease, transform 0.3s ease;
 		position: relative; // for optional focus pseudo-element
 		display: flex;
-		align-items: center;
+		align-items: flex-start;
 		gap: 0.75rem;
 		cursor: pointer;
 		.footer__contactDetailsContainer:last-child {
@@ -216,37 +216,15 @@
 	}
 
 	// Hover and focus together
-	&__footerContactLinks:hover,
-	&__footerContactLinks:focus {
-		transform: scale(1.08);
+	&__footerContactLinks:hover {
+		transform: scale(1.1);
 		outline: none; // remove default outline
 	}
 
 	// Change text color on hover/focus
 	&__footerContactLinks:hover .paragraph--footerAddressDetails,
-	&__footerContactLinks:hover .paragraph--footerContactDetails,
-	&__footerContactLinks:focus .paragraph--footerAddressDetails,
-	&__footerContactLinks:focus .paragraph--footerContactDetails {
+	&__footerContactLinks:hover .paragraph--footerContactDetails {
 		color: $cf-blue;
-	}
-
-	// Optional: subtle underline pseudo-element for focus
-	&__footerContactLinks:focus::after {
-		content: "";
-		position: absolute;
-		left: 0;
-		bottom: -2px;
-		width: 100%;
-		height: 2px;
-		background-color: $cf-blue;
-		border-radius: 1px;
-		transform: scaleX(0);
-		transform-origin: left;
-		transition: transform 0.3s ease;
-	}
-
-	&__footerContactLinks:focus::after {
-		transform: scaleX(1);
 	}
 
 	// Icon scaling in sync with link
@@ -264,8 +242,6 @@
 		@include displayFlexRow;
 		align-items: flex-start;
 		gap: 0.75rem;
-		// transform-origin: center;
-		// transition: color 0.3s, transform 0.3s;
 	}
 
 	///////////////////////////////////////////////////////////////////
@@ -479,7 +455,13 @@
 		&__addressAndContactDetailsContainer {
 			@include displayFlexColumn;
 			align-items: flex-start;
-			gap: 1rem;
+			gap: 2rem;
+		}
+		&__footerContactDetailsText {
+			margin-top: 0.25rem;
+		}
+		&__footerAddressDetailsText {
+			margin-top: 0.25rem;
 		}
 		&__linebreakFooterAddress {
 			display: none;
@@ -488,7 +470,7 @@
 			width: fit-content;
 			@include displayFlexColumn;
 			align-items: flex-start;
-			gap: 1rem;
+			gap: 2rem;
 		}
 		&__contactDetailsContainer > :nth-child(2) {
 			margin-left: 0rem;
