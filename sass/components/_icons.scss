@@ -5,18 +5,7 @@
 	display: block;
 	width: 2.8rem;
 	height: 2.8rem;
-	&__footerWhatsAppIconWrapper::after {
-		content: "";
-		display: block;
-		width: 2.1rem;
-		height: 2rem;
-		border-radius: 100%;
-		background-color: rgba($cp-blue, 0.85);
-		position: absolute;
-		top: 0.08rem;
-		left: -0.38rem;
-		z-index: -1;
-	}
+
 	&--aboutPhoneIcon,
 	&--servicesPhoneIcon,
 	&--skillsPhoneIcon {
@@ -68,8 +57,8 @@
 		height: 1.8rem;
 	}
 	&--footerWhatsAppIcon {
-		width: 1.4rem;
-		height: 1.4rem;
+		width: 1.8rem;
+		height: 1.8rem;
 	}
 	&--streetAddressIcon {
 		width: 2.2rem;
@@ -79,7 +68,7 @@
 		fill: rgba($cf-blue, 0.85);
 	}
 	&--footerWhatsAppIconColor {
-		fill: rgba($cf-dark, 0.85);
+		fill: rgba($cf-blue, 0.85);
 	}
 	&--aboutBtnIcon,
 	&--projectsBtnIcon,
@@ -120,19 +109,13 @@
 }
 @include respond(tab-land) {
 	.icon {
-		&__footerWhatsAppIconWrapper::after {
-			width: 2.5rem;
-			height: 2.4rem;
-			top: 0;
-			left: -0.1;
-		}
 		&--footerContactDetailsIcon {
 			width: 2.2rem;
 			height: 2.2rem;
 		}
 		&--footerWhatsAppIcon {
-			width: 1.8rem;
-			height: 1.8rem;
+			width: 2.2rem;
+			height: 2.2rem;
 		}
 		&--streetAddressIcon {
 			margin-bottom: 1rem;
