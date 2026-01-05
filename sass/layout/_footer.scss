@@ -129,33 +129,32 @@
 	}
 
 	// Hover and focus together
-	&__navlink:hover,
-	&__navlink:focus {
+	&__navlink:hover {
 		color: $cf-blue;
 		transform: scale(1.08);
 		outline: none; // remove default outline
 		position: relative; // for pseudo-element focus cue
 	}
 
-	// Optional: subtle focus underline using pseudo-element
-	&__navlink:focus::after {
-		content: "";
-		position: absolute;
-		left: 0;
-		bottom: -2px; // just below text
-		width: 100%;
-		height: 2px;
-		background-color: $cf-blue;
-		border-radius: 1px;
-		transform: scaleX(0);
-		transform-origin: bottom;
-		transition: transform 0.3s ease;
-	}
+	// // Optional: subtle focus underline using pseudo-element
+	// &__navlink:focus::after {
+	// 	content: "";
+	// 	position: absolute;
+	// 	left: 0;
+	// 	bottom: -2px; // just below text
+	// 	width: 100%;
+	// 	height: 2px;
+	// 	background-color: $cf-blue;
+	// 	border-radius: 1px;
+	// 	transform: scaleX(0);
+	// 	transform-origin: bottom;
+	// 	transition: transform 0.3s ease;
+	// }
 
-	// Animate the pseudo-element on focus
-	&__navlink:focus::after {
-		transform: scaleX(1);
-	}
+	// // Animate the pseudo-element on focus
+	// &__navlink:focus::after {
+	// 	transform: scaleX(1);
+	// }
 	///////////////////////////////////////////////////////////////////
 
 	&__addressAndContactAndSocialMediaContainer {

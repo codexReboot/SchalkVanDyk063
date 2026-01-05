@@ -6,7 +6,7 @@
 		display: block;
 		width: clamp(27rem, 100vw, 30rem);
 		height: auto;
-		transform-origin: top;
+		transform-origin: center;
 		transition: transform 0.3s;
 	}
 	&--footer:hover {
@@ -16,17 +16,16 @@
 		display: block;
 		width: 10rem;
 		height: auto;
-		transform-origin: bottom;
+		transform-origin: center left;
 		transition: transform 0.3s;
 	}
 	&--designerAndDeveloperLogo:hover {
-		transform: scale(1.1) translateY(-1rem);
+		transform: scale(1.1);
 	}
 
 	@include respond(tab-port) {
 		&--designerAndDeveloperLogo {
 			margin-bottom: 0.45rem;
-			transform-origin: center left;
 		}
 	}
 
@@ -38,7 +37,7 @@
 			margin-bottom: 2rem;
 		}
 		&--designerAndDeveloperLogo {
-			transform: translateY(-1rem);
+			transform-origin: center left;
 		}
 	}
 }
