@@ -7,6 +7,11 @@
 		position: relative;
 		padding: 0 2rem 15rem;
 	}
+	@include respond(tab-land) {
+		&__socialMediaSection {
+			padding: 0 5rem 15rem;
+		}
+	}
 }
 
 .contactSection {
@@ -70,6 +75,41 @@
 		width: min(100%, 45rem);
 		a {
 			margin: 0 auto;
+		}
+	}
+	@include respond(tab-port) {
+		&__socialMediaContentContainer,
+		&__socialMediaCardContainer {
+			width: min(100%, 56rem);
+		}
+	}
+	@include respond(tab-land) {
+		align-items: flex-start;
+		&__socialMediaContentContainer {
+			width: min(100%, 120rem);
+			gap: 5rem;
+			align-items: flex-start;
+		}
+		.paragraph--socialMediaSectionIntro {
+			max-width: 72rem;
+		}
+		&__socialMediaCardContainer {
+			width: 100%;
+			@include displayFlexRow;
+			justify-content: flex-start;
+			align-items: flex-start;
+			flex-wrap: wrap;
+			row-gap: 5rem;
+			column-gap: 5rem;
+			a {
+				flex: 0 0 min(100%, 32rem);
+				margin: 0;
+			}
+		}
+	}
+	@include respond(desk) {
+		.paragraph--socialMediaSectionIntro {
+			max-width: 90rem;
 		}
 	}
 }

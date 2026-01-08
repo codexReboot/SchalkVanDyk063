@@ -28,22 +28,26 @@ html {
 
 	@include respond(tab-port) {
 		/* 	11px / 16px *100 = 68.75% */
-		font-size: 68.75%; // 1rem = 11px
+		// font-size: 68.75%; // 1rem = 11px
+		font-size: 68.75%;
 	}
 
 	@include respond(tab-land) {
 		/* 	12px / 16px *100 = 75% */
-		font-size: 75%; // 1rem = 12px
+		// font-size: 75%; // 1rem = 12px
+		font-size: 70%;
 	}
 
 	@include respond(desk) {
-		/* 	13px / 16px *100 = 81.25% */
-		font-size: 81.25%; // 1rem = 13px
+		/* 	12px / 16px *100 = 75% */
+		// font-size: 75%; // 1rem = 12px
+		font-size: 75%;
 	}
 
 	@include respond(big-desk) {
-		/* 	14px / 16px *100 = 87.5% */
-		font-size: 87.5%; // 1rem = 14px
+		/* 	13px / 16px *100 = 81.25% */
+		// font-size: 81.25%; // 1rem = 13px
+		font-size: 81.25%;
 	}
 }
 

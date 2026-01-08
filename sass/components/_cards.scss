@@ -181,6 +181,11 @@
 		@include displayFlexRow;
 		justify-content: flex-start;
 		gap: 0.5rem;
+		transform-origin: left center;
+		transition: all 0.3s;
+	}
+	&__socialMediaCardHeadingContainer:hover {
+		transform: scale(1.05);
 	}
 	&__hr {
 		background: linear-gradient(to right, $cp-darkBlue 10%, transparent 80%);
@@ -189,8 +194,10 @@
 		margin: 0.25rem 0;
 		border: none;
 	}
-	&:hover {
-		transform-origin: bottom left;
-		transform: scale(1.05);
+	@include respond(tab-port) {
+		width: min(100%, 50rem);
+	}
+	@include respond(tab-land) {
+		width: min(100%, 35rem);
 	}
 }
