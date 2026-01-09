@@ -8,6 +8,7 @@
 		padding: 0 2rem 15rem;
 	}
 	@include respond(tab-land) {
+		&__contactSection,
 		&__socialMediaSection {
 			padding: 0 5rem 15rem;
 		}
@@ -19,13 +20,17 @@
 	gap: 3rem;
 	&__contactContentContainer {
 		@include displayFlexColumn;
-		gap: 3rem;
+		gap: 2.75rem;
 		width: min(100%, 45rem);
 	}
 	&__contactDetailsContainer,
+	&__contactIntro,
 	&__contactCtaContainer {
 		@include displayFlexColumn;
-		gap: 1rem;
+		gap: 1.25rem;
+	}
+	&__contactCtaContainer {
+		margin-top: 2rem;
 	}
 	&__contactDetailsItemContainer,
 	&__addressDetailsContainer {
@@ -48,16 +53,66 @@
 		margin-top: 0.25rem;
 	}
 	&__streetAddress {
-		margin-top: 0;
-		width: min(56vw, 21rem);
+		margin-top: 0.5rem;
+		width: min(100%, 20rem);
 	}
 	&__contactSectionCta {
-		margin-top: 3rem;
+		margin-top: 1rem;
 		padding: 3rem 2rem;
 		background-color: rgba($cp-darkBlue, 0.15); /* or a subtle accent */
 		border-radius: 1rem;
 		text-align: center;
 		box-shadow: 0px 0px 24px 4px rgba($cp-dark, 0.1);
+	}
+	@include respond(tab-land) {
+		&__contactContentContainer {
+			width: min(100%, 120rem);
+		}
+		&__contactIntro {
+			align-items: flex-start;
+		}
+		&__contactDetailsContainer {
+			margin-top: 1.5rem;
+			width: 100%;
+
+			@include displayFlexRow;
+			gap: 7rem;
+			justify-content: flex-start;
+			align-items: flex-start;
+		}
+		&__contactCtaContainer {
+			width: 100%;
+			align-items: flex-start;
+			.paragraph--contactCta {
+				max-width: 75rem;
+			}
+		}
+		&__contactSectionCta {
+			max-width: 70rem;
+			align-items: flex-start;
+		}
+	}
+	@include respond(desk) {
+		&__contactContentContainer {
+			width: 100%;
+			@include displayFlexRow;
+			justify-content: flex-start;
+			align-items: flex-start;
+			gap: 7rem;
+		}
+		&__contactIntro {
+			max-width: 45%;
+		}
+		&__contactDetailsContainer {
+			width: 100%;
+			@include displayFlexColumn;
+			align-items: flex-start;
+		}
+		&__contactCtaContainer {
+			margin-top: 0;
+			max-width: 45%;
+			align-items: flex-start;
+		}
 	}
 }
 
@@ -107,7 +162,7 @@
 			}
 		}
 	}
-	@include respond(desk) {
+	@media (min-width: 1392px) {
 		.paragraph--socialMediaSectionIntro {
 			max-width: 90rem;
 		}
