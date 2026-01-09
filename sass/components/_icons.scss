@@ -48,6 +48,13 @@
 	&--aboutPhoneIconColor {
 		fill: $cp-white;
 	}
+	//////////////////////////////////////////////////////////////////////////////////
+	// contact section icons
+	&--pindropIcon {
+		width: 3.5rem;
+		height: 3.5rem;
+	}
+
 	&--contactIconColor {
 		fill: $cp-darkRed;
 	}
