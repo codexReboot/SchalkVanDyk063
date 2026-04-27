@@ -92,7 +92,7 @@
 	}
 	&--socialMediaCardIcon {
 		filter: drop-shadow(0 0 12px rgba($cp-dark, 0.45));
-		width: min(45%, 13.5rem);
+		width: min(35%, 7rem);
 		height: auto;
 	}
 	&--socialMediaCardLinkIcon {
@@ -114,10 +114,18 @@
 		stroke: $cp-blue;
 	}
 }
+@include respond(tab-port) {
+	.icon {
+		&--socialMediaCardIcon {
+			width: min(35%, 9rem);
+			height: auto;
+		}
+	}
+}
 @include respond(tab-land) {
 	.icon {
 		&--socialMediaCardIcon {
-			width: min(45%, 10rem);
+			// width: min(45%, 11.25rem);
 			height: auto;
 		}
 		&--footerContactDetailsIcon {

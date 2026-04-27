@@ -58,41 +58,13 @@
 	}
 	&__contactSectionCta {
 		margin-top: 1rem;
-		padding: 3rem 2rem;
+		padding: 3rem;
 		background-color: rgba($cp-darkBlue, 0.15); /* or a subtle accent */
 		border-radius: 1rem;
 		text-align: center;
 		box-shadow: 0px 0px 24px 4px rgba($cp-dark, 0.1);
 	}
 	@include respond(tab-land) {
-		&__contactContentContainer {
-			width: min(100%, 120rem);
-		}
-		&__contactIntro {
-			align-items: flex-start;
-		}
-		&__contactDetailsContainer {
-			margin-top: 1.5rem;
-			width: 100%;
-
-			@include displayFlexRow;
-			gap: 7rem;
-			justify-content: flex-start;
-			align-items: flex-start;
-		}
-		&__contactCtaContainer {
-			width: 100%;
-			align-items: flex-start;
-			.paragraph--contactCta {
-				max-width: 75rem;
-			}
-		}
-		&__contactSectionCta {
-			max-width: 70rem;
-			align-items: flex-start;
-		}
-	}
-	@include respond(desk) {
 		&__contactContentContainer {
 			width: 100%;
 			@include displayFlexRow;
@@ -102,6 +74,7 @@
 		}
 		&__contactIntro {
 			max-width: 45%;
+			align-items: flex-start;
 		}
 		&__contactDetailsContainer {
 			width: 100%;
@@ -126,27 +99,33 @@
 	}
 	&__socialMediaCardContainer {
 		@include displayFlexColumn;
-		gap: 5rem;
+		gap: 4rem;
 		width: min(100%, 45rem);
 		a {
 			margin: 0 auto;
+			width: min(100%, 38rem);
 		}
 	}
 	@include respond(tab-port) {
 		&__socialMediaContentContainer,
 		&__socialMediaCardContainer {
-			width: min(100%, 56rem);
+			width: min(100%, 45rem);
+		}
+		&__socialMediaCardContainer {
+			a {
+				width: min(100%, 34rem);
+			}
 		}
 	}
 	@include respond(tab-land) {
 		align-items: flex-start;
 		&__socialMediaContentContainer {
-			width: min(100%, 120rem);
-			gap: 5rem;
+			width: 100%;
+			gap: 4rem;
 			align-items: flex-start;
 		}
 		.paragraph--socialMediaSectionIntro {
-			max-width: 72rem;
+			// max-width: 72rem;
 		}
 		&__socialMediaCardContainer {
 			width: 100%;
@@ -155,9 +134,10 @@
 			align-items: flex-start;
 			flex-wrap: wrap;
 			row-gap: 5rem;
-			column-gap: 5rem;
+			column-gap: 7rem;
 			a {
-				flex: 0 0 min(100%, 32rem);
+				// flex: 0 0 min(100%, 25rem);
+				width: clamp(25rem, 20vw, 30rem);
 				margin: 0;
 			}
 		}
