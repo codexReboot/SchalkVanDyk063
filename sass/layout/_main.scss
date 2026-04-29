@@ -118,6 +118,7 @@
 		padding: 0 5rem 15rem;
 		&__skillsContentContainer {
 			width: 100%;
+			align-items: flex-start;
 		}
 		&__skills,
 		&__tech {
@@ -132,10 +133,22 @@
 			column-gap: 7rem;
 			row-gap: 5rem;
 		}
+		&__techStackContainer {
+			width: min(100%, 75rem);
+			justify-content: flex-start;
+		}
+		&__skillsSectionCta {
+			padding: 3rem;
+			width: min(100%, 50rem);
+			align-items: flex-start;
+		}
 	}
 	@include respond(desk) {
 		&__skillsCardContainer {
 			column-gap: 10rem;
+		}
+		&__techStackContainer {
+			width: min(100%, 95rem);
 		}
 	}
 	@media (min-width: 1400px) {
