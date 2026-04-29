@@ -290,6 +290,9 @@
 	}
 	@include respond(tab-land) {
 		text-align: left;
+		&--skillsCardDescription {
+			text-align: left;
+		}
 		&--footerLogoBylineText {
 			font-size: clamp(3.4rem, 4.5vw, 3.6rem);
 			font-weight: 700;

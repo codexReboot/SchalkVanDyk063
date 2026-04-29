@@ -63,9 +63,12 @@
 .skillsSection {
 	@include displayFlexColumn;
 	gap: 3rem;
+	&__introParagraphBreakpoint {
+		display: none;
+	}
 	&__skillsContentContainer {
 		@include displayFlexColumn;
-		gap: 3rem;
+		gap: 4rem;
 		width: min(100%, 45rem);
 	}
 	&__skills,
@@ -74,10 +77,12 @@
 		gap: 2rem;
 	}
 	&__skillsCardContainer {
+		margin-top: 2rem;
 		@include displayFlexColumn;
-		gap: 2rem;
+		gap: 4rem;
 	}
 	&__techStackContainer {
+		margin-top: 2rem;
 		@include displayFlexRow;
 		align-items: flex-end;
 		column-gap: 3rem;
@@ -102,11 +107,40 @@
 		z-index: -1; /* Push behind the icon */
 	}
 	&__skillsSectionCta {
-		margin-top: 5rem;
+		margin-top: 3rem;
 		padding: 3rem 2rem;
 		background-color: rgba($cp-darkBlue, 0.15); /* or a subtle accent */
 		border-radius: 1rem;
 		text-align: center;
 		box-shadow: 0px 0px 24px 4px rgba($cp-dark, 0.1);
+	}
+	@include respond(tab-land) {
+		padding: 0 5rem 15rem;
+		&__skillsContentContainer {
+			width: 100%;
+		}
+		&__skills,
+		&__tech {
+			align-items: flex-start;
+		}
+		&__skillsCardContainer {
+			margin-top: 2rem;
+			@include displayFlexRow;
+			justify-content: flex-start;
+			align-items: flex-start;
+			flex-wrap: wrap;
+			column-gap: 7rem;
+			row-gap: 5rem;
+		}
+	}
+	@include respond(desk) {
+		&__skillsCardContainer {
+			column-gap: 10rem;
+		}
+	}
+	@media (min-width: 1400px) {
+		&__introParagraphBreakpoint {
+			display: block;
+		}
 	}
 }

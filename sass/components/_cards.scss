@@ -168,6 +168,7 @@
 	gap: 1.25rem;
 	width: min(100%, 35rem);
 	&__contentContainer {
+		width: 100%;
 		@include displayFlexColumn;
 		gap: 0.25rem;
 	}
@@ -175,6 +176,21 @@
 		background-color: $cp-darkBlue;
 		width: 100%;
 		margin: 0.25rem 0;
+	}
+	@include respond(tab-land) {
+		width: min(100%, 30rem);
+		@include displayFlexRow;
+		gap: 1.5rem;
+		&__contentContainer {
+			align-items: flex-start;
+		}
+	}
+	@include respond(desk) {
+		width: min(100%, 38rem);
+		align-items: flex-start;
+	}
+	@media (min-width: 1400px) {
+		width: min(100%, 42rem);
 	}
 }
 .socialMediaCard {

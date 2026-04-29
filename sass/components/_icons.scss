@@ -124,6 +124,10 @@
 }
 @include respond(tab-land) {
 	.icon {
+		&--skillsCardSvgIcon {
+			width: min(25vw, 9rem);
+			height: min(25vw, 9rem);
+		}
 		&--socialMediaCardIcon {
 			// width: min(45%, 11.25rem);
 			height: auto;
