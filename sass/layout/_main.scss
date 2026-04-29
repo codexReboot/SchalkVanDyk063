@@ -52,12 +52,44 @@
 	&__portfolioContentContainer {
 		@include displayFlexColumn;
 		gap: 3rem;
-		width: min(100%, 450px);
+		width: min(100%, 45rem);
+	}
+	&__introParagraphBreakpoint {
+		display: none;
 	}
 	&__projectCardsContainer {
 		@include displayFlexColumn;
 		gap: 5rem;
 		padding-top: 2rem;
+	}
+	@include respond(tab-land) {
+		padding: 0 5rem 15rem;
+		&__headingH3Breakpoint {
+			display: none;
+		}
+		&__portfolioContentContainer {
+			width: 100%;
+			align-items: flex-start;
+			gap: 2rem;
+		}
+		&__projectCardsContainer {
+			padding-top: 1rem;
+			width: 100%;
+			@include displayFlexRow;
+			justify-content: flex-start;
+			flex-wrap: wrap;
+			gap: 4rem;
+		}
+	}
+	@include respond(desk) {
+		&__projectCardsContainer {
+			gap: 5rem;
+		}
+	}
+	@media (min-width: 1400px) {
+		&__introParagraphBreakpoint {
+			display: block;
+		}
 	}
 }
 .skillsSection {
