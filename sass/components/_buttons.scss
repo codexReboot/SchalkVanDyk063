@@ -108,6 +108,9 @@
 		z-index: 1000;
 	}
 	@include respond(tab-land) {
+		&--about {
+			margin-left: 0;
+		}
 		&--contactCta {
 			margin: 1.25rem 0 0;
 		}
