@@ -2,86 +2,139 @@
 @use "../abstracts/mixins" as *;
 
 .header {
-  position: relative;
-  background: url("/img/background/HeroAndFooterBgPortrait.webp");
-  background-size: cover;
-  background-position: left center;
-  background-repeat: no-repeat;
-  padding: 1rem 1rem 7rem;
-  margin-bottom: 4rem;
+	position: relative;
+	background: url("/img/background/HeroAndFooterBgPortrait.webp");
+	background-size: cover;
+	background-position: left center;
+	background-repeat: no-repeat;
+	padding: 1rem 1rem 7rem;
+	margin-bottom: 4rem;
+	@include respond(tab-land) {
+		padding: 1rem 5rem 7rem;
+	}
 }
 .heroSection {
-  @include displayFlexColumn;
-  gap: 0;
-  width: min(100%, 45rem);
-  margin: 3rem auto 0;
-  &__logoImage {
-    display: block;
-    width: clamp(16rem, 70vw, 40rem);
-    height: auto;
-  }
-  &__headingAndCtaContainer {
-    @include displayFlexColumn;
-    gap: 2rem;
-    margin-top: -3rem;
-  }
-  &__headingIntro,
-  &__ctaIntroParagraph {
-    width: min(95%, 32rem);
-  }
-  &__ctaContainer {
-    @include displayFlexColumn;
-    gap: 1rem;
-  }
-  &__ctaButtonContainer {
-    @include displayFlexColumn;
-    gap: 1.75rem;
-  }
-  @media (min-width: 400px) {
-    &__headingIntro,
-    &__ctaIntroParagraph {
-      width: min(95%, 35rem);
-    }
-  }
-  @media (min-width: 450px) {
-    &__headingIntro,
-    &__ctaIntroParagraph {
-      width: min(95%, 40rem);
-    }
-  }
+	@include displayFlexColumn;
+	gap: 0;
+	width: min(100%, 45rem);
+	margin: 7rem auto 0;
+	&__logoImage {
+		display: block;
+		width: clamp(16rem, 70vw, 40rem);
+		height: auto;
+	}
+	&__headingAndCtaContainer {
+		@include displayFlexColumn;
+		gap: 2rem;
+		margin-top: -3rem;
+	}
+	&__headingIntro,
+	&__ctaIntroParagraph {
+		width: min(95%, 32rem);
+	}
+	&__ctaContainer {
+		@include displayFlexColumn;
+		gap: 1rem;
+	}
+	&__ctaButtonContainer {
+		@include displayFlexColumn;
+		gap: 1.75rem;
+	}
+	@media (min-width: 400px) {
+		&__headingIntro,
+		&__ctaIntroParagraph {
+			width: min(95%, 35rem);
+		}
+	}
+	@media (min-width: 450px) {
+		&__headingIntro,
+		&__ctaIntroParagraph {
+			width: min(95%, 40rem);
+		}
+	}
+	@include respond(tab-land) {
+		width: 100%;
+		padding: 0 0 7rem;
+		margin: 10rem 0 0;
+		@include displayFlexRow;
+		justify-content: space-between;
+		align-items: flex-start;
+		gap: 5rem;
+		&__logoImage {
+			// width: clamp(22rem, 27vw, 30rem);
+			width: 100%;
+		}
+		&__figure {
+			flex: 0 0 28rem;
+		}
+		&__headingAndCtaContainer {
+			flex: 0 0 60%;
+			margin-bottom: 5rem;
+			align-items: flex-start;
+		}
+		&__ctaContainer {
+			align-items: flex-start;
+		}
+		&__ctaButtonContainer {
+			@include displayFlexRow;
+			justify-content: flex-start;
+			gap: 5rem;
+		}
+	}
+	@include respond(desk) {
+		width: min(100%, 95rem);
+		gap: 6rem;
+		&__figure {
+			flex: 0 0 23rem;
+		}
+		&__headingAndCtaContainer {
+			flex: 1 0 60%;
+		}
+		&__headingIntro,
+		&__ctaIntroParagraph {
+			width: 100%;
+		}
+	}
 }
 .headingH1 {
-  @include displayFlexColumn;
-  gap: clamp(1.25rem, 4.5vw, 1.75rem);
-  &__primaryHeading {
-    @include displayFlexColumn;
-    gap: 0;
-    position: relative;
-  }
-  &__title {
-    @include displayFlexRow;
-    gap: 0;
-  }
-  &__subtitle {
-    position: absolute;
-    top: min(18vw, 6rem);
-    left: 0;
-    right: 0;
-  }
-  &__letterS {
-    margin-bottom: 0rem;
-  }
-  &__lettersTheRest {
-    margin-bottom: -1.25rem;
-  }
-  @media (min-width: 350px) {
-    &__subtitle {
-      top: min(18vw, 7.5rem);
-    }
-  }
-  @media (min-width: 450px) {
-    &__subtitle {
-      top: min(18vw, 8.5rem);
-    }
-  }
+	@include displayFlexColumn;
+	gap: clamp(1.25rem, 4.5vw, 1.75rem);
+	&__primaryHeading {
+		@include displayFlexColumn;
+		gap: 0;
+		position: relative;
+	}
+	&__title {
+		@include displayFlexRow;
+		gap: 0;
+	}
+	&__subtitle {
+		position: absolute;
+		top: min(18vw, 6rem);
+		left: 0;
+		right: 0;
+	}
+	&__letterS {
+		margin-bottom: 0rem;
+	}
+	&__lettersTheRest {
+		margin-bottom: -1.25rem;
+	}
+	@media (min-width: 350px) {
+		&__subtitle {
+			top: min(18vw, 7.5rem);
+		}
+	}
+	@media (min-width: 450px) {
+		&__subtitle {
+			top: min(18vw, 8.5rem);
+		}
+	}
+	@include respond(tab-land) {
+		width: 100%;
+		align-items: flex-start;
+		&__subtitle {
+			text-align: left;
+		}
+	}
 }
