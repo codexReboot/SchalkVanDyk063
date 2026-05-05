@@ -60,7 +60,9 @@
 		backface-visibility: hidden;
 		will-change: color, transform;
 		transform-origin: center;
-		transition: color 0.3s ease, transform 0.3s ease;
+		transition:
+			color 0.3s ease,
+			transform 0.3s ease;
 		position: relative;
 		cursor: pointer;
 	}
@@ -125,7 +127,9 @@
 		backface-visibility: hidden;
 		will-change: color, transform;
 		transform-origin: bottom;
-		transition: color 0.3s ease, transform 0.3s ease;
+		transition:
+			color 0.3s ease,
+			transform 0.3s ease;
 	}
 
 	// Hover and focus together
@@ -203,7 +207,9 @@
 		backface-visibility: hidden;
 		will-change: color, transform;
 		transform-origin: center;
-		transition: color 0.3s ease, transform 0.3s ease;
+		transition:
+			color 0.3s ease,
+			transform 0.3s ease;
 		position: relative; // for optional focus pseudo-element
 		display: flex;
 		align-items: flex-start;
@@ -288,7 +294,9 @@
 		backface-visibility: hidden;
 		will-change: color, transform;
 		transform-origin: center;
-		transition: color 0.3s ease, transform 0.3s ease;
+		transition:
+			color 0.3s ease,
+			transform 0.3s ease;
 		position: relative; // for pseudo-element focus cue
 	}
 

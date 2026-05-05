@@ -16,7 +16,7 @@
 		display: block;
 		width: 10rem;
 		height: auto;
-		transform-origin: center left;
+		transform-origin: center;
 		transition: transform 0.3s;
 	}
 	&--designerAndDeveloperLogo:hover {
@@ -26,6 +26,7 @@
 	@include respond(tab-port) {
 		&--designerAndDeveloperLogo {
 			margin-bottom: 0.45rem;
+			transform-origin: center left;
 		}
 	}
 
@@ -38,7 +39,7 @@
 		}
 		&--designerAndDeveloperLogo {
 			position: absolute;
-			top: -0.75rem;
+			top: -1.9rem;
 			transform-origin: center left;
 		}
 	}
