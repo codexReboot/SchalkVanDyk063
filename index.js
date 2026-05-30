@@ -21,6 +21,26 @@ app.get("/", (req, res) => {
 	res.render("home", { currentPage: "home" });
 });
 
+// Graphic Design page
+app.get("/design", (req, res) => {
+	res.render("design", { currentPage: "graphic-design" });
+});
+
+// Web Development page
+app.get("/development", (req, res) => {
+	res.render("development", { currentPage: "web-development" });
+});
+
+// Hosting page
+app.get("/hosting", (req, res) => {
+	res.render("hosting", { currentPage: "hosting" });
+});
+
+// Marketing page
+app.get("/marketing", (req, res) => {
+	res.render("marketing", { currentPage: "marketing" });
+});
+
 // Popia page
 app.get("/popia", (req, res) => {
 	res.render("popia", { currentPage: "popia" });
