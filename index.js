@@ -41,6 +41,11 @@ app.get("/marketing", (req, res) => {
 	res.render("marketing", { currentPage: "marketing" });
 });
 
+// Contact page
+app.get("/contact", (req, res) => {
+	res.render("contact", { currentPage: "contact" });
+});
+
 // Popia page
 app.get("/popia", (req, res) => {
 	res.render("popia", { currentPage: "popia" });
