@@ -107,6 +107,9 @@
 		float: right;
 		z-index: 1000;
 	}
+	&--underConstructionServices {
+		padding: 0.75rem 2rem;
+	}
 	@include respond(tab-land) {
 		&--about {
 			margin-left: 0;

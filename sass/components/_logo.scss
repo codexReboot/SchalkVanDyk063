@@ -22,6 +22,13 @@
 	&--designerAndDeveloperLogo:hover {
 		transform: scale(1.1);
 	}
+	&--underConstructionServicesLogo {
+		display: block;
+		width: clamp(10rem, 40vw, 20rem);
+		height: auto;
+		margin: 0 auto;
+		margin-bottom: -1rem;
+	}
 
 	@include respond(tab-port) {
 		&--designerAndDeveloperLogo {

@@ -39,6 +39,16 @@
 		color: rgba($cf-white, 0.95);
 		text-align: left;
 	}
+	&--underConstructionServices {
+		color: $cf-blue;
+		font-family: "Alegreya", serif;
+		font-size: clamp(2.8rem, 10vw, 5.5rem);
+		font-weight: 900;
+		font-style: normal;
+		letter-spacing: 3px;
+		text-align: center;
+		text-shadow: 2px 2px 1px rgba(0, 0, 0, 1);
+	}
 }
 .headingH2 {
 	color: $cf-darkBlue;
@@ -57,6 +67,15 @@
 		font-size: clamp(2rem, 7vw, 2.2rem);
 		font-weight: 900;
 		text-transform: uppercase;
+	}
+	&--underConstructionServices {
+		color: rgba($cf-white, 0.75);
+		font-size: clamp(1.8rem, 5.5vw, 2rem);
+		letter-spacing: 2px;
+		text-align: center;
+		text-transform: none;
+		text-decoration: 2px solid underline;
+		text-underline-offset: 5px;
 	}
 }
 .headingH2Tagline {
@@ -319,6 +338,9 @@
 		&--footerServicesText {
 			font-size: clamp(1.4rem, 4.5vw, 1.6rem);
 		}
+		&--underConstructionServices {
+			text-align: center;
+		}
 	}
 }
 .logoText {
@@ -359,6 +381,11 @@
 		span {
 			transform: scale(2);
 		}
+	}
+	&--underConstructionServices {
+		text-shadow:
+			1px 1px 0px rgba($cp-white, 0.45),
+			2px 2px 1px rgba($cp-dark, 0.45);
 	}
 }
 .navlinkText {

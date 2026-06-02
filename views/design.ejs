@@ -1,2 +1,18 @@
-<%- include('partials/underConstructionServices') %>
-<a class="underConstructionServices__btn btn btn-returnHome" href="/#services">Return to Services</a>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title><%= heading %> | codexReboot | Schalk van Dyk | Web Developer & Designer</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body class="underConstructionServicesPage__body">
+		<div class="underConstructionServicesPage__container">
+			<h1 class="headingH1 headingH1--underConstructionServices"><%= heading %></h1>
+			<%- include('partials/underConstructionServices') %>
+			<a class="underConstructionServices__btn btn btn--primary btn--underConstructionServices" href="/#services"
+				>Return to Services Section on Home Page</a
+			>
+		</div>
+	</body>
+</html>

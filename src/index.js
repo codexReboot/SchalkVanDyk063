@@ -23,27 +23,28 @@ app.get("/", (req, res) => {
 
 // Graphic Design page
 app.get("/design", (req, res) => {
-	res.render("design", { currentPage: "graphic-design" });
+	// to display title on page
+	res.render("design", { heading: "Graphic Design Solutions" });
 });
 
 // Web Development page
 app.get("/development", (req, res) => {
-	res.render("development", { currentPage: "web-development" });
+	res.render("development", { heading: "Web Design & Development" });
 });
 
 // Hosting page
 app.get("/hosting", (req, res) => {
-	res.render("hosting", { currentPage: "hosting" });
+	res.render("hosting", { heading: "Domain Setup & Web Hosting" });
 });
 
 // Marketing page
 app.get("/marketing", (req, res) => {
-	res.render("marketing", { currentPage: "marketing" });
+	res.render("marketing", { heading: "Online Digital Marketing & SEO" });
 });
 
 // Contact page
 app.get("/contact", (req, res) => {
-	res.render("contact", { currentPage: "contact" });
+	res.render("contact", { heading: "Contact Us" });
 });
 
 // Popia page

@@ -1,0 +1,29 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.underConstructionServicesPage {
+	&__body {
+		background: url("../img/background/HeroAndFooterBgLandscape.webp");
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		min-height: 100vh;
+		@include displayFlexColumn;
+	}
+	&__container {
+		@include displayFlexColumn;
+		gap: 2rem;
+	}
+}
+
+.underConstructionServices {
+	padding: 0 1rem;
+	width: min(100%, 45rem);
+	@include displayFlexColumn;
+	gap: 1rem;
+}
+
+.headingH1--underConstructionServices {
+	align-items: center;
+}
