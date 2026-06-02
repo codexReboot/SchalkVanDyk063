@@ -7,10 +7,10 @@
 	"scripts": {
 		"start-server": "node src/index.js",
 		"sass": "sass --watch sass/main.scss:public/css/style.css",
-		"server": "nodemon src/index.js --watch -ext js,html,ejs",
+		"server": "nodemon src/index.js --watch --ext js,html,ejs",
 		"browser-sync": "node bs.js",
 		"dev": "npm-run-all --parallel server sass browser-sync",
-		"open": "google-chrome http://localhost:3000 &",
+		"open": "google-chrome --disable-gpu --new-window http://localhost:3000",
 		"start": "npm-run-all --parallel dev open"
 	},
 	"keywords": [
