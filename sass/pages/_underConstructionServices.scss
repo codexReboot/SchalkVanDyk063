@@ -12,6 +12,7 @@
 		@include displayFlexColumn;
 	}
 	&__container {
+		padding: 0 1rem;
 		@include displayFlexColumn;
 		gap: 2rem;
 	}

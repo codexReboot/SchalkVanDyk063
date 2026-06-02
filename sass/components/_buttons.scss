@@ -108,6 +108,7 @@
 		z-index: 1000;
 	}
 	&--underConstructionServices {
+		background-color: rgba($cp-white, 0.55);
 		padding: 0.75rem 2rem;
 	}
 	@include respond(tab-land) {

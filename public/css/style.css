@@ -591,6 +591,7 @@ h6 {
   z-index: 1000;
 }
 .btn--underConstructionServices {
+  background-color: rgba(242, 242, 242, 0.55);
   padding: 0.75rem 2rem;
 }
 @media (min-width: 56.25em) {
@@ -2849,6 +2850,7 @@ h6 {
   gap: 1rem;
 }
 .underConstructionServicesPage__container {
+  padding: 0 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
