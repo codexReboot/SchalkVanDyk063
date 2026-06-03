@@ -391,12 +391,11 @@
 .navlinkText {
 	color: $cf-white;
 	font-family: "Contrail One", serif;
-	font-weight: 400;
+	font-weight: 500;
 	font-style: normal;
 	font-size: $navlinkTextSize;
 	letter-spacing: 1px;
 	text-align: center;
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
 	transition: all 0.3s;
 	&--footerNavlinkText {
 		color: rgba($cf-white, 0.85);
