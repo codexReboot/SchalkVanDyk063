@@ -1779,7 +1779,8 @@ h6 {
   }
 }
 
-.getstartedSection {
+.getstartedSection,
+.servicesIntroSection {
   padding-bottom: 5rem;
   display: flex;
   flex-direction: column;

@@ -1,7 +1,8 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
-.getstartedSection {
+.getstartedSection,
+.servicesIntroSection {
 	padding-bottom: 5rem;
 	@include displayFlexColumn;
 	gap: 2rem;
