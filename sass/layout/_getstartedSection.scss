@@ -1,0 +1,8 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.getstartedSection {
+	padding-bottom: 5rem;
+	@include displayFlexColumn;
+	gap: 2rem;
+}

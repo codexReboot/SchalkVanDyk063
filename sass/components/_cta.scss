@@ -1,0 +1,12 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.cta {
+	background: linear-gradient(to bottom right, rgba($cp-blue, 1), rgba($cp-darkBlue, 0.95) 75%);
+	border-radius: 0.5rem;
+	box-shadow: 0px 0px 25px 5px rgba($cp-dark, 0.35);
+	padding: 2rem;
+	width: min(100%, 45rem);
+	@include displayFlexColumn;
+	gap: 2rem;
+}

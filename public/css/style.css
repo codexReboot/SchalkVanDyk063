@@ -388,6 +388,15 @@ h6 {
   color: rgba(51, 51, 51, 0.85);
   text-align: left;
 }
+.paragraph--cta {
+  color: #f0f0f0;
+}
+.paragraph--getstarted {
+  color: #292828;
+}
+.paragraph--cta {
+  color: #f0f0f0;
+}
 @media (min-width: 400px) {
   .paragraph--projectDesc, .paragraph--projectFeaturesText, .paragraph--projectTech {
     font-size: clamp(1.4rem, 3.5vw, 1.6rem);
@@ -890,6 +899,20 @@ h6 {
   }
 }
 
+.cta {
+  background: linear-gradient(to bottom right, #1b90d8, rgba(0, 48, 73, 0.95) 75%);
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 25px 5px rgba(51, 51, 51, 0.35);
+  padding: 2rem;
+  width: min(100%, 45rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  gap: 2rem;
+}
+
 .icon {
   display: block;
   width: 2.8rem;
@@ -1107,6 +1130,9 @@ h6 {
 }
 .sectionDivider--about, .sectionDivider--services, .sectionDivider--portfolio, .sectionDivider--skills, .sectionDivider--contact {
   bottom: 0rem;
+}
+.sectionDivider--designPageServicesSection {
+  position: static;
 }
 .sectionDivider--footer {
   top: -15rem;
@@ -1736,6 +1762,16 @@ h6 {
   }
 }
 
+.getstartedSection {
+  padding-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  gap: 2rem;
+}
+
 .header {
   position: relative;
   background: url("/img/background/HeroAndFooterBgPortrait.webp");
@@ -2243,6 +2279,11 @@ h6 {
   .skillsSection__introParagraphBreakpoint {
     display: block;
   }
+}
+
+.designPageServicesSection {
+  padding: 0 1rem;
+  position: relative;
 }
 
 .nav {

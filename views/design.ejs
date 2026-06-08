@@ -4,15 +4,478 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title><%= heading %> | codexReboot | Schalk van Dyk | Web Developer & Designer</title>
+		<!-- Preconnect (performance optimization) -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+		<link
+			href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Caveat:wght@400..700&family=Contrail+One&family=Lalezar&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap"
+			rel="stylesheet" />
+
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
-	<body class="underConstructionServicesPage__body">
-		<div class="underConstructionServicesPage__container">
-			<h1 class="headingH1 headingH1--underConstructionServices"><%= heading %></h1>
-			<%- include('partials/underConstructionServices') %>
-			<a class="underConstructionServices__btn btn btn--primary btn--underConstructionServices" href="/#services"
-				>Return to Services Section on Home Page</a
-			>
-		</div>
+	<body class="body body--designPage">
+		<header>
+			<nav class="header__nav nav">
+				<a href="/">
+					<figure class="nav__logoContainer">
+						<img
+							class="nav__logo logo logo--nav"
+							src="/img/logo/codexRebootNavbarWideLogo.webp"
+							alt="Business logo of Schalk van Dyk, web designer and developer t/a codexReboot. Code with purpose, design with impact, and market with precision." />
+					</figure>
+				</a>
+				<div class="nav__hamburger">
+					<div class="hamburgerBar"></div>
+					<div class="hamburgerBar"></div>
+					<div class="hamburgerBar"></div>
+				</div>
+				<ul class="nav__list">
+					<li class="nav__item">
+						<a class="nav__link navlinkText navlinkText--navbar" href="#intro">
+							<span class="navlinkText__content" data-text="About">Intro</span>
+						</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link navlinkText navlinkText--navbar" href="#services">
+							<span class="navlinkText__content" data-text="Services">Design Services</span>
+						</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link navlinkText navlinkText--navbar" href="#portfolio">
+							<span class="navlinkText__content" data-text="Projects">Projects</span>
+						</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link navlinkText navlinkText--navbar" href="#pricing">
+							<span class="navlinkText__content" data-text="Skills">Pricing</span>
+						</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link navlinkText navlinkText--navbar" href="#getstarted">
+							<span class="navlinkText__content" data-text="Contact">Get Started</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main class="main main--designPage">
+			<!-- HERO SECTION -->
+			<header class="main__servicesHeroSection servicesHeroSection designPageServicesSection">
+				<h1>Website Graphics & Visual Support</h1>
+
+				<h2>Web design visuals, logos, and UI graphics for modern websites</h2>
+
+				<p>
+					I provide website design and development services in South Africa, including practical graphic
+					design support for modern websites and web apps.
+				</p>
+			</header>
+			<!-- sectionDivider -->
+			<svg
+				class="sectionDivider sectionDivider--designPageServicesSection"
+				viewBox="0 0 1440 1000"
+				preserveAspectRatio="none"
+				xmlns="http://www.w3.org/2000/svg">
+				<g transform="scale(1, -1) translate(0, -1000)">
+					<path fill="#1b90d8" d="M0,600 C420,900 1020,200 1440,600 L1440,0 L0,0 Z" />
+					<path fill="#f2f2f2" d="M0,500 C400,1000 1040,100 1440,500 L1440,0 L0,0 Z" />
+					<path fill="url(#gradientBlue)" d="M0,400 C360,800 1080,0 1440,400 L1440,0 L0,0 Z" />
+				</g>
+				<defs>
+					<linearGradient id="gradientBlue" x1="0%" y1="0%" x2="0%" y2="100%">
+						<stop offset="0%" stop-color="#1b90d8" stop-opacity="0" />
+						<stop offset="30%" stop-color="#1b90d8" stop-opacity="0.25" />
+						<stop offset="100%" stop-color="#1b90d8" stop-opacity="1" />
+					</linearGradient>
+					<linearGradient id="gradientWhite" x1="0%" y1="0%" x2="0%" y2="100%">
+						<stop offset="0%" stop-color="#f2f2f2" stop-opacity="0" />
+						<stop offset="100%" stop-color="#f2f2f2" stop-opacity="1" />
+					</linearGradient>
+					<linearGradient id="gradientDarkBlue" x1="0%" y1="0%" x2="0%" y2="100%">
+						<stop offset="0%" stop-color="#003049" stop-opacity="0" />
+						<stop offset="100%" stop-color="#003049" stop-opacity="1" />
+					</linearGradient>
+				</defs>
+			</svg>
+			<!-- INTRO -->
+			<section class="main__servicesIntroSection servicesIntroSection designPageServicesSection">
+				<h2>Improve your website design with clean, modern visuals</h2>
+
+				<p>
+					Many websites don’t need a full redesign — they just need better visual structure, improved
+					graphics, and consistent design elements.
+				</p>
+
+				<p>
+					This service provides website graphics and visual design support to improve the look, clarity, and
+					user experience of your website without the cost of a full design agency.
+				</p>
+
+				<p>
+					It is ideal for businesses that want affordable website design improvements, logo support, and UI
+					graphics as part of their web project.
+				</p>
+			</section>
+			<!-- sectionDivider -->
+			<svg
+				class="sectionDivider sectionDivider--designPageServicesSection"
+				viewBox="0 0 1440 1000"
+				preserveAspectRatio="none"
+				xmlns="http://www.w3.org/2000/svg">
+				<g transform="scale(1, -1) translate(0, -1000)">
+					<path fill="#1b90d8" d="M0,600 C420,900 1020,200 1440,600 L1440,0 L0,0 Z" />
+					<path fill="#f2f2f2" d="M0,500 C400,1000 1040,100 1440,500 L1440,0 L0,0 Z" />
+					<path fill="url(#gradientBlue)" d="M0,400 C360,800 1080,0 1440,400 L1440,0 L0,0 Z" />
+				</g>
+				<defs>
+					<linearGradient id="gradientBlue" x1="0%" y1="0%" x2="0%" y2="100%">
+						<stop offset="0%" stop-color="#1b90d8" stop-opacity="0" />
+						<stop offset="30%" stop-color="#1b90d8" stop-opacity="0.25" />
+						<stop offset="100%" stop-color="#1b90d8" stop-opacity="1" />
+					</linearGradient>
+					<linearGradient id="gradientWhite" x1="0%" y1="0%" x2="0%" y2="100%">
+						<stop offset="0%" stop-color="#f2f2f2" stop-opacity="0" />
+						<stop offset="100%" stop-color="#f2f2f2" stop-opacity="1" />
+					</linearGradient>
+					<linearGradient id="gradientDarkBlue" x1="0%" y1="0%" x2="0%" y2="100%">
+						<stop offset="0%" stop-color="#003049" stop-opacity="0" />
+						<stop offset="100%" stop-color="#003049" stop-opacity="1" />
+					</linearGradient>
+				</defs>
+			</svg>
+			<!-- WHAT IS THIS SERVICE -->
+			<section class="main__servicesDetailsSection servicesDetailsSection designPageServicesSection">
+				<h2>What is Website Graphics & Visual Support?</h2>
+
+				<p>
+					This service focuses on practical web design elements that improve how your website looks and feels,
+					including:
+				</p>
+
+				<ul>
+					<li>Website design visuals</li>
+					<li>Hero section banners and header visuals</li>
+					<li>Website section graphics for better layout flow</li>
+					<li>Call-to-action (CTA) design elements</li>
+					<li>Feature and service highlight visuals</li>
+				</ul>
+
+				<h3>Website UI graphics and icons</h3>
+				<ul>
+					<li>Custom icon sets for website features</li>
+					<li>Consistent UI icons for better user experience</li>
+					<li>Lightweight illustrations for web pages</li>
+				</ul>
+
+				<h3>Simple logo design for websites</h3>
+				<ul>
+					<li>Basic logo design for small businesses</li>
+					<li>Logo simplification for better web readability</li>
+					<li>Web-ready logo formats for websites and apps</li>
+				</ul>
+
+				<h3>Visual design improvements</h3>
+				<ul>
+					<li>Background styling (gradients, textures, overlays)</li>
+					<li>Colour adjustments for better contrast and branding consistency</li>
+					<li>Layout visual enhancements for modern UI design</li>
+				</ul>
+			</section>
+			<!-- sectionDivider -->
+			<svg
+				class="sectionDivider sectionDivider--designPageServicesSection"
+				viewBox="0 0 1440 1000"
+				preserveAspectRatio="none"
+				xmlns="http://www.w3.org/2000/svg">
+				<g transform="scale(1, -1) translate(0, -1000)">
+					<path fill="#1b90d8" d="M0,600 C420,900 1020,200 1440,600 L1440,0 L0,0 Z" />
+					<path fill="#f2f2f2" d="M0,500 C400,1000 1040,100 1440,500 L1440,0 L0,0 Z" />
+					<path fill="url(#gradientBlue)" d="M0,400 C360,800 1080,0 1440,400 L1440,0 L0,0 Z" />
+				</g>
+				<defs>
+					<linearGradient id="gradientBlue" x1="0%" y1="0%" x2="0%" y2="100%">
+						<stop offset="0%" stop-color="#1b90d8" stop-opacity="0" />
+						<stop offset="30%" stop-color="#1b90d8" stop-opacity="0.25" />
+						<stop offset="100%" stop-color="#1b90d8" stop-opacity="1" />
+					</linearGradient>
+					<linearGradient id="gradientWhite" x1="0%" y1="0%" x2="0%" y2="100%">
+						<stop offset="0%" stop-color="#f2f2f2" stop-opacity="0" />
+						<stop offset="100%" stop-color="#f2f2f2" stop-opacity="1" />
+					</linearGradient>
+					<linearGradient id="gradientDarkBlue" x1="0%" y1="0%" x2="0%" y2="100%">
+						<stop offset="0%" stop-color="#003049" stop-opacity="0" />
+						<stop offset="100%" stop-color="#003049" stop-opacity="1" />
+					</linearGradient>
+				</defs>
+			</svg>
+			<!-- WHO IT IS FOR -->
+			<section class="main__servicesAudienceSection servicesAudienceSection designPageServicesSection">
+				<h2>Who this service is for</h2>
+
+				<ul>
+					<li>Small businesses needing affordable website design support</li>
+					<li>Startups building a new website or web app</li>
+					<li>Clients who already have a website but need visual improvements</li>
+					<li>Anyone wanting a modern, clean website design without agency costs</li>
+				</ul>
+			</section>
+			<!-- sectionDivider -->
+			<svg
+				class="sectionDivider sectionDivider--designPageServicesSection"
+				viewBox="0 0 1440 1000"
+				preserveAspectRatio="none"
+				xmlns="http://www.w3.org/2000/svg">
+				<g transform="scale(1, -1) translate(0, -1000)">
+					<path fill="#1b90d8" d="M0,600 C420,900 1020,200 1440,600 L1440,0 L0,0 Z" />
+					<path fill="#f2f2f2" d="M0,500 C400,1000 1040,100 1440,500 L1440,0 L0,0 Z" />
+					<path fill="url(#gradientBlue)" d="M0,400 C360,800 1080,0 1440,400 L1440,0 L0,0 Z" />
+				</g>
+				<defs>
+					<linearGradient id="gradientBlue" x1="0%" y1="0%" x2="0%" y2="100%">
+						<stop offset="0%" stop-color="#1b90d8" stop-opacity="0" />
+						<stop offset="30%" stop-color="#1b90d8" stop-opacity="0.25" />
+						<stop offset="100%" stop-color="#1b90d8" stop-opacity="1" />
+					</linearGradient>
+					<linearGradient id="gradientWhite" x1="0%" y1="0%" x2="0%" y2="100%">
+						<stop offset="0%" stop-color="#f2f2f2" stop-opacity="0" />
+						<stop offset="100%" stop-color="#f2f2f2" stop-opacity="1" />
+					</linearGradient>
+					<linearGradient id="gradientDarkBlue" x1="0%" y1="0%" x2="0%" y2="100%">
+						<stop offset="0%" stop-color="#003049" stop-opacity="0" />
+						<stop offset="100%" stop-color="#003049" stop-opacity="1" />
+					</linearGradient>
+				</defs>
+			</svg>
+			<!-- WHAT IT IS NOT -->
+			<section class="main__servicesNotIncludedSection servicesNotIncludedSection designPageServicesSection">
+				<h2>What this service is NOT</h2>
+
+				<p>To keep expectations clear, this is not a full branding or design agency service.</p>
+
+				<p><strong>It does NOT include:</strong></p>
+
+				<ul>
+					<li>Full corporate branding or identity systems</li>
+					<li>Advanced marketing design campaigns</li>
+					<li>High-end illustration or concept-heavy design work</li>
+					<li>Large-scale creative direction projects</li>
+				</ul>
+
+				<p>This service is focused on web-ready, practical design that supports your website development.</p>
+			</section>
+			<!-- sectionDivider -->
+			<svg
+				class="sectionDivider sectionDivider--designPageServicesSection"
+				viewBox="0 0 1440 1000"
+				preserveAspectRatio="none"
+				xmlns="http://www.w3.org/2000/svg">
+				<g transform="scale(1, -1) translate(0, -1000)">
+					<path fill="#1b90d8" d="M0,600 C420,900 1020,200 1440,600 L1440,0 L0,0 Z" />
+					<path fill="#f2f2f2" d="M0,500 C400,1000 1040,100 1440,500 L1440,0 L0,0 Z" />
+					<path fill="url(#gradientBlue)" d="M0,400 C360,800 1080,0 1440,400 L1440,0 L0,0 Z" />
+				</g>
+				<defs>
+					<linearGradient id="gradientBlue" x1="0%" y1="0%" x2="0%" y2="100%">
+						<stop offset="0%" stop-color="#1b90d8" stop-opacity="0" />
+						<stop offset="30%" stop-color="#1b90d8" stop-opacity="0.25" />
+						<stop offset="100%" stop-color="#1b90d8" stop-opacity="1" />
+					</linearGradient>
+					<linearGradient id="gradientWhite" x1="0%" y1="0%" x2="0%" y2="100%">
+						<stop offset="0%" stop-color="#f2f2f2" stop-opacity="0" />
+						<stop offset="100%" stop-color="#f2f2f2" stop-opacity="1" />
+					</linearGradient>
+					<linearGradient id="gradientDarkBlue" x1="0%" y1="0%" x2="0%" y2="100%">
+						<stop offset="0%" stop-color="#003049" stop-opacity="0" />
+						<stop offset="100%" stop-color="#003049" stop-opacity="1" />
+					</linearGradient>
+				</defs>
+			</svg>
+			<!-- PRICING -->
+			<section class="main__servicesPricingSection servicesPricingSection designPageServicesSection">
+				<div id="pricing" class="linkDiv"></div>
+				<div class="pricingSection__sectionHeading sectionHeading">
+					<h2 class="pricingSection__headingH2 sectionHeading__headingH2 headingH2 headingH2--pricing">
+						pricing
+					</h2>
+					<hr class="pricingSection__hr sectionHeading__hr hr hr--pricingSection" />
+					<p
+						class="pricingSection__headingH2Tagline sectionHeading__headingH2Tagline headingH2Tagline headingH2Tagline--pricing">
+						Website Graphics & Visual Support
+					</p>
+				</div>
+
+				<div class="pricing-grid">
+					<article class="pricing-card">
+						<h3>🟢 Small Fix - R750</h3>
+						<ul>
+							<li>1–3 small website visuals</li>
+							<li>Simple banner, icons, or logo tweak</li>
+							<li>Quick design adjustments</li>
+						</ul>
+						<p><em>“Fix or improve a small part of my website”</em></p>
+					</article>
+
+					<article class="pricing-card featured">
+						<h3>🔵 Website Visual Pack (Most Popular) - R2,500</h3>
+						<ul>
+							<li>Hero or banner design</li>
+							<li>3–8 matching website icons</li>
+							<li>Basic logo design (web-focused)</li>
+							<li>Section and background styling</li>
+						</ul>
+						<p><em>“Make my website look more professional and complete”</em></p>
+					</article>
+
+					<article class="pricing-card">
+						<h3>🟣 Full Visual Upgrade - R5,000</h3>
+						<ul>
+							<li>Full set of website visuals across pages</li>
+							<li>Expanded icon system</li>
+							<li>Hero + multiple section designs</li>
+							<li>Logo refinement and improvement</li>
+							<li>Consistent visual style across the entire website</li>
+						</ul>
+						<p><em>“Complete visual improvement for my website”</em></p>
+					</article>
+				</div>
+			</section>
+			<!-- sectionDivider -->
+			<svg
+				class="sectionDivider sectionDivider--designPageServicesSection"
+				viewBox="0 0 1440 1000"
+				preserveAspectRatio="none"
+				xmlns="http://www.w3.org/2000/svg">
+				<g transform="scale(1, -1) translate(0, -1000)">
+					<path fill="#1b90d8" d="M0,600 C420,900 1020,200 1440,600 L1440,0 L0,0 Z" />
+					<path fill="#f2f2f2" d="M0,500 C400,1000 1040,100 1440,500 L1440,0 L0,0 Z" />
+					<path fill="url(#gradientBlue)" d="M0,400 C360,800 1080,0 1440,400 L1440,0 L0,0 Z" />
+				</g>
+				<defs>
+					<linearGradient id="gradientBlue" x1="0%" y1="0%" x2="0%" y2="100%">
+						<stop offset="0%" stop-color="#1b90d8" stop-opacity="0" />
+						<stop offset="30%" stop-color="#1b90d8" stop-opacity="0.25" />
+						<stop offset="100%" stop-color="#1b90d8" stop-opacity="1" />
+					</linearGradient>
+					<linearGradient id="gradientWhite" x1="0%" y1="0%" x2="0%" y2="100%">
+						<stop offset="0%" stop-color="#f2f2f2" stop-opacity="0" />
+						<stop offset="100%" stop-color="#f2f2f2" stop-opacity="1" />
+					</linearGradient>
+					<linearGradient id="gradientDarkBlue" x1="0%" y1="0%" x2="0%" y2="100%">
+						<stop offset="0%" stop-color="#003049" stop-opacity="0" />
+						<stop offset="100%" stop-color="#003049" stop-opacity="1" />
+					</linearGradient>
+				</defs>
+			</svg>
+			<!-- HOW IT FITS -->
+			<section class="main__servicesIntegrationSection servicesIntegrationSection designPageServicesSection">
+				<h2>How this fits into web design services</h2>
+
+				<ul>
+					<li>Website development and design</li>
+					<li>Website redesign projects</li>
+					<li>Small business website builds</li>
+					<li>Landing page creation</li>
+				</ul>
+
+				<p>It helps ensure your website is not only functional, but also visually consistent and modern.</p>
+			</section>
+			<!-- sectionDivider -->
+			<svg
+				class="sectionDivider sectionDivider--designPageServicesSection"
+				viewBox="0 0 1440 1000"
+				preserveAspectRatio="none"
+				xmlns="http://www.w3.org/2000/svg">
+				<g transform="scale(1, -1) translate(0, -1000)">
+					<path fill="#1b90d8" d="M0,600 C420,900 1020,200 1440,600 L1440,0 L0,0 Z" />
+					<path fill="#f2f2f2" d="M0,500 C400,1000 1040,100 1440,500 L1440,0 L0,0 Z" />
+					<path fill="url(#gradientBlue)" d="M0,400 C360,800 1080,0 1440,400 L1440,0 L0,0 Z" />
+				</g>
+				<defs>
+					<linearGradient id="gradientBlue" x1="0%" y1="0%" x2="0%" y2="100%">
+						<stop offset="0%" stop-color="#1b90d8" stop-opacity="0" />
+						<stop offset="30%" stop-color="#1b90d8" stop-opacity="0.25" />
+						<stop offset="100%" stop-color="#1b90d8" stop-opacity="1" />
+					</linearGradient>
+					<linearGradient id="gradientWhite" x1="0%" y1="0%" x2="0%" y2="100%">
+						<stop offset="0%" stop-color="#f2f2f2" stop-opacity="0" />
+						<stop offset="100%" stop-color="#f2f2f2" stop-opacity="1" />
+					</linearGradient>
+					<linearGradient id="gradientDarkBlue" x1="0%" y1="0%" x2="0%" y2="100%">
+						<stop offset="0%" stop-color="#003049" stop-opacity="0" />
+						<stop offset="100%" stop-color="#003049" stop-opacity="1" />
+					</linearGradient>
+				</defs>
+			</svg>
+			<!-- WHY IT MATTERS -->
+			<section class="main__servicesValueSection servicesValueSection designPageServicesSection">
+				<h2>Why good website visuals matter</h2>
+
+				<ul>
+					<li>Visual inconsistency can reduce trust and professionalism</li>
+					<li>Poor layout flow makes websites harder to navigate</li>
+					<li>Missing or mismatched icons confuse users</li>
+					<li>Strong visuals improve clarity and user experience</li>
+				</ul>
+
+				<p>This service improves website usability, design clarity, and overall presentation.</p>
+			</section>
+			<!-- sectionDivider -->
+			<svg
+				class="sectionDivider sectionDivider--designPageServicesSection"
+				viewBox="0 0 1440 1000"
+				preserveAspectRatio="none"
+				xmlns="http://www.w3.org/2000/svg">
+				<g transform="scale(1, -1) translate(0, -1000)">
+					<path fill="#1b90d8" d="M0,600 C420,900 1020,200 1440,600 L1440,0 L0,0 Z" />
+					<path fill="#f2f2f2" d="M0,500 C400,1000 1040,100 1440,500 L1440,0 L0,0 Z" />
+					<path fill="url(#gradientBlue)" d="M0,400 C360,800 1080,0 1440,400 L1440,0 L0,0 Z" />
+				</g>
+				<defs>
+					<linearGradient id="gradientBlue" x1="0%" y1="0%" x2="0%" y2="100%">
+						<stop offset="0%" stop-color="#1b90d8" stop-opacity="0" />
+						<stop offset="30%" stop-color="#1b90d8" stop-opacity="0.25" />
+						<stop offset="100%" stop-color="#1b90d8" stop-opacity="1" />
+					</linearGradient>
+					<linearGradient id="gradientWhite" x1="0%" y1="0%" x2="0%" y2="100%">
+						<stop offset="0%" stop-color="#f2f2f2" stop-opacity="0" />
+						<stop offset="100%" stop-color="#f2f2f2" stop-opacity="1" />
+					</linearGradient>
+					<linearGradient id="gradientDarkBlue" x1="0%" y1="0%" x2="0%" y2="100%">
+						<stop offset="0%" stop-color="#003049" stop-opacity="0" />
+						<stop offset="100%" stop-color="#003049" stop-opacity="1" />
+					</linearGradient>
+				</defs>
+			</svg>
+			<!-- CTA -->
+			<section class="main__getstartedSection getstartedSection designPageServicesSection">
+				<div id="getstarted" class="linkDiv"></div>
+				<div class="getstartedSection__sectionHeading sectionHeading">
+					<h2 class="getstartedSection__headingH2 sectionHeading__headingH2 headingH2 headingH2--getstarted">
+						Get Started
+					</h2>
+					<hr class="getstartedSection__hr sectionHeading__hr hr hr--getstartedSection" />
+					<p
+						class="getstartedSection__headingH2Tagline sectionHeading__headingH2Tagline headingH2Tagline headingH2Tagline--getstarted">
+						How to get started
+					</p>
+				</div>
+				<p class="getstartedSection__paragraph paragraph paragraph--getstarted">
+					If you are building or improving a website, this service helps you enhance your design with
+					professional visuals, UI elements, and branding support without the need for a full design agency.
+					This means you get high-quality design improvements without the high costs, long timelines, or
+					complex processes that usually come with larger agencies.
+				</p>
+
+				<div class="getstartedSection__cta cta cta--getstarted">
+					<p class="getstartedSection__paragraph paragraph paragraph--getstarted paragraph--cta">
+						Click the button below to request a quote. Tell us what you need, and we’ll get back to you with
+						a clear plan and pricing options.
+					</p>
+					<a href="/contact" class="getstartedSection__btn btn btn--secondary btn--cta">Request a Quote</a>
+				</div>
+			</section>
+		</main>
+		<script type="module" src="js/app.js"></script>
 	</body>
 </html>

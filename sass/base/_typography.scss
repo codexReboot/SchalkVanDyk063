@@ -305,6 +305,18 @@
 		color: rgba($cp-dark, 0.85);
 		text-align: left;
 	}
+	// components
+	&--cta {
+		color: $cf-white;
+	}
+	// services page
+	&--getstarted {
+		color: $cf-dark;
+	}
+	&--cta {
+		color: $cf-white;
+	}
+
 	@media (min-width: 400px) {
 		&--projectDesc,
 		&--projectFeaturesText,

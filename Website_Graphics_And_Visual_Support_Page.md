@@ -20,7 +20,9 @@ Here is your upgraded version:
 
 ## Website Graphics & Visual Support
 
-#### Web design visuals, logos, and UI graphics for modern websites
+### Web design visuals, logos, and UI graphics for modern websites
+
+I provide website design and development services in South Africa, including practical graphic design support for modern websites and web apps.
 
 ### Improve your website design with clean, modern visuals
 
@@ -32,7 +34,7 @@ It is ideal for businesses that want affordable website design improvements, log
 
 ### What is Website Graphics & Visual Support?
 
-#### This s ervice focuses on practical web design elements that improve how your website looks and feels, including:
+#### This service focuses on practical web design elements that improve how your website looks and feels, including:
 
 - Website design visuals
 - Hero section banners and header visuals
@@ -58,87 +60,79 @@ It is ideal for businesses that want affordable website design improvements, log
 - Colour adjustments for better contrast and branding consistency
 - Layout visual enhancements for modern UI design
 
-### Who this service is for
+#### Who this service is for
 
 This service is ideal for:
 
-Small businesses needing affordable website design support
-Startups building a new website or web app
-Clients who already have a website but need visual improvements
-Anyone wanting a modern, clean website design without agency costs
-What this service is NOT
+- Small businesses needing affordable website design support
+- Startups building a new website or web app
+- Clients who already have a website but need visual improvements
+- Anyone wanting a modern, clean website design without agency costs
 
-To keep expectations clear, this is not a full branding or design agency service.
+### What this service is NOT
 
-It does NOT include:
+#### To keep expectations clear, this is not a full branding or design agency service.
 
-Full corporate branding or identity systems
-Advanced marketing design campaigns
-High-end illustration or concept-heavy design work
-Large-scale creative direction projects
+#### It does NOT include:
 
-This service is focused on web-ready, practical design that supports your website development.
+- Full corporate branding or identity systems
+- Advanced marketing design campaigns
+- High-end illustration or concept-heavy design work
+- Large-scale creative direction projects
 
-Pricing
-Website Graphics & Visual Support
-🟢 Small Fix
+### This service is focused on web-ready, practical design that supports your website development.
 
-R750
+### Pricing
 
-1–3 small website visuals
-Simple banner, icons, or logo tweak
-Quick design adjustments
+#### Website Graphics & Visual Support
 
-👉 “Fix or improve a small part of my website”
+#### 🟢 Small Fix - R750
 
-🔵 Website Visual Pack (Most Popular)
+- 1–3 small website visuals
+- Simple banner, icons, or logo tweak
+- Quick design adjustments
+- 👉 “Fix or improve a small part of my website”
 
-R2,500
+#### 🔵 Website Visual Pack (Most Popular) - R2,500
 
-Hero or banner design
-3–8 matching website icons
-Basic logo design (web-focused)
-Section and background styling
+- Hero or banner design
+- 3–8 matching website icons
+- Basic logo design (web-focused)
+- Section and background styling
+- 👉 “Make my website look more professional and complete”
 
-👉 “Make my website look more professional and complete”
+#### 🟣 Full Visual Upgrade - R5,000
 
-🟣 Full Visual Upgrade
+- Full set of website visuals across pages
+- Expanded icon system
+- Hero + multiple section designs
+- Logo refinement and improvement
+- Consistent visual style across the entire website
+- 👉 “Complete visual improvement for my website”
 
-R5,000
+### How this fits into web design services
 
-Full set of website visuals across pages
-Expanded icon system
-Hero + multiple section designs
-Logo refinement and improvement
-Consistent visual style across the entire website
+- This service is often used alongside:
+    - Website development and design
+    - Website redesign projects
+    - Small business website builds
+    - Landing page creation
 
-👉 “Complete visual improvement for my website”
+- It helps ensure your website is not only functional, but also visually consistent and modern.
 
-How this fits into web design services
+### Why good website visuals matter
 
-This service is often used alongside:
-
-Website development and design
-Website redesign projects
-Small business website builds
-Landing page creation
-
-It helps ensure your website is not only functional, but also visually consistent and modern.
-
-Why good website visuals matter
-
-Even well-built websites can lose customers if:
-
-visuals are inconsistent or outdated
-sections feel empty or unstructured
-icons and graphics don’t match the content
-there is no visual flow guiding the user
+- Even well-built websites can lose customers if:
+    - visuals are inconsistent or outdated
+    - sections feel empty or unstructured
+    - icons and graphics don’t match the content
+    - there is no visual flow guiding the user
 
 This service improves website usability, design clarity, and overall presentation.
 
-Get started
+### Get started
 
-If you are building or improving a website, this service helps you add professional-looking visuals, logos, and UI elements without needing a full design agency.
+    If you are building or improving a website, this service helps you add professional-looking visuals, logos, and UI elements without needing a full design agency.
 
 ## 3. SEO alignment with your homepage (important)
 
