@@ -345,6 +345,10 @@
 		display: none;
 	}
 
+	&--designPage {
+		margin-top: 15rem;
+	}
+
 	@include respond(tab-port) {
 		&__servicesDetailsContainer {
 			width: min(100%, 55rem);

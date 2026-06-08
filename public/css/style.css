@@ -1513,6 +1513,9 @@ h6 {
 .footer__linebreakDeveloper {
   display: none;
 }
+.footer--designPage {
+  margin-top: 15rem;
+}
 @media (min-width: 37.5em) {
   .footer__servicesDetailsContainer {
     width: min(100%, 55rem);
