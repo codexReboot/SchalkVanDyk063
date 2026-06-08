@@ -32,9 +32,15 @@
 	&__ctaIntroParagraph {
 		width: min(95%, 32rem);
 	}
+	&__heroIntro--designPage {
+		margin-top: 1rem;
+	}
 	&__ctaContainer {
 		@include displayFlexColumn;
 		gap: 1rem;
+	}
+	&__ctaContainer--designPage {
+		gap: 2.25rem;
 	}
 	&__ctaButtonContainer {
 		@include displayFlexColumn;
@@ -71,6 +77,9 @@
 			flex: 0 0 60%;
 			margin-bottom: 5rem;
 			align-items: flex-start;
+			&--designPage {
+				flex: 0 0 53%;
+			}
 		}
 		&__ctaContainer {
 			align-items: flex-start;

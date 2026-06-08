@@ -15,89 +15,79 @@
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body class="body body--designPage">
-		<header>
-			<nav class="header__nav nav">
-				<a href="/">
-					<figure class="nav__logoContainer">
-						<img
-							class="nav__logo logo logo--nav"
-							src="/img/logo/codexRebootNavbarWideLogo.webp"
-							alt="Business logo of Schalk van Dyk, web designer and developer t/a codexReboot. Code with purpose, design with impact, and market with precision." />
-					</figure>
-				</a>
-				<div class="nav__hamburger">
-					<div class="hamburgerBar"></div>
-					<div class="hamburgerBar"></div>
-					<div class="hamburgerBar"></div>
-				</div>
-				<ul class="nav__list">
-					<li class="nav__item">
-						<a class="nav__link navlinkText navlinkText--navbar" href="#intro">
-							<span class="navlinkText__content" data-text="About">Intro</span>
-						</a>
-					</li>
-					<li class="nav__item">
-						<a class="nav__link navlinkText navlinkText--navbar" href="#services">
-							<span class="navlinkText__content" data-text="Services">Design Services</span>
-						</a>
-					</li>
-					<li class="nav__item">
-						<a class="nav__link navlinkText navlinkText--navbar" href="#portfolio">
-							<span class="navlinkText__content" data-text="Projects">Projects</span>
-						</a>
-					</li>
-					<li class="nav__item">
-						<a class="nav__link navlinkText navlinkText--navbar" href="#pricing">
-							<span class="navlinkText__content" data-text="Skills">Pricing</span>
-						</a>
-					</li>
-					<li class="nav__item">
-						<a class="nav__link navlinkText navlinkText--navbar" href="#getstarted">
-							<span class="navlinkText__content" data-text="Contact">Get Started</span>
-						</a>
-					</li>
-				</ul>
-			</nav>
-		</header>
 		<main class="main main--designPage">
 			<!-- HERO SECTION -->
-			<header class="main__servicesHeroSection servicesHeroSection designPageServicesSection">
-				<h1>Website Graphics & Visual Support</h1>
+			<header class="main__header header">
+				<%- include('partials/navbar') %>
+				<section class="header__heroSection heroSection">
+					<figure class="heroSection__figure">
+						<img
+							class="heroSection__logoImage"
+							src="./img/logo/codexRebootHeroLogo.webp"
+							alt="Business logo of Schalk van Dyk t/a codexReboot - Web Designer and Developer of websites and web apps that drive traffic and boost sales." />
+						<!-- <figcaption class="heroSection__logoCaption">
+            <p class="heroSection__logoText">Code with Purpose, Design with Impact, & Market with Precision</p>
+          </figcaption> -->
+					</figure>
 
-				<h2>Web design visuals, logos, and UI graphics for modern websites</h2>
-
-				<p>
-					I provide website design and development services in South Africa, including practical graphic
-					design support for modern websites and web apps.
-				</p>
+					<div class="heroSection__headingAndCtaContainer heroSection__headingAndCtaContainer--designPage">
+						<h1 class="heroSection__headingH1 headingH1 headingH1--heroHeading">
+							<div class="headingH1__primaryHeading">
+								<span class="headingH1__title">
+									<span class="headingH1__letterS">S</span>
+									<span class="headingH1__lettersTheRest">chalk van Dyk</span>
+								</span>
+								<span class="headingH1__subtitle headingH1__subtitle--designPage"
+									>Website Graphics & Visual Support</span
+								>
+							</div>
+						</h1>
+						<p
+							class="heroSection__heroIntro heroSection__heroIntro--designPage paragraph paragraph--heroIntro">
+							Web design visuals, logos, and UI graphics for modern websites, providing practical design
+							support for websites and web apps across South Africa.
+						</p>
+						<div class="heroSection__ctaContainer heroSection__ctaContainer--designPage">
+							<p class="heroSection__ctaIntroParagraph paragraph paragraph--ctaIntroParagraph">
+								From simple logos and icons to banners, graphics, and layout enhancements, I create
+								affordable web-ready visuals that help your website look more professional, consistent,
+								and engaging.
+							</p>
+							<div class="heroSection__ctaButtonContainer">
+								<a class="heroSection__ctaBtn btn btn--primary" href="#services">Get a Quote</a>
+								<a class="heroSection__ctaBtn btn btn--secondary" href="#portfolio">View Pricing</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- sectionDivider -->
+				<svg
+					class="sectionDivider sectionDivider--hero"
+					viewBox="0 0 1440 1000"
+					preserveAspectRatio="none"
+					xmlns="http://www.w3.org/2000/svg">
+					<g transform="scale(1, -1) translate(0, -1000)">
+						<path fill="#1b90d8" d="M0,600 C420,900 1020,200 1440,600 L1440,0 L0,0 Z" />
+						<path fill="#f2f2f2" d="M0,500 C400,1000 1040,100 1440,500 L1440,0 L0,0 Z" />
+						<path fill="url(#gradientBlue)" d="M0,400 C360,800 1080,0 1440,400 L1440,0 L0,0 Z" />
+					</g>
+					<defs>
+						<linearGradient id="gradientBlue" x1="0%" y1="0%" x2="0%" y2="100%">
+							<stop offset="0%" stop-color="#1b90d8" stop-opacity="0" />
+							<stop offset="30%" stop-color="#1b90d8" stop-opacity="0.25" />
+							<stop offset="100%" stop-color="#1b90d8" stop-opacity="1" />
+						</linearGradient>
+						<linearGradient id="gradientWhite" x1="0%" y1="0%" x2="0%" y2="100%">
+							<stop offset="0%" stop-color="#f2f2f2" stop-opacity="0" />
+							<stop offset="100%" stop-color="#f2f2f2" stop-opacity="1" />
+						</linearGradient>
+						<linearGradient id="gradientDarkBlue" x1="0%" y1="0%" x2="0%" y2="100%">
+							<stop offset="0%" stop-color="#003049" stop-opacity="0" />
+							<stop offset="100%" stop-color="#003049" stop-opacity="1" />
+						</linearGradient>
+					</defs>
+				</svg>
 			</header>
-			<!-- sectionDivider -->
-			<svg
-				class="sectionDivider sectionDivider--designPageServicesSection"
-				viewBox="0 0 1440 1000"
-				preserveAspectRatio="none"
-				xmlns="http://www.w3.org/2000/svg">
-				<g transform="scale(1, -1) translate(0, -1000)">
-					<path fill="#1b90d8" d="M0,600 C420,900 1020,200 1440,600 L1440,0 L0,0 Z" />
-					<path fill="#f2f2f2" d="M0,500 C400,1000 1040,100 1440,500 L1440,0 L0,0 Z" />
-					<path fill="url(#gradientBlue)" d="M0,400 C360,800 1080,0 1440,400 L1440,0 L0,0 Z" />
-				</g>
-				<defs>
-					<linearGradient id="gradientBlue" x1="0%" y1="0%" x2="0%" y2="100%">
-						<stop offset="0%" stop-color="#1b90d8" stop-opacity="0" />
-						<stop offset="30%" stop-color="#1b90d8" stop-opacity="0.25" />
-						<stop offset="100%" stop-color="#1b90d8" stop-opacity="1" />
-					</linearGradient>
-					<linearGradient id="gradientWhite" x1="0%" y1="0%" x2="0%" y2="100%">
-						<stop offset="0%" stop-color="#f2f2f2" stop-opacity="0" />
-						<stop offset="100%" stop-color="#f2f2f2" stop-opacity="1" />
-					</linearGradient>
-					<linearGradient id="gradientDarkBlue" x1="0%" y1="0%" x2="0%" y2="100%">
-						<stop offset="0%" stop-color="#003049" stop-opacity="0" />
-						<stop offset="100%" stop-color="#003049" stop-opacity="1" />
-					</linearGradient>
-				</defs>
-			</svg>
 			<!-- INTRO -->
 			<section class="main__servicesIntroSection servicesIntroSection designPageServicesSection">
 				<h2>Improve your website design with clean, modern visuals</h2>
