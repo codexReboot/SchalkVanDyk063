@@ -125,6 +125,23 @@
 		font-size: clamp(1.8rem, 4.7vw, 2rem);
 		font-weight: 700;
 	}
+	&--servicesDetails {
+		color: transparent;
+		font-size: clamp(1.8rem, 4.8vw, 2rem);
+		letter-spacing: 1px;
+		line-height: 1.4;
+		text-align: left;
+
+		background: linear-gradient(
+			to bottom right,
+			rgba($cf-darkRed, 1),
+			rgba($cf-darkBlue, 0.85) 70%,
+			rgba($cf-blue, 1) 90%
+		);
+		-webkit-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
 	@include respond(tab-land) {
 		&--portfolioSection {
 			text-align: left;
@@ -325,8 +342,23 @@
 		color: $cf-white;
 	}
 	// services page
-	&--getstarted {
+	&--getstarted,
+	&--servicesDetails {
 		color: $cf-dark;
+	}
+	&--servicesList {
+		color: $cf-white;
+		font-family: "Contrail One", sans-serif;
+		font-size: clamp(1.4rem, 4.5vw, 1.6rem);
+		line-height: 1.2;
+		text-align: left;
+		text-shadow: 1px 1px 1px rgba($cf-dark, 1);
+	}
+	&--graphicsServicesCard {
+		font-family: "Contrail One", sans-serif;
+		// font-weight: 700;
+		line-height: 1.2;
+		text-align: left;
 	}
 	&--cta {
 		color: $cf-white;
