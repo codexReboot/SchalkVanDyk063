@@ -33,7 +33,7 @@
 		width: min(95%, 32rem);
 	}
 	&__heroIntro--designPage {
-		margin-top: 1rem;
+		margin-top: 4rem;
 	}
 	&__ctaContainer {
 		@include displayFlexColumn;
@@ -51,11 +51,22 @@
 		&__ctaIntroParagraph {
 			width: min(95%, 35rem);
 		}
+		&__heroIntro--designPage {
+			margin-top: 5rem;
+		}
 	}
 	@media (min-width: 450px) {
 		&__headingIntro,
 		&__ctaIntroParagraph {
 			width: min(95%, 40rem);
+		}
+		&__heroIntro--designPage {
+			margin-top: 6rem;
+		}
+	}
+	@include respond(tab-port) {
+		&__heroIntro--designPage {
+			margin-top: 7rem;
 		}
 	}
 	@include respond(tab-land) {
@@ -72,6 +83,9 @@
 		}
 		&__figure {
 			flex: 0 0 28rem;
+		}
+		&__heroIntro--designPage {
+			margin-top: 1rem;
 		}
 		&__headingAndCtaContainer {
 			flex: 0 0 60%;
@@ -144,6 +158,9 @@
 		align-items: flex-start;
 		&__subtitle {
 			text-align: left;
+		}
+		&__subtitleLinebreak {
+			display: none;
 		}
 	}
 }
