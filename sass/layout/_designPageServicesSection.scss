@@ -1,11 +1,19 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
+// designPage
+.designPageServicesSection {
+	padding: 0 1rem;
+	margin: 0 auto;
+	position: relative;
+}
+
 .getstartedSection,
 .servicesIntroSection,
 .servicesDetailsSection,
 .servicesPricingSection {
 	padding-bottom: 5rem;
+	width: min(100%, 45rem);
 	@include displayFlexColumn;
 	gap: 2rem;
 }
