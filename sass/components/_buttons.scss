@@ -51,14 +51,7 @@
 		// border: none;
 		// box-shadow: none;
 		border-left: 2px solid rgba($cp-darkGrey, 0.85);
-		background:
-			linear-gradient(
-				to bottom right,
-				rgba($cp-white, 0.95),
-				rgba($cp-white, 0.65) 35%,
-				rgba($cp-white, 0.35) 85%
-			),
-			url("/img/background/HeroAndFooterBgLandscape.webp");
+		background: linear-gradient(to bottom right, rgba($cp-white, 0.95), rgba($cp-white, 0.65) 35%, rgba($cp-white, 0.35) 85%), url("/img/background/HeroAndFooterBgLandscape.webp");
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -110,6 +103,11 @@
 	&--underConstructionServices {
 		background-color: rgba($cp-white, 0.55);
 		padding: 0.75rem 2rem;
+	}
+	// graphicDesignPage
+	&--servicesPricingCardGetStarted {
+		background: linear-gradient(to bottom right, rgba($cp-red, 0.95) 25%, rgba($cp-darkRed, 0.85) 85%);
+		margin: 2rem auto 4rem;
 	}
 	@include respond(tab-land) {
 		&--about {

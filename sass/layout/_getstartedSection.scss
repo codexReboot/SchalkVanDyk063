@@ -3,7 +3,8 @@
 
 .getstartedSection,
 .servicesIntroSection,
-.servicesDetailsSection {
+.servicesDetailsSection,
+.servicesPricingSection {
 	padding-bottom: 5rem;
 	@include displayFlexColumn;
 	gap: 2rem;
@@ -26,6 +27,13 @@
 		line-height: 1.2;
 	}
 	&__graphicsServicesCardsContainer {
+		@include displayFlexColumn;
+		gap: 5rem;
+	}
+}
+
+.servicesPricingSection {
+	&__servicesPricingCardsContainer {
 		@include displayFlexColumn;
 		gap: 5rem;
 	}

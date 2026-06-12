@@ -133,15 +133,16 @@
 		line-height: 1.4;
 		text-align: left;
 
-		background: linear-gradient(
-			to bottom right,
-			rgba($cf-darkRed, 1),
-			rgba($cf-darkBlue, 0.85) 70%,
-			rgba($cf-blue, 1) 90%
-		);
+		background: linear-gradient(to bottom right, rgba($cf-darkRed, 1), rgba($cf-darkBlue, 0.85) 70%, rgba($cf-blue, 1) 90%);
 		-webkit-background-clip: text;
 		background-clip: text;
 		-webkit-text-fill-color: transparent;
+	}
+	&--pricingCardHeading {
+		color: rgba($cf-white, 1);
+		font-size: clamp(2rem, 5.2vw, 2.2rem);
+		text-shadow: 2px 2px 1px rgba($cf-darkBlue, 1);
+		letter-spacing: 2px;
 	}
 	@include respond(tab-land) {
 		&--portfolioSection {
@@ -179,13 +180,7 @@
 	&--socialMediaCard {
 		text-align: left;
 		// margin-top: 1rem;
-		background: linear-gradient(
-			to right,
-			$cp-blue,
-			$cp-darkBlue 20%,
-			$cp-darkRed 75%,
-			$cp-red 90%
-		); /* Define your gradient */
+		background: linear-gradient(to right, $cp-blue, $cp-darkBlue 20%, $cp-darkRed 75%, $cp-red 90%); /* Define your gradient */
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		/* Optional for Firefox */
@@ -357,8 +352,23 @@
 	}
 	&--graphicsServicesCard {
 		font-family: "Contrail One", sans-serif;
-		// font-weight: 700;
 		line-height: 1.2;
+		text-align: left;
+	}
+	&--pricingCardSubtitle {
+		color: rgba($cf-white, 0.95);
+		font-size: clamp(1.2rem, 4.3vw, 1.4rem);
+		text-align: center;
+	}
+	&--pricingCardByline {
+		font-family: "Alegreya", serif;
+		font-size: clamp(2rem, 6vw, 2.2rem);
+		font-weight: 900;
+		text-shadow: 2px 2px 1px rgba($cf-darkBlue, 1);
+		text-align: center;
+	}
+	&--servicesPricingCard {
+		color: rgba($cf-white, 0.95);
 		text-align: left;
 	}
 	&--cta {
