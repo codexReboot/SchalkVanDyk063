@@ -1999,12 +1999,12 @@ h6 {
   background-size: cover;
   background-position: left center;
   background-repeat: no-repeat;
-  padding: 1rem 1rem 7rem;
+  padding: 1rem 1rem 10rem;
   margin-bottom: 4rem;
 }
 @media (min-width: 56.25em) {
   .header {
-    padding: 1rem 5rem 7rem;
+    padding: 1rem 5rem 2rem;
   }
 }
 
@@ -2022,6 +2022,9 @@ h6 {
   display: block;
   width: clamp(16rem, 70vw, 40rem);
   height: auto;
+}
+.heroSection__logoImage--designPage {
+  width: clamp(12rem, 42vw, 30rem);
 }
 .heroSection__headingAndCtaContainer {
   display: flex;
@@ -2135,6 +2138,11 @@ h6 {
   }
   .heroSection__headingIntro, .heroSection__ctaIntroParagraph {
     width: 100%;
+  }
+}
+@media (max-height: 500px) {
+  .heroSection {
+    margin: 0rem auto 0;
   }
 }
 
