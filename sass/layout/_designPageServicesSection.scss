@@ -3,19 +3,31 @@
 
 // designPage
 .designPageServicesSection {
-	padding: 0 1rem;
-	margin: 0 auto;
+	padding: 0 1rem 3rem;
+	width: 100%;
 	position: relative;
-}
-
-.getstartedSection,
-.servicesIntroSection,
-.servicesDetailsSection,
-.servicesPricingSection {
-	padding-bottom: 5rem;
-	width: min(100%, 45rem);
 	@include displayFlexColumn;
 	gap: 2rem;
+	&__sectionContentContainer {
+		margin-top: 0.5rem;
+		width: min(100%, 45rem);
+		@include displayFlexColumn;
+		gap: 2rem;
+	}
+	@include respond(tab-port) {
+		padding: 0 2rem 3rem;
+		&__sectionContentContainer {
+			width: min(100%, 75rem);
+		}
+	}
+	@include respond(tab-land) {
+		padding: 0 5rem 3rem;
+		align-items: flex-start;
+		&__sectionContentContainer {
+			width: min(100%, 95rem);
+			align-items: flex-start;
+		}
+	}
 }
 
 .servicesDetailsSection {

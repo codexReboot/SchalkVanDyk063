@@ -1320,16 +1320,18 @@ h6 {
 }
 
 .designPageServicesSection {
-  padding: 0 1rem;
-  margin: 0 auto;
+  padding: 0 1rem 3rem;
+  width: 100%;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  gap: 2rem;
 }
-
-.getstartedSection,
-.servicesIntroSection,
-.servicesDetailsSection,
-.servicesPricingSection {
-  padding-bottom: 5rem;
+.designPageServicesSection__sectionContentContainer {
+  margin-top: 0.5rem;
   width: min(100%, 45rem);
   display: flex;
   flex-direction: column;
@@ -1337,6 +1339,24 @@ h6 {
   align-items: center;
   gap: 1rem;
   gap: 2rem;
+}
+@media (min-width: 37.5em) {
+  .designPageServicesSection {
+    padding: 0 2rem 3rem;
+  }
+  .designPageServicesSection__sectionContentContainer {
+    width: min(100%, 75rem);
+  }
+}
+@media (min-width: 56.25em) {
+  .designPageServicesSection {
+    padding: 0 5rem 3rem;
+    align-items: flex-start;
+  }
+  .designPageServicesSection__sectionContentContainer {
+    width: min(100%, 95rem);
+    align-items: flex-start;
+  }
 }
 
 .servicesDetailsSection__servicesCardsContainer {
