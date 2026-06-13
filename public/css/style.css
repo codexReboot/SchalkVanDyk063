@@ -1537,6 +1537,10 @@ h6 {
   }
 }
 
+.getstartedSection__cta {
+  margin-top: 2rem;
+}
+
 .footer {
   display: flex;
   flex-direction: column;
