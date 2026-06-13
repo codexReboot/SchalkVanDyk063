@@ -126,17 +126,13 @@
 		font-size: clamp(1.8rem, 4.7vw, 2rem);
 		font-weight: 700;
 	}
-	&--servicesDetails {
-		color: transparent;
-		font-size: clamp(1.8rem, 4.8vw, 2rem);
-		letter-spacing: 1px;
-		line-height: 1.4;
-		text-align: left;
-
-		background: linear-gradient(to bottom right, rgba($cf-darkRed, 1), rgba($cf-darkBlue, 0.85) 70%, rgba($cf-blue, 1) 90%);
-		-webkit-background-clip: text;
-		background-clip: text;
-		-webkit-text-fill-color: transparent;
+	&--servicesCardsSectionHeading {
+		color: rgba($cf-darkBlue, 0.85);
+		font-size: clamp(2.2rem, 5.5vw, 2.4rem);
+		text-shadow:
+			1px 1px 1px rgba($cf-white, 0.95),
+			2px 2px 1px rgba($cf-grey, 1);
+		letter-spacing: 2px;
 	}
 	&--pricingCardHeading {
 		color: rgba($cf-white, 1);
@@ -187,6 +183,18 @@
 		background-clip: text;
 		color: transparent;
 		text-shadow: none;
+	}
+	&--servicesDetails {
+		color: transparent;
+		font-size: clamp(1.6rem, 4.8vw, 1.8rem);
+		letter-spacing: 1px;
+		line-height: 1.4;
+		text-align: left;
+
+		background: linear-gradient(to bottom right, rgba($cf-darkRed, 1), rgba($cf-darkBlue, 0.85) 70%, rgba($cf-blue, 1) 90%);
+		-webkit-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
 	}
 	&--footerHeadingH4 {
 		color: rgba($cf-red, 0.95);

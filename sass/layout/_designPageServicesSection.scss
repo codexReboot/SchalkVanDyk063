@@ -7,12 +7,12 @@
 	width: 100%;
 	position: relative;
 	@include displayFlexColumn;
-	gap: 2rem;
+	gap: 1.25rem;
 	&__sectionContentContainer {
 		margin-top: 0.5rem;
 		width: min(100%, 45rem);
 		@include displayFlexColumn;
-		gap: 2rem;
+		gap: 1.25rem;
 	}
 	@include respond(tab-port) {
 		padding: 0 2rem 3rem;
@@ -32,6 +32,8 @@
 
 .servicesDetailsSection {
 	&__servicesCardsContainer {
+		margin-top: 1.25rem;
+		width: 100%;
 		@include displayFlexColumn;
 		gap: 5rem;
 	}
@@ -47,8 +49,18 @@
 		line-height: 1.2;
 	}
 	&__graphicsServicesCardsContainer {
+		margin-top: 1rem;
+		width: 100%;
 		@include displayFlexColumn;
 		gap: 5rem;
+	}
+	@include respond(tab-land) {
+		&__servicesCardsContainer {
+			align-items: flex-start;
+		}
+		&__graphicsServicesCardsContainer {
+			align-items: flex-start;
+		}
 	}
 }
 
