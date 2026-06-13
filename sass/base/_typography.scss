@@ -140,6 +140,13 @@
 		text-shadow: 2px 2px 1px rgba($cf-darkBlue, 1);
 		letter-spacing: 2px;
 	}
+	@include respond(tab-port) {
+		&--pricingCardHeading {
+			font-size: clamp(1.7rem, 5.5vw, 1.9rem);
+			letter-spacing: 1px;
+			text-align: left;
+		}
+	}
 	@include respond(tab-land) {
 		&--portfolioSection {
 			text-align: left;
@@ -363,6 +370,9 @@
 		line-height: 1.2;
 		text-align: left;
 	}
+	&--servicesPricing {
+		color: rgba($cf-dark, 1);
+	}
 	&--pricingCardSubtitle {
 		color: rgba($cf-white, 0.95);
 		font-size: clamp(1.2rem, 4.3vw, 1.4rem);
@@ -388,6 +398,16 @@
 		&--projectFeaturesText,
 		&--projectTech {
 			font-size: clamp(1.4rem, 3.5vw, 1.6rem);
+		}
+	}
+	@include respond(tab-port) {
+		&--pricingCardByline {
+			font-size: clamp(1.6rem, 4.8vw, 1.8rem);
+			letter-spacing: 1px;
+			text-align: left;
+		}
+		&--pricingCardSubtitle {
+			text-align: left;
 		}
 	}
 	@include respond(tab-land) {

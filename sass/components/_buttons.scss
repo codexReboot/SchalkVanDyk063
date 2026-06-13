@@ -107,7 +107,7 @@
 	// graphicDesignPage
 	&--servicesPricingCardGetStarted {
 		background: linear-gradient(to bottom right, rgba($cp-red, 0.95) 25%, rgba($cp-darkRed, 0.85) 85%);
-		margin: 2rem auto 4rem;
+		margin: 2rem auto 2.75rem;
 	}
 	@include respond(tab-land) {
 		&--about {
