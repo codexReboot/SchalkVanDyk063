@@ -3,7 +3,7 @@
 
 // designPage
 .designPageServicesSection {
-	padding: 0 1rem 3rem;
+	padding: 0 1rem 15rem;
 	width: 100%;
 	position: relative;
 	@include displayFlexColumn;
@@ -15,13 +15,13 @@
 		gap: 1.25rem;
 	}
 	@include respond(tab-port) {
-		padding: 0 2rem 3rem;
+		padding: 0 2rem 15rem;
 		&__sectionContentContainer {
 			width: min(100%, 75rem);
 		}
 	}
 	@include respond(tab-land) {
-		padding: 0 5rem 3rem;
+		padding: 0 5rem 15rem;
 		align-items: flex-start;
 		&__sectionContentContainer {
 			width: min(100%, 95rem);

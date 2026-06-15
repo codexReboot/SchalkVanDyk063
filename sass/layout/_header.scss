@@ -36,7 +36,7 @@
 		width: min(95%, 32rem);
 	}
 	&__heroIntro--designPage {
-		margin-top: 4rem;
+		margin-top: 1rem;
 	}
 	&__ctaContainer {
 		@include displayFlexColumn;
@@ -55,7 +55,7 @@
 			width: min(95%, 35rem);
 		}
 		&__heroIntro--designPage {
-			margin-top: 5rem;
+			margin-top: 1rem;
 		}
 	}
 	@media (min-width: 450px) {
@@ -64,12 +64,12 @@
 			width: min(95%, 40rem);
 		}
 		&__heroIntro--designPage {
-			margin-top: 6rem;
+			margin-top: 1.5rem;
 		}
 	}
 	@include respond(tab-port) {
 		&__heroIntro--designPage {
-			margin-top: 7rem;
+			margin-top: 2rem;
 		}
 	}
 	@include respond(tab-land) {
@@ -77,7 +77,7 @@
 		padding: 0 0 7rem;
 		margin: 10rem 0 0;
 		@include displayFlexRow;
-		justify-content: space-between;
+		justify-content: flex-start;
 		align-items: flex-start;
 		gap: 5rem;
 		&__logoImage {
@@ -88,14 +88,26 @@
 			flex: 0 0 28rem;
 		}
 		&__heroIntro--designPage {
-			margin-top: 1rem;
+			margin-top: 1.75rem;
+		}
+		&__pagelink {
+			color: rgba($cf-blue, 1);
+			text-decoration: underline solid 1px;
+			text-underline-offset: 5px;
+			transition:
+				color 0.3s,
+				transform 0.3s;
+			&:hover {
+				color: rgba($cf-red, 1);
+				transform: scale(1.05);
+			}
 		}
 		&__headingAndCtaContainer {
 			flex: 0 0 60%;
 			margin-bottom: 5rem;
 			align-items: flex-start;
 			&--designPage {
-				flex: 0 0 53%;
+				flex: 0 0 55%;
 			}
 		}
 		&__ctaContainer {
@@ -104,7 +116,7 @@
 		&__ctaButtonContainer {
 			@include displayFlexRow;
 			justify-content: flex-start;
-			gap: 5rem;
+			gap: 2rem;
 		}
 	}
 	@include respond(desk) {
