@@ -252,7 +252,7 @@ h6 {
 }
 .headingH3--pricingCardHeading {
   color: #f0f0f0;
-  font-size: clamp(2rem, 5.2vw, 2.2rem);
+  font-size: clamp(1.6rem, 5vw, 1.8rem);
   text-shadow: 2px 2px 1px #003049;
   letter-spacing: 2px;
 }
@@ -462,7 +462,7 @@ h6 {
 }
 .paragraph--pricingCardByline {
   font-family: "Alegreya", serif;
-  font-size: clamp(2rem, 6vw, 2.2rem);
+  font-size: clamp(1.6rem, 5vw, 1.8rem);
   font-weight: 900;
   text-shadow: 2px 2px 1px #003049;
   text-align: center;
@@ -1144,7 +1144,7 @@ h6 {
 }
 @media (min-width: 37.5em) {
   .servicesPricingCard {
-    width: min(100%, 82rem);
+    width: min(100%, 85rem);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -1157,11 +1157,11 @@ h6 {
     filter: drop-shadow(12px 0px 5px rgba(51, 51, 51, 0.45));
   }
   .servicesPricingCard__headingContainer {
-    flex: 0 0 25rem;
+    flex: 0 0 30rem;
     border-top-left-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
     background: linear-gradient(to bottom right, #c1121f, rgba(153, 24, 24, 0.95) 85%);
-    padding: 2rem 5rem 2rem 2rem;
+    padding: 2rem 4rem 2rem 3rem;
     margin-bottom: 0;
     margin-right: 0rem;
     height: 100%;
@@ -1179,15 +1179,10 @@ h6 {
     width: 100%;
   }
   .servicesPricingCard div {
-    flex: 0 1 40rem;
+    flex: 0 1 35rem;
   }
   .servicesPricingCard ul {
     margin-top: 2rem;
-  }
-}
-@media (min-width: 37.5em) {
-  .servicesPricingCard__headingContainer {
-    padding: 2rem 5rem 2rem 4rem;
   }
 }
 

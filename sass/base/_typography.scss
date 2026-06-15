@@ -136,7 +136,7 @@
 	}
 	&--pricingCardHeading {
 		color: rgba($cf-white, 1);
-		font-size: clamp(2rem, 5.2vw, 2.2rem);
+		font-size: clamp(1.6rem, 5vw, 1.8rem);
 		text-shadow: 2px 2px 1px rgba($cf-darkBlue, 1);
 		letter-spacing: 2px;
 	}
@@ -380,7 +380,7 @@
 	}
 	&--pricingCardByline {
 		font-family: "Alegreya", serif;
-		font-size: clamp(2rem, 6vw, 2.2rem);
+		font-size: clamp(1.6rem, 5vw, 1.8rem);
 		font-weight: 900;
 		text-shadow: 2px 2px 1px rgba($cf-darkBlue, 1);
 		text-align: center;
