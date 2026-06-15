@@ -24,7 +24,7 @@ app.get("/", (req, res) => {
 // Graphic Design page
 app.get("/design", (req, res) => {
 	// to display title on page
-	res.render("design", { currentPage: "design", heading: "Graphic Design Solutions" });
+	res.render("design", { currentPage: "design", heading: "Website Design", slug: "design" });
 });
 
 // Web Development page
