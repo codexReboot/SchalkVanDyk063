@@ -147,11 +147,12 @@ h6 {
 }
 .headingH1__subtitle {
   color: #c1121f;
-  font-size: clamp(1.6rem, 6.5vw, 3.6rem);
+  font-size: clamp(1.6rem, 6.5vw, 3.2rem);
   font-family: "Caveat", serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
+  line-height: 1;
   text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
 .headingH1__subtitle--designPage {
@@ -2203,6 +2204,9 @@ h6 {
 }
 .heroSection__headingIntro, .heroSection__ctaIntroParagraph {
   width: min(95%, 32rem);
+}
+.heroSection__headingIntro {
+  margin-top: 1.75rem;
 }
 .heroSection__heroIntro--designPage {
   margin-top: 1rem;
