@@ -6,13 +6,277 @@
 		<title><%= heading %> | codexReboot | Schalk van Dyk | Web Developer & Designer</title>
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
-	<body class="underConstructionServicesPage__body">
-		<div class="underConstructionServicesPage__container">
-			<h1 class="headingH1 headingH1--underConstructionServices"><%= heading %></h1>
-			<%- include('partials/underConstructionServices') %>
-			<a class="underConstructionServices__btn btn btn--primary btn--underConstructionServices" href="/#contact"
-				>Return to Contact Section on Home Page</a
-			>
-		</div>
+	<body class="body">
+		<main class="contactPage">
+			<!-- ===================================== -->
+			<!-- HERO -->
+			<!-- ===================================== -->
+
+			<!-- HERO SECTION -->
+			<header class="main__header header">
+				<%- include('partials/navbarDesignPage') %>
+				<section class="header__heroSection heroSection">
+					<figure class="heroSection__figure">
+						<img
+							class="heroSection__logoImage heroSection__logoImage--designPage"
+							src="./img/logo/codexRebootHeroLogo.webp"
+							alt="Business logo of Schalk van Dyk t/a codexReboot - Web Designer and Developer of websites and web apps that drive traffic and boost sales." />
+					</figure>
+
+					<div class="heroSection__headingAndCtaContainer heroSection__headingAndCtaContainer--designPage">
+						<h1 class="heroSection__headingH1 headingH1 headingH1--heroHeading">
+							<div class="headingH1__primaryHeading">
+								<span class="headingH1__title">
+									<span class="headingH1__letterS">S</span>
+									<span class="headingH1__lettersTheRest">chalk van Dyk</span>
+								</span>
+								<span class="headingH1__subtitle headingH1__subtitle--designPage">Website Design Services</span>
+							</div>
+						</h1>
+						<p class="heroSection__heroIntro heroSection__heroIntro--designPage paragraph paragraph--heroIntro">
+							I provide website <a class="heroSection__pagelink" href="#services">design services</a> and support for custom websites and landing pages across South Africa to improve user interface and
+							experience.
+						</p>
+						<div class="heroSection__ctaContainer heroSection__ctaContainer--designPage">
+							<p class="heroSection__ctaIntroParagraph paragraph paragraph--ctaIntroParagraph">Affordable website visuals and design support that improve clarity, consistency, and user experience.</p>
+							<div class="heroSection__ctaButtonContainer">
+								<a class="heroSection__ctaBtn btn btn--primary" href="#services">Request a Quote</a>
+								<a class="heroSection__ctaBtn btn btn--secondary" href="#pricing">View Pricing</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- sectionDivider -->
+				<svg class="sectionDivider sectionDivider--hero" viewBox="0 0 1440 1000" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+					<g transform="scale(1, -1) translate(0, -1000)">
+						<path fill="#1b90d8" d="M0,600 C420,900 1020,200 1440,600 L1440,0 L0,0 Z" />
+						<path fill="#f2f2f2" d="M0,500 C400,1000 1040,100 1440,500 L1440,0 L0,0 Z" />
+						<path fill="url(#gradientBlue)" d="M0,400 C360,800 1080,0 1440,400 L1440,0 L0,0 Z" />
+					</g>
+					<defs>
+						<linearGradient id="gradientBlue" x1="0%" y1="0%" x2="0%" y2="100%">
+							<stop offset="0%" stop-color="#1b90d8" stop-opacity="0" />
+							<stop offset="30%" stop-color="#1b90d8" stop-opacity="0.25" />
+							<stop offset="100%" stop-color="#1b90d8" stop-opacity="1" />
+						</linearGradient>
+						<linearGradient id="gradientWhite" x1="0%" y1="0%" x2="0%" y2="100%">
+							<stop offset="0%" stop-color="#f2f2f2" stop-opacity="0" />
+							<stop offset="100%" stop-color="#f2f2f2" stop-opacity="1" />
+						</linearGradient>
+						<linearGradient id="gradientDarkBlue" x1="0%" y1="0%" x2="0%" y2="100%">
+							<stop offset="0%" stop-color="#003049" stop-opacity="0" />
+							<stop offset="100%" stop-color="#003049" stop-opacity="1" />
+						</linearGradient>
+					</defs>
+				</svg>
+			</header>
+
+			<!-- ===================================== -->
+			<!-- CONTACT CONTENT -->
+			<!-- ===================================== -->
+
+			<section class="contactPage__content">
+				<!-- CONTACT INFORMATION -->
+
+				<aside class="contactPage__contactInfo">
+					<div class="contactPage__intro">
+						<h2 class="headingH2">Have A Project In Mind?</h2>
+
+						<p class="paragraph">
+							Got a question, idea, or project you'd like to discuss? I'd love to hear from you. Whether you're looking for a new website, a redesign, ongoing support, or simply need some advice, feel free
+							to get in touch.
+						</p>
+
+						<p class="paragraph">Meetings are by appointment and can be arranged at a time that works best for both of us.</p>
+					</div>
+
+					<div class="contactPage__detailsContainer">
+						<h3 class="headingH3">Contact Information</h3>
+
+						<!-- PHONE -->
+
+						<a href="tel:+27825503872" class="contactPage__detailItem">
+							<div class="contactPage__iconContainer">
+								<!-- phone icon -->
+							</div>
+
+							<div>
+								<p class="paragraph paragraph--contactLabel">Phone</p>
+
+								<p class="paragraph paragraph--contactDetails">082 550 3872</p>
+							</div>
+						</a>
+
+						<!-- EMAIL -->
+
+						<a href="mailto:schalk@schalkvandyk.com" class="contactPage__detailItem">
+							<div class="contactPage__iconContainer">
+								<!-- email icon -->
+							</div>
+
+							<div>
+								<p class="paragraph paragraph--contactLabel">Email</p>
+
+								<p class="paragraph paragraph--contactDetails">schalk@schalkvandyk.com</p>
+							</div>
+						</a>
+
+						<!-- ADDRESS -->
+
+						<div class="contactPage__detailItem">
+							<div class="contactPage__iconContainer">
+								<!-- pin icon -->
+							</div>
+
+							<div>
+								<p class="paragraph paragraph--contactLabel">Address</p>
+
+								<p class="paragraph paragraph--contactDetails">
+									25 Steve Tshwete Street
+									<br />
+									Modimolle, 0510
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- AVAILABILITY CARD -->
+
+					<div class="contactPage__availabilityCard">
+						<h3 class="headingH3">Working Hours</h3>
+
+						<ul class="contactPage__hoursList">
+							<li>Monday – Friday: 08:00 – 17:00</li>
+							<li>Saturday: By Appointment</li>
+							<li>Sunday: Closed</li>
+						</ul>
+
+						<p class="paragraph">Response times are typically within one business day.</p>
+					</div>
+				</aside>
+
+				<!-- CONTACT FORM -->
+
+				<div class="contactPage__formContainer">
+					<div class="contactPage__formCard">
+						<h2 class="headingH2">Send A Message</h2>
+
+						<p class="paragraph">Fill out the form below and I'll get back to you as soon as possible.</p>
+
+						<form class="contactPage__form" action="/contact" method="POST">
+							<div class="contactPage__formRow">
+								<div class="contactPage__inputGroup">
+									<label for="firstName"> First Name * </label>
+
+									<input type="text" id="firstName" name="firstName" required />
+								</div>
+
+								<div class="contactPage__inputGroup">
+									<label for="lastName"> Last Name * </label>
+
+									<input type="text" id="lastName" name="lastName" required />
+								</div>
+							</div>
+
+							<div class="contactPage__formRow">
+								<div class="contactPage__inputGroup">
+									<label for="email"> Email Address * </label>
+
+									<input type="email" id="email" name="email" required />
+								</div>
+
+								<div class="contactPage__inputGroup">
+									<label for="phone"> Phone Number </label>
+
+									<input type="tel" id="phone" name="phone" />
+								</div>
+							</div>
+
+							<div class="contactPage__inputGroup">
+								<label for="subject"> Subject </label>
+
+								<input type="text" id="subject" name="subject" />
+							</div>
+
+							<div class="contactPage__inputGroup">
+								<label for="service"> Service Required </label>
+
+								<select id="service" name="service">
+									<option value="">Please Select</option>
+
+									<option value="web-design">Web Design</option>
+
+									<option value="web-development">Web Development</option>
+
+									<option value="seo">SEO</option>
+
+									<option value="maintenance">Website Maintenance</option>
+
+									<option value="other">Other</option>
+								</select>
+							</div>
+
+							<div class="contactPage__inputGroup">
+								<label for="message"> Message * </label>
+
+								<textarea id="message" name="message" rows="8" required></textarea>
+							</div>
+
+							<div class="contactPage__submitContainer">
+								<button type="submit" class="btn btn--secondary">Send Message</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+
+			<!-- ===================================== -->
+			<!-- MAP -->
+			<!-- ===================================== -->
+
+			<section class="contactPage__mapSection">
+				<div class="contactPage__mapHeading">
+					<h2 class="headingH2">Find Me</h2>
+
+					<p class="paragraph">Appointments can be arranged at my office in Modimolle.</p>
+				</div>
+
+				<div class="contactPage__mapContainer">
+					<iframe src="YOUR_GOOGLE_MAP_EMBED_LINK" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</section>
+
+			<!-- ===================================== -->
+			<!-- FAQ -->
+			<!-- ===================================== -->
+
+			<section class="contactPage__faqSection">
+				<div class="contactPage__faqHeading">
+					<h2 class="headingH2">Frequently Asked Questions</h2>
+				</div>
+
+				<div class="contactPage__faqContainer">
+					<article class="contactPage__faqItem">
+						<h3 class="headingH3">How quickly do you respond?</h3>
+
+						<p class="paragraph">I usually respond within one business day.</p>
+					</article>
+
+					<article class="contactPage__faqItem">
+						<h3 class="headingH3">Do you work with clients remotely?</h3>
+
+						<p class="paragraph">Absolutely. Most projects can be completed entirely online through email, phone, and video meetings.</p>
+					</article>
+
+					<article class="contactPage__faqItem">
+						<h3 class="headingH3">Can I request a quote?</h3>
+
+						<p class="paragraph">Yes. Simply use the contact form and provide as much detail as possible about your project.</p>
+					</article>
+				</div>
+			</section>
+		</main>
+		<%- include('partials/footer-homepage') %>
+		<script type="module" src="js/app.js"></script>
 	</body>
 </html>

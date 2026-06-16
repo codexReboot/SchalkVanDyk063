@@ -44,7 +44,7 @@ app.get("/marketing", (req, res) => {
 
 // Contact page
 app.get("/contact", (req, res) => {
-	res.render("contact", { heading: "Contact Us" });
+	res.render("contact", { currentPage: "contact", heading: "Contact Us" });
 });
 
 // Popia page
