@@ -1,0 +1,90 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.form {
+	background: linear-gradient(to bottom right, rgba($cp-blue, 1), rgba($cp-darkBlue, 1));
+	border: 1px solid rgba($cp-darkBlue, 0.25);
+	border-radius: 0.5rem;
+	box-shadow: 0px 0px 25px 5px rgba($cp-dark, 0.25);
+	padding: 1rem 1rem 3rem;
+	width: 100%;
+	@include displayFlexColumn;
+	gap: 2rem;
+
+	&__formRow {
+		border: 1px solid rgba($cp-white, 0.9);
+		border-radius: 0.5rem;
+		padding: 2rem 1rem;
+		width: 100%;
+		@include displayFlexColumn;
+		align-items: stretch;
+		gap: 3rem;
+	}
+	&__headingH4 {
+		padding: 0.25rem 1rem;
+	}
+
+	&__inputGroup {
+		@include displayFlexColumn;
+		gap: 3rem;
+
+		label {
+			color: $cp-dark;
+			font-weight: 600;
+			position: absolute;
+			top: 1rem;
+			left: 2rem;
+			transition: all 0.3s;
+		}
+
+		input,
+		select,
+		textarea {
+			width: 100%;
+
+			padding: 1rem 1.25rem;
+
+			border: 1px solid rgba($cp-dark, 0.15);
+			border-radius: 0.5rem;
+
+			background-color: rgba($cp-white, 0.9);
+
+			font-family: inherit;
+			font-size: inherit;
+
+			transition: all 0.3s;
+		}
+		.focusBackgroundColor {
+			background-color: rgba($cp-white, 0.65);
+		}
+		.focusLabel {
+			color: rgba($cp-white, 0.85);
+			font-size: clamp(1rem, 4vw, 1.2rem);
+			background-color: rgba($cp-darkBlue, 0.95);
+			border: 1px solid rgba($cp-darkBlue, 1);
+			border-radius: 0.5rem;
+			padding: 0.25rem 1.75rem;
+			top: -1.75rem;
+		}
+
+		input:focus,
+		select:focus,
+		textarea:focus {
+			outline: none;
+
+			border-color: $cp-darkBlue;
+
+			box-shadow: 0 0 0 3px rgba($cp-darkBlue, 0.15);
+		}
+		position: relative;
+	}
+
+	textarea {
+		min-height: 14rem;
+		resize: vertical;
+	}
+
+	&__submitContainer {
+		margin-top: 0.5rem;
+	}
+}

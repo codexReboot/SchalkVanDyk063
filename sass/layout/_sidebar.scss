@@ -29,6 +29,9 @@
 		@include displayFlexColumn;
 		gap: 1.25rem;
 	}
+	&__contactDetailsContainer--contactPage {
+		margin-top: 2rem;
+	}
 	&__contactCtaContainer {
 		margin-top: 2rem;
 	}

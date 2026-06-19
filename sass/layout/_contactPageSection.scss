@@ -1,0 +1,57 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.contactPageSection {
+	padding: 0 1rem 5.5rem;
+	@include displayFlexColumn;
+	gap: 2rem;
+	&__contactPageSectionContentContainer {
+		width: min(100%, 45rem);
+		@include displayFlexColumn;
+		gap: 1rem;
+	}
+}
+
+.contactDetailsSection {
+	&__contactDetailsContentContainer {
+		@include displayFlexColumn;
+	}
+}
+
+.availabilityDetailsSection {
+	&__hoursList {
+		border-radius: 0.5rem;
+		width: min(100%, 35rem);
+		@include displayFlexColumn;
+		align-items: stretch;
+		gap: 2rem;
+	}
+	li {
+		@include displayFlexColumn;
+		gap: 0.25rem;
+		span {
+			background: linear-gradient(to bottom right, rgba($cp-blue, 1), rgba($cp-darkBlue, 1));
+			border: 1px solid rgba($cp-darkBlue, 0.25);
+			border-radius: 0.5rem;
+			box-shadow: 0px 0px 25px 5px rgba($cp-dark, 0.25);
+			padding: 0.5rem 2rem;
+			width: 65%;
+		}
+	}
+}
+
+.contactFormSection {
+	@include displayFlexColumn;
+	gap: 2rem;
+	&__formContainer {
+		width: 100%;
+	}
+}
+
+.faqSection {
+	padding: 0rem 1rem 15rem;
+	&__faqContainer {
+		@include displayFlexColumn;
+		gap: 2rem;
+	}
+}

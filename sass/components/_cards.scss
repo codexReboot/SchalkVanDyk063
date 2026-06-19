@@ -400,3 +400,24 @@
 		}
 	}
 }
+
+.availabilityCard {
+	background: linear-gradient(to bottom right, rgba($cp-white, 0.85) 10%, rgba($cp-grey, 0.95) 95%);
+	border: 1px solid rgba($cp-grey, 0.1);
+	border-radius: 0.75rem;
+	box-shadow: 0px 0px 25px 5px rgba($cp-dark, 0.45);
+	padding: 0rem 0rem 2rem;
+	margin-top: 1rem;
+	width: min(100%, 35rem);
+	@include displayFlexColumn;
+	gap: 2rem;
+	justify-content: flex-start;
+	align-items: stretch;
+	&__headingH4 {
+		background: linear-gradient(to bottom right, rgba($cp-blue, 0.85) 10%, rgba($cp-darkBlue, 0.95) 95%);
+		border-top-left-radius: 0.5rem;
+		border-top-right-radius: 0.5rem;
+		padding: 2rem;
+		margin-bottom: 1rem;
+	}
+}

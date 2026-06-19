@@ -1,5 +1,6 @@
 import { appState } from "./modules/appVariables.js";
 import { hideNavbarBgAndNavbarLogo, openMenuBg, closeMenuBg, checkScreenAndAttach, showNavbarBgAndNavbarLogo } from "./modules/navbarFunctions.js";
+import { listForInputClicks } from "./modules/formLogic.js";
 ////////////////////////////////////////////////////////////////////////
 // navbar logic to show and hide the navbar background and logo
 ////////////////////////////////////////////////////////////////////////
@@ -170,3 +171,7 @@ document.addEventListener("scroll", () => {
 		hideReturnToTopBtn();
 	}
 });
+
+/////////////////////////////////
+// print
+listForInputClicks();
