@@ -1585,6 +1585,7 @@ h6 {
   align-items: center;
   gap: 1rem;
   gap: 2rem;
+  position: relative;
 }
 .contactPageSection__contactPageSectionContentContainer {
   width: min(100%, 45rem);
@@ -2434,6 +2435,16 @@ h6 {
 .heroSection__heroIntro--designPage {
   margin-top: 1rem;
 }
+.heroSection__pagelink {
+  color: #1b90d8;
+  text-decoration: underline solid 1px;
+  text-underline-offset: 5px;
+  transition: color 0.3s, transform 0.3s;
+}
+.heroSection__pagelink:hover {
+  color: #c1121f;
+  transform: scale(1.05);
+}
 .heroSection__ctaContainer {
   display: flex;
   flex-direction: column;
@@ -2494,25 +2505,15 @@ h6 {
   .heroSection__figure {
     flex: 0 0 28rem;
   }
-  .heroSection__heroIntro--designPage {
+  .heroSection__heroIntro--designPage, .heroSection__heroIntro--contactPage {
     margin-top: 1.75rem;
-  }
-  .heroSection__pagelink {
-    color: #1b90d8;
-    text-decoration: underline solid 1px;
-    text-underline-offset: 5px;
-    transition: color 0.3s, transform 0.3s;
-  }
-  .heroSection__pagelink:hover {
-    color: #c1121f;
-    transform: scale(1.05);
   }
   .heroSection__headingAndCtaContainer {
     flex: 0 0 60%;
     margin-bottom: 5rem;
     align-items: flex-start;
   }
-  .heroSection__headingAndCtaContainer--designPage {
+  .heroSection__headingAndCtaContainer--designPage, .heroSection__headingAndCtaContainer--contactPage {
     flex: 0 0 55%;
   }
   .heroSection__ctaContainer {
@@ -3055,6 +3056,9 @@ h6 {
   align-items: center;
   gap: 1rem;
 }
+.nav__link--contactPage {
+  width: fit-content;
+}
 .nav .navlinkText__content {
   width: fit-content;
   position: relative;
@@ -3099,6 +3103,9 @@ h6 {
     transform: none;
     position: static;
     z-index: 1100;
+  }
+  .nav__list--contactPage {
+    gap: 3rem;
   }
   .nav__item {
     visibility: visible;

@@ -41,6 +41,18 @@
 	&__heroIntro--designPage {
 		margin-top: 1rem;
 	}
+	&__pagelink {
+		color: rgba($cf-blue, 1);
+		text-decoration: underline solid 1px;
+		text-underline-offset: 5px;
+		transition:
+			color 0.3s,
+			transform 0.3s;
+		&:hover {
+			color: rgba($cf-red, 1);
+			transform: scale(1.05);
+		}
+	}
 	&__ctaContainer {
 		@include displayFlexColumn;
 		gap: 1rem;
@@ -90,26 +102,16 @@
 		&__figure {
 			flex: 0 0 28rem;
 		}
-		&__heroIntro--designPage {
+		&__heroIntro--designPage,
+		&__heroIntro--contactPage {
 			margin-top: 1.75rem;
-		}
-		&__pagelink {
-			color: rgba($cf-blue, 1);
-			text-decoration: underline solid 1px;
-			text-underline-offset: 5px;
-			transition:
-				color 0.3s,
-				transform 0.3s;
-			&:hover {
-				color: rgba($cf-red, 1);
-				transform: scale(1.05);
-			}
 		}
 		&__headingAndCtaContainer {
 			flex: 0 0 60%;
 			margin-bottom: 5rem;
 			align-items: flex-start;
-			&--designPage {
+			&--designPage,
+			&--contactPage {
 				flex: 0 0 55%;
 			}
 		}

@@ -5,6 +5,7 @@
 	padding: 0 1rem 5.5rem;
 	@include displayFlexColumn;
 	gap: 2rem;
+	position: relative;
 	&__contactPageSectionContentContainer {
 		width: min(100%, 45rem);
 		@include displayFlexColumn;
