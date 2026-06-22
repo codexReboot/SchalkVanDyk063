@@ -11,10 +11,15 @@
 		@include displayFlexColumn;
 		gap: 1rem;
 	}
+	@include respond(tab-port) {
+		&__contactPageSectionContentContainer {
+			width: min(100%, 65rem);
+		}
+	}
 	@include respond(tab-land) {
 		align-items: flex-start;
 		&__contactPageSectionContentContainer {
-			width: min(100%, 95rem);
+			width: min(100%, 110rem);
 			align-items: flex-start;
 		}
 	}
@@ -36,6 +41,7 @@
 	@include respond(tab-land) {
 		&__contactDetailsContentContainer {
 			@include displayFlexRow;
+			gap: 2rem;
 			align-items: flex-start;
 			justify-content: flex-start;
 		}
@@ -50,21 +56,51 @@
 			width: min(100%, 115rem);
 			gap: 8rem;
 		}
-		// &__contactDetailsTextContainer {
-		// 	flex: 1 0 50rem;
-		// 	@include displayFlexColumn;
-		// 	align-items: flex-start;
-		// }
 	}
 }
 
 .availabilityDetailsSection {
+	&__availabilityDetailsContentContainer {
+		@include displayFlexColumn;
+	}
+	&__availabilityDetailsTextContainer {
+		@include displayFlexColumn;
+	}
+	@include respond(tab-land) {
+		&__availabilityDetailsContentContainer {
+			@include displayFlexRow;
+			align-items: flex-start;
+			justify-content: flex-start;
+			gap: 3rem;
+		}
+		&__availabilityDetailsTextContainer {
+			width: min(55%, 75rem);
+			@include displayFlexColumn;
+			align-items: flex-start;
+		}
+	}
+	@include respond(desk) {
+		&__availabilityDetailsContentContainer {
+			width: min(100%, 115rem);
+			gap: 8rem;
+		}
+	}
+	.availabilityCard {
+		@include respond(tab-land) {
+			flex: 0 0 31.5rem;
+		}
+	}
 	&__hoursList {
 		border-radius: 0.5rem;
+		margin-top: 1rem;
 		width: min(100%, 35rem);
 		@include displayFlexColumn;
 		align-items: stretch;
-		gap: 2rem;
+		gap: 1rem;
+		@include respond(tab-land) {
+			padding: 0 0 0 2rem;
+			align-items: flex-start;
+		}
 	}
 	li {
 		@include displayFlexColumn;
@@ -74,8 +110,14 @@
 			border: 1px solid rgba($cp-darkBlue, 0.25);
 			border-radius: 0.5rem;
 			box-shadow: 0px 0px 25px 5px rgba($cp-dark, 0.25);
-			padding: 0.5rem 2rem;
+			padding: 0.2rem 2rem;
 			width: 65%;
+		}
+		@include respond(tab-land) {
+			@include displayFlexRow;
+			span {
+				width: fit-content;
+			}
 		}
 	}
 }

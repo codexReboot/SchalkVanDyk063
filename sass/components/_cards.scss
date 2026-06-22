@@ -410,14 +410,13 @@
 	margin-top: 1rem;
 	width: min(100%, 35rem);
 	@include displayFlexColumn;
-	gap: 2rem;
+	gap: 1rem;
 	justify-content: flex-start;
 	align-items: stretch;
 	&__headingH4 {
 		background: linear-gradient(to bottom right, rgba($cp-blue, 0.85) 10%, rgba($cp-darkBlue, 0.95) 95%);
 		border-top-left-radius: 0.5rem;
 		border-top-right-radius: 0.5rem;
-		padding: 2rem;
-		margin-bottom: 1rem;
+		padding: 1.25rem 2rem;
 	}
 }

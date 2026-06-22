@@ -1233,7 +1233,7 @@ h6 {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  gap: 2rem;
+  gap: 1rem;
   justify-content: flex-start;
   align-items: stretch;
 }
@@ -1241,8 +1241,7 @@ h6 {
   background: linear-gradient(to bottom right, rgba(27, 144, 216, 0.85) 10%, rgba(0, 48, 73, 0.95) 95%);
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
-  padding: 2rem;
-  margin-bottom: 1rem;
+  padding: 1.25rem 2rem;
 }
 
 .cta {
@@ -1596,12 +1595,17 @@ h6 {
   gap: 1rem;
   gap: 1rem;
 }
+@media (min-width: 37.5em) {
+  .contactPageSection__contactPageSectionContentContainer {
+    width: min(100%, 65rem);
+  }
+}
 @media (min-width: 56.25em) {
   .contactPageSection {
     align-items: flex-start;
   }
   .contactPageSection__contactPageSectionContentContainer {
-    width: min(100%, 95rem);
+    width: min(100%, 110rem);
     align-items: flex-start;
   }
 }
@@ -1633,6 +1637,7 @@ h6 {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    gap: 2rem;
     align-items: flex-start;
     justify-content: flex-start;
   }
@@ -1653,8 +1658,55 @@ h6 {
   }
 }
 
+.availabilityDetailsSection__availabilityDetailsContentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.availabilityDetailsSection__availabilityDetailsTextContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+@media (min-width: 56.25em) {
+  .availabilityDetailsSection__availabilityDetailsContentContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 3rem;
+  }
+  .availabilityDetailsSection__availabilityDetailsTextContainer {
+    width: min(55%, 75rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+}
+@media (min-width: 75em) {
+  .availabilityDetailsSection__availabilityDetailsContentContainer {
+    width: min(100%, 115rem);
+    gap: 8rem;
+  }
+}
+@media (min-width: 56.25em) {
+  .availabilityDetailsSection .availabilityCard {
+    flex: 0 0 31.5rem;
+  }
+}
 .availabilityDetailsSection__hoursList {
   border-radius: 0.5rem;
+  margin-top: 1rem;
   width: min(100%, 35rem);
   display: flex;
   flex-direction: column;
@@ -1662,7 +1714,13 @@ h6 {
   align-items: center;
   gap: 1rem;
   align-items: stretch;
-  gap: 2rem;
+  gap: 1rem;
+}
+@media (min-width: 56.25em) {
+  .availabilityDetailsSection__hoursList {
+    padding: 0 0 0 2rem;
+    align-items: flex-start;
+  }
 }
 .availabilityDetailsSection li {
   display: flex;
@@ -1677,8 +1735,20 @@ h6 {
   border: 1px solid rgba(0, 48, 73, 0.25);
   border-radius: 0.5rem;
   box-shadow: 0px 0px 25px 5px rgba(51, 51, 51, 0.25);
-  padding: 0.5rem 2rem;
+  padding: 0.2rem 2rem;
   width: 65%;
+}
+@media (min-width: 56.25em) {
+  .availabilityDetailsSection li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .availabilityDetailsSection li span {
+    width: fit-content;
+  }
 }
 
 .contactFormSection {
