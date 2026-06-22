@@ -11,11 +11,50 @@
 		@include displayFlexColumn;
 		gap: 1rem;
 	}
+	@include respond(tab-land) {
+		align-items: flex-start;
+		&__contactPageSectionContentContainer {
+			width: min(100%, 95rem);
+			align-items: flex-start;
+		}
+	}
+	@include respond(desk) {
+		&__contactPageSectionContentContainer {
+			width: min(100%, 125rem);
+			align-items: flex-start;
+		}
+	}
 }
 
 .contactDetailsSection {
 	&__contactDetailsContentContainer {
 		@include displayFlexColumn;
+	}
+	&__contactDetailsTextContainer {
+		@include displayFlexColumn;
+	}
+	@include respond(tab-land) {
+		&__contactDetailsContentContainer {
+			@include displayFlexRow;
+			align-items: flex-start;
+			justify-content: flex-start;
+		}
+		&__contactDetailsTextContainer {
+			width: min(55%, 75rem);
+			@include displayFlexColumn;
+			align-items: flex-start;
+		}
+	}
+	@include respond(desk) {
+		&__contactDetailsContentContainer {
+			width: min(100%, 115rem);
+			gap: 8rem;
+		}
+		// &__contactDetailsTextContainer {
+		// 	flex: 1 0 50rem;
+		// 	@include displayFlexColumn;
+		// 	align-items: flex-start;
+		// }
 	}
 }
 
