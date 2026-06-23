@@ -123,10 +123,24 @@
 }
 
 .contactFormSection {
-	@include displayFlexColumn;
-	gap: 2rem;
 	&__formContainer {
-		width: 100%;
+		margin-top: 2rem;
+		width: min(100%, 45rem);
+		@include displayFlexColumn;
+	}
+	@include respond(tab-land) {
+		&__contactFormSectionContentContainer {
+			align-items: flex-start;
+		}
+		&__formContainer {
+			width: min(100%, 95rem);
+			align-items: flex-start;
+		}
+	}
+	@include respond(desk) {
+		&__formContainer {
+			width: min(100%, 103.5rem);
+		}
 	}
 }
 

@@ -182,71 +182,81 @@
 					<p class="contactFormSection__headingH2Tagline sectionHeading__headingH2Tagline headingH2Tagline headingH2Tagline--contactForm">message me right now</p>
 				</div>
 
-				<div class="contactPageSection__contactPageSectionContentContainer">
+				<div class="contactPageSection__contactPageSectionContentContainer contactFormSection__contactFormSectionContentContainer">
+					<h3 class="contactFormSection__headingH3 headingH3 headingH3--contactForm">Ready to bring your ideas online?</h3>
+
 					<p class="contactFormSection__paragraph contactFormSection__paragraph--intro paragraph paragraph--contactform">
-						Have a project in mind or need help with your website? This contact form is the best way to get in touch with me.
+						Whether you need a new website, a redesign of your current site, or expert guidance on improving your online presence, I'm here to help. Use this contact form to tell me about your project, goals,
+						and requirements so we can discuss the best solution for your business.
 					</p>
 
 					<p class="contactFormSection__paragraph contactFormSection__paragraph--action paragraph paragraph--contactform">
-						Fill out the form below with a few details and I'll get back to you as soon as possible.
+						Complete the form below with as much detail as you'd like, and you'll receive a response within one business.
 					</p>
+
+					<p class="contactFormSection__paragraph contactFormSection__paragraph--action paragraph paragraph--contactform">All information submitted hrough this form is handled with care and confidentiality.</p>
 
 					<div class="contactFormSection__formContainer">
 						<form class="contactFormSection__form form" action="/contact" method="POST">
 							<h3 class="form__headingH3 headingH3 headingH3--contactform">Contact Form</h3>
-							<fieldset class="form__formRow form__formRow--names">
-								<legend class="form__headingH4 headingH4 headingH4--contactform">Full Names</legend>
 
-								<div class="form__inputGroup form__inputGroup--firstname">
-									<label for="firstName">First Name</label>
-									<input type="text" id="firstName" name="firstName" required />
-								</div>
+							<div class="form__formRowGroupNamesAndDetails">
+								<fieldset class="form__formRow form__formRow--names">
+									<legend class="form__headingH4 headingH4 headingH4--contactform">Full Names</legend>
 
-								<div class="form__inputGroup form__inputGroup--lastname">
-									<label for="lastName">Last Name</label>
-									<input type="text" id="lastName" name="lastName" required />
-								</div>
-							</fieldset>
+									<div class="form__inputGroup form__inputGroup--firstname">
+										<label for="firstName">First Name</label>
+										<input type="text" id="firstName" name="firstName" required />
+									</div>
 
-							<fieldset class="form__formRow form__formRow--details">
-								<legend class="form__headingH4 headingH4 headingH4--contactform">Contact Details</legend>
+									<div class="form__inputGroup form__inputGroup--lastname">
+										<label for="lastName">Last Name</label>
+										<input type="text" id="lastName" name="lastName" required />
+									</div>
+								</fieldset>
 
-								<div class="form__inputGroup form__inputGroup--email">
-									<label for="email">Email Address</label>
-									<input type="email" id="email" name="email" required />
-								</div>
+								<fieldset class="form__formRow form__formRow--details">
+									<legend class="form__headingH4 headingH4 headingH4--contactform">Contact Details</legend>
 
-								<div class="form__inputGroup form__inputGroup--phonenumber">
-									<label for="phone">Phone Number</label>
-									<input type="tel" id="phone" name="phone" />
-								</div>
-							</fieldset>
+									<div class="form__inputGroup form__inputGroup--email">
+										<label for="email">Email Address</label>
+										<input type="email" id="email" name="email" required />
+									</div>
+
+									<div class="form__inputGroup form__inputGroup--phonenumber">
+										<label for="phone">Phone Number</label>
+										<input type="tel" id="phone" name="phone" />
+									</div>
+								</fieldset>
+							</div>
 
 							<fieldset class="form__formRow form__formRow--message">
 								<legend class="form__headingH4 headingH4 headingH4--contactform">Message</legend>
 
-								<div class="form__inputGroup form__inputGroup--subject">
-									<label for="subject">Subject</label>
-									<input type="text" id="subject" name="subject" />
-								</div>
+								<div class="form__inputGroupContainer">
+									<div class="form__inputGroup form__inputGroup--subject">
+										<label for="subject">Subject</label>
+										<input type="text" id="subject" name="subject" />
+									</div>
 
-								<div class="form__inputGroup form__inputGroup--service">
-									<label for="service">Service Required</label>
+									<div class="form__inputGroup form__inputGroup--service">
+										<label for="service">Service Required</label>
 
-									<select id="service" name="service">
-										<option value="">Please Select</option>
-										<option value="web-design">Web Design</option>
-										<option value="web-development">Web Development</option>
-										<option value="seo">SEO</option>
-										<option value="maintenance">Website Maintenance</option>
-										<option value="other">Other</option>
-									</select>
+										<select id="service" name="service">
+											<option value="">Please Select</option>
+											<option value="web-design">Web Design</option>
+											<option value="web-development">Web Development</option>
+											<option value="seo">SEO</option>
+											<option value="maintenance">Website Maintenance</option>
+											<option value="other">Other</option>
+										</select>
+									</div>
 								</div>
 
 								<div class="form__inputGroup form__inputGroup--message">
 									<label for="message">Message</label>
 
-									<textarea id="message" name="message" rows="8" required></textarea>
+									<textarea id="message" name="message" rows="3" required></textarea>
 								</div>
 							</fieldset>
 

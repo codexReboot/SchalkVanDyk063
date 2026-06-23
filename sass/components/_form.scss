@@ -11,6 +11,21 @@
 	@include displayFlexColumn;
 	gap: 2rem;
 
+	&__formRowGroupNamesAndDetails {
+		width: 100%;
+		@include displayFlexColumn;
+		gap: 2rem;
+		@include respond(tab-land) {
+			@include displayFlexRow;
+		}
+	}
+
+	&__inputGroupContainer {
+		@include displayFlexColumn;
+		align-items: stretch;
+		gap: 2rem;
+	}
+
 	&__formRow {
 		border: 1px solid rgba($cp-white, 0.9);
 		border-radius: 0.5rem;
@@ -80,11 +95,24 @@
 	}
 
 	textarea {
-		min-height: 14rem;
+		height: 11rem;
 		resize: vertical;
 	}
 
 	&__submitContainer {
 		margin-top: 0.5rem;
+	}
+	@include respond(tab-land) {
+		&__formRow--message {
+			@include displayFlexRow;
+			align-items: flex-start;
+			gap: 3.25rem;
+		}
+		&__inputGroupContainer {
+			flex: 1 0 20rem;
+		}
+		&__inputGroup--message {
+			flex: 1 0 20rem;
+		}
 	}
 }

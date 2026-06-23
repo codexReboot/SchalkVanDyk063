@@ -1272,6 +1272,33 @@ h6 {
   gap: 1rem;
   gap: 2rem;
 }
+.form__formRowGroupNamesAndDetails {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  gap: 2rem;
+}
+@media (min-width: 56.25em) {
+  .form__formRowGroupNamesAndDetails {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+.form__inputGroupContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  align-items: stretch;
+  gap: 2rem;
+}
 .form__formRow {
   border: 1px solid rgba(242, 242, 242, 0.9);
   border-radius: 0.5rem;
@@ -1337,11 +1364,28 @@ h6 {
   box-shadow: 0 0 0 3px rgba(0, 48, 73, 0.15);
 }
 .form textarea {
-  min-height: 14rem;
+  height: 11rem;
   resize: vertical;
 }
 .form__submitContainer {
   margin-top: 0.5rem;
+}
+@media (min-width: 56.25em) {
+  .form__formRow--message {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    align-items: flex-start;
+    gap: 3.25rem;
+  }
+  .form__inputGroupContainer {
+    flex: 1 0 20rem;
+  }
+  .form__inputGroup--message {
+    flex: 1 0 20rem;
+  }
 }
 
 .icon {
@@ -1751,16 +1795,28 @@ h6 {
   }
 }
 
-.contactFormSection {
+.contactFormSection__formContainer {
+  margin-top: 2rem;
+  width: min(100%, 45rem);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  gap: 2rem;
 }
-.contactFormSection__formContainer {
-  width: 100%;
+@media (min-width: 56.25em) {
+  .contactFormSection__contactFormSectionContentContainer {
+    align-items: flex-start;
+  }
+  .contactFormSection__formContainer {
+    width: min(100%, 95rem);
+    align-items: flex-start;
+  }
+}
+@media (min-width: 75em) {
+  .contactFormSection__formContainer {
+    width: min(100%, 103.5rem);
+  }
 }
 
 .faqSection {
