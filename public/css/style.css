@@ -1640,12 +1640,16 @@ h6 {
   gap: 1rem;
 }
 @media (min-width: 37.5em) {
+  .contactPageSection {
+    padding: 0 2rem 5.5rem;
+  }
   .contactPageSection__contactPageSectionContentContainer {
     width: min(100%, 65rem);
   }
 }
 @media (min-width: 56.25em) {
   .contactPageSection {
+    padding: 0 5rem 5.5rem;
     align-items: flex-start;
   }
   .contactPageSection__contactPageSectionContentContainer {
@@ -1819,9 +1823,6 @@ h6 {
   }
 }
 
-.faqSection {
-  padding: 0rem 1rem 15rem;
-}
 .faqSection__faqContainer {
   display: flex;
   flex-direction: column;

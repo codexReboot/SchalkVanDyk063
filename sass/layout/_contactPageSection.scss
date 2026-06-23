@@ -12,11 +12,13 @@
 		gap: 1rem;
 	}
 	@include respond(tab-port) {
+		padding: 0 2rem 5.5rem;
 		&__contactPageSectionContentContainer {
 			width: min(100%, 65rem);
 		}
 	}
 	@include respond(tab-land) {
+		padding: 0 5rem 5.5rem;
 		align-items: flex-start;
 		&__contactPageSectionContentContainer {
 			width: min(100%, 110rem);
@@ -145,7 +147,6 @@
 }
 
 .faqSection {
-	padding: 0rem 1rem 15rem;
 	&__faqContainer {
 		@include displayFlexColumn;
 		gap: 2rem;
