@@ -2318,7 +2318,7 @@ h6 {
 .footer__linebreakDeveloper {
   display: none;
 }
-.footer--designPage {
+.footer--designPage, .footer--contactPage {
   margin-top: 15rem;
 }
 @media (min-width: 37.5em) {
