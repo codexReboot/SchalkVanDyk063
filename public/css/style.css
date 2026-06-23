@@ -273,7 +273,7 @@ h6 {
   }
 }
 @media (min-width: 56.25em) {
-  .headingH3--portfolioSection {
+  .headingH3--portfolioSection, .headingH3--faq {
     text-align: left;
   }
 }
@@ -1829,6 +1829,17 @@ h6 {
   align-items: center;
   gap: 1rem;
   gap: 2rem;
+}
+.faqSection__faqItem {
+  width: 100%;
+}
+@media (min-width: 56.25em) {
+  .faqSection__faqContainer {
+    align-items: flex-start;
+  }
+  .faqSection__faqItem {
+    width: min(100%, 95rem);
+  }
 }
 
 .designPageServicesSection {

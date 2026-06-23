@@ -157,7 +157,8 @@
 		}
 	}
 	@include respond(tab-land) {
-		&--portfolioSection {
+		&--portfolioSection,
+		&--faq {
 			text-align: left;
 		}
 	}

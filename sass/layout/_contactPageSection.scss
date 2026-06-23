@@ -150,4 +150,15 @@
 		@include displayFlexColumn;
 		gap: 2rem;
 	}
+	&__faqItem {
+		width: 100%;
+	}
+	@include respond(tab-land) {
+		&__faqContainer {
+			align-items: flex-start;
+		}
+		&__faqItem {
+			width: min(100%, 95rem);
+		}
+	}
 }
