@@ -427,6 +427,13 @@
 	&--contactform {
 		color: $cp-dark;
 	}
+	&--input,
+	&--formSelectOption {
+		color: rgba($cf-dark, 0.9);
+		font-size: clamp(1.3rem, 4.3vw, 1.5rem);
+		text-shadow: 1px 1px 1px rgba($cf-white, 1);
+		text-align: left;
+	}
 	&--faq {
 		color: rgba($cf-dark, 0.95);
 	}

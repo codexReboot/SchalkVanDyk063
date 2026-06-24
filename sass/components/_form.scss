@@ -62,7 +62,7 @@
 			border: 1px solid rgba($cp-dark, 0.15);
 			border-radius: 0.5rem;
 
-			background-color: rgba($cp-white, 0.9);
+			background-color: rgba($cp-white, 0.75);
 
 			font-family: inherit;
 			font-size: inherit;
@@ -70,7 +70,7 @@
 			transition: all 0.3s;
 		}
 		.focusBackgroundColor {
-			background-color: rgba($cp-white, 0.65);
+			background-color: rgba($cp-white, 0.95);
 		}
 		.focusLabel {
 			color: rgba($cp-white, 0.85);

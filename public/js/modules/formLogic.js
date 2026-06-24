@@ -4,13 +4,16 @@ export const listForInputClicks = function clicks() {
 
 		for (let input of inputs) {
 			input.addEventListener("focus", () => {
-				input.classList.toggle("focusBackgroundColor");
-				input.previousElementSibling.classList.toggle("focusLabel");
+				input.classList.add("focusBackgroundColor");
+				input.previousElementSibling.classList.add("focusLabel");
 			});
 
 			input.addEventListener("blur", () => {
-				input.classList.toggle("focusBackgroundColor");
-				input.previousElementSibling.classList.toggle("focusLabel");
+				// Only remove styles if input is empty
+				if (input.value.trim() === "") {
+					input.classList.remove("focusBackgroundColor");
+					input.previousElementSibling.classList.remove("focusLabel");
+				}
 			});
 		}
 	});

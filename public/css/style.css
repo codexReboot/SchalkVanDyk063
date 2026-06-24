@@ -505,6 +505,12 @@ h6 {
 .paragraph--contactform {
   color: #333333;
 }
+.paragraph--input, .paragraph--formSelectOption {
+  color: rgba(41, 40, 40, 0.9);
+  font-size: clamp(1.3rem, 4.3vw, 1.5rem);
+  text-shadow: 1px 1px 1px #f0f0f0;
+  text-align: left;
+}
 .paragraph--faq {
   color: rgba(41, 40, 40, 0.95);
 }
@@ -1339,13 +1345,13 @@ h6 {
   padding: 1rem 1.25rem;
   border: 1px solid rgba(51, 51, 51, 0.15);
   border-radius: 0.5rem;
-  background-color: rgba(242, 242, 242, 0.9);
+  background-color: rgba(242, 242, 242, 0.75);
   font-family: inherit;
   font-size: inherit;
   transition: all 0.3s;
 }
 .form__inputGroup .focusBackgroundColor {
-  background-color: rgba(242, 242, 242, 0.65);
+  background-color: rgba(242, 242, 242, 0.95);
 }
 .form__inputGroup .focusLabel {
   color: rgba(242, 242, 242, 0.85);
