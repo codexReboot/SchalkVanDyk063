@@ -50,6 +50,9 @@
 			top: 1rem;
 			left: 2rem;
 			transition: all 0.3s;
+			span {
+				color: red;
+			}
 		}
 
 		input,
@@ -69,6 +72,16 @@
 
 			transition: all 0.3s;
 		}
+
+		input::placeholder {
+			opacity: 0;
+			transition: opacity 0.3s ease;
+		}
+
+		input.show-placeholder::placeholder {
+			opacity: 1;
+		}
+
 		.focusBackgroundColor {
 			background-color: rgba($cp-white, 0.95);
 		}

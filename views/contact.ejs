@@ -249,14 +249,32 @@
 								<fieldset class="form__formRow form__formRow--names">
 									<legend class="form__headingH4 headingH4 headingH4--contactform">Full Names</legend>
 
-									<div class="form__inputGroup form__inputGroup--firstname">
+									<!-- <div class="form__inputGroup form__inputGroup--firstname">
 										<label for="firstName">First Name</label>
 										<input class="form__input paragraph paragraph--input" type="text" id="firstName" name="firstName" required />
+									</div> -->
+
+									<div class="form__inputGroup form__inputGroup--firstname">
+										<label for="firstName"> First Name <span aria-hidden="true">*</span> </label>
+
+										<input
+											class="form__input form__input--firstName paragraph paragraph--input"
+											type="text"
+											id="firstName"
+											name="firstName"
+											required
+											aria-required="true"
+											autocomplete="given-name"
+											minlength="2"
+											maxlength="50"
+											placeholder="" />
+
+										<span class="form__error" aria-live="polite"></span>
 									</div>
 
 									<div class="form__inputGroup form__inputGroup--lastname">
 										<label for="lastName">Last Name</label>
-										<input class="form__input paragraph paragraph--input" type="text" id="lastName" name="lastName" required />
+										<input class="form__input form__input--lastName paragraph paragraph--input" type="text" id="lastName" name="lastName" required />
 									</div>
 								</fieldset>
 
@@ -264,13 +282,13 @@
 									<legend class="form__headingH4 headingH4 headingH4--contactform">Contact Details</legend>
 
 									<div class="form__inputGroup form__inputGroup--email">
-										<label for="email">Email Address</label>
-										<input class="form__input paragraph paragraph--input" type="email" id="email" name="email" required />
+										<label for="email">Email Address <span aria-hidden="true">*</span> </label>
+										<input class="form__input form__input--email paragraph paragraph--input" type="email" id="email" name="email" required />
 									</div>
 
 									<div class="form__inputGroup form__inputGroup--phonenumber">
 										<label for="phone">Phone Number</label>
-										<input class="form__input paragraph paragraph--input" type="tel" id="phone" name="phone" />
+										<input class="form__input form__input--phonenumber paragraph paragraph--input" type="tel" id="phone" name="phone" />
 									</div>
 								</fieldset>
 							</div>
@@ -281,7 +299,7 @@
 								<div class="form__inputGroupContainer">
 									<div class="form__inputGroup form__inputGroup--subject">
 										<label for="subject">Subject</label>
-										<input class="form__input paragraph paragraph--input" type="text" id="subject" name="subject" />
+										<input class="form__input form__input--subject paragraph paragraph--input" type="text" id="subject" name="subject" />
 									</div>
 
 									<div class="form__inputGroup form__inputGroup--service">
@@ -299,9 +317,9 @@
 								</div>
 
 								<div class="form__inputGroup form__inputGroup--message">
-									<label for="message">Message</label>
+									<label for="message">Message <span aria-hidden="true">*</span> </label>
 
-									<textarea id="message" name="message" rows="3" required></textarea>
+									<textarea class="form__textarea" id="message" name="message" rows="3" required></textarea>
 								</div>
 							</fieldset>
 

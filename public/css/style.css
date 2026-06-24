@@ -1338,6 +1338,9 @@ h6 {
   left: 2rem;
   transition: all 0.3s;
 }
+.form__inputGroup label span {
+  color: red;
+}
 .form__inputGroup input,
 .form__inputGroup select,
 .form__inputGroup textarea {
@@ -1349,6 +1352,13 @@ h6 {
   font-family: inherit;
   font-size: inherit;
   transition: all 0.3s;
+}
+.form__inputGroup input::placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.form__inputGroup input.show-placeholder::placeholder {
+  opacity: 1;
 }
 .form__inputGroup .focusBackgroundColor {
   background-color: rgba(242, 242, 242, 0.95);
