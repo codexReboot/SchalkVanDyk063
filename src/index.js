@@ -1,26 +1,13 @@
 import express from "express";
 import path from "path";
 import { fileURLToPath } from "url";
-import nodemailer from "nodemailer";
-import dotenv from "dotenv";
-
-dotenv.config();
+import { handleContactForm } from "./contactForm.js";
 
 const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-
-const transporter = nodemailer.createTransport({
-	host: "mail.schalkvandyk.com", // replace if cPanel shows something different
-	port: 465,
-	secure: true,
-	auth: {
-		user: process.env.EMAIL_USER,
-		pass: process.env.EMAIL_PASS,
-	},
-});
 
 // Get __dirname equivalent in ES Modules
 const __filename = fileURLToPath(import.meta.url);
@@ -54,6 +41,9 @@ app.get("/hosting", (req, res) => {
 	res.render("hosting", { heading: "Domain Setup & Web Hosting" });
 });
 
+// Handle contact form submission and send email via SMTP
+app.post("/contact", handleContactForm);
+
 // Marketing page
 app.get("/marketing", (req, res) => {
 	res.render("marketing", { heading: "Online Digital Marketing & SEO" });
@@ -62,36 +52,6 @@ app.get("/marketing", (req, res) => {
 // Contact page
 app.get("/contact", (req, res) => {
 	res.render("contact", { currentPage: "contact", heading: "Contact Us" });
-});
-
-app.post("/contact", async (req, res) => {
-	try {
-		const { firstName, lastName, email, phone, subject, service, message } = req.body;
-
-		await transporter.sendMail({
-			from: `"Website Contact Form" <${process.env.EMAIL_USER}>`,
-			to: process.env.EMAIL_USER,
-			replyTo: email,
-			subject: subject || "New Website Enquiry",
-			text: `
-Name: ${firstName} ${lastName}
-
-Email: ${email}
-
-Phone: ${phone || "Not provided"}
-
-Service: ${service || "Not specified"}
-
-Message:
-${message}
-			`,
-		});
-
-		res.redirect("/contact");
-	} catch (error) {
-		console.error("Email send failed:", error);
-		res.status(500).send("Unable to send message");
-	}
 });
 
 // Popia page
