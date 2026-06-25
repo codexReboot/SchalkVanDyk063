@@ -434,6 +434,12 @@
 		text-shadow: 1px 1px 1px rgba($cf-white, 1);
 		text-align: left;
 	}
+	&--contactFormSelectOption {
+		color: rgba($cf-dark, 0.9);
+		font-weight: 600;
+		font-size: clamp(1.3rem, 4.3vw, 1.5rem);
+		text-align: left;
+	}
 	&--formError {
 		color: rgba($cf-white, 1);
 		font-size: clamp(1.2rem, 4.2vw, 1.4rem);

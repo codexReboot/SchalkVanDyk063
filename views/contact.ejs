@@ -307,16 +307,32 @@
 									</div>
 
 									<div class="form__inputGroup form__inputGroup--service">
-										<label for="service">Service Required</label>
+										<label class="form__label" for="service">Service Required</label>
 
-										<select id="service" name="service">
-											<option class="form__formSelectOption paragraph paragraph--formSelectOption" value="">Please Select</option>
-											<option class="form__formSelectOption paragraph paragraph--formSelectOption" value="web-design">Web Design</option>
-											<option class="form__formSelectOption paragraph paragraph--formSelectOption" value="web-development">Web Development</option>
-											<option class="form__formSelectOption paragraph paragraph--formSelectOption" value="seo">SEO</option>
-											<option class="form__formSelectOption paragraph paragraph--formSelectOption" value="maintenance">Website Maintenance</option>
-											<option class="form__formSelectOption paragraph paragraph--formSelectOption" value="other">Other</option>
-										</select>
+										<!-- Custom dropdown -->
+										<div class="form__select form__select--service" data-select>
+											<button type="button" class="form__selectButton paragraph paragraph--contactFormSelectOption" data-select-button>
+												<span data-select-label>Select A Service</span>
+												<span class="form__selectArrow">▼</span>
+											</button>
+
+											<ul class="form__selectOptions" role="listbox" data-select-options>
+												<li class="form__selectOption paragraph paragraph--contactFormSelectOption" data-value="">Select A Service</li>
+
+												<li class="form__selectOption paragraph paragraph--contactFormSelectOption" data-value="web-design">Web Design Services</li>
+
+												<li class="form__selectOption paragraph paragraph--contactFormSelectOption" data-value="web-development">Web Development Services</li>
+
+												<li class="form__selectOption paragraph paragraph--contactFormSelectOption" data-value="seo">Domain Setup and Web Hosting</li>
+
+												<li class="form__selectOption paragraph paragraph--contactFormSelectOption" data-value="maintenance">Online Digital Marketing and SEO</li>
+
+												<li class="form__selectOption paragraph paragraph--contactFormSelectOption" data-value="other">Other</li>
+											</ul>
+
+											<!-- Real form value (still submits like a normal form) -->
+											<input type="hidden" name="service" value="" data-select-input />
+										</div>
 									</div>
 								</div>
 

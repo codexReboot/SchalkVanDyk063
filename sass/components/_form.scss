@@ -151,6 +151,74 @@
 	&__submitContainer {
 		margin-top: 0.5rem;
 	}
+
+	&__select {
+		position: relative;
+		@include displayFlexColumn;
+		align-items: stretch;
+	}
+
+	&__selectButton {
+		padding: 1rem 1.25rem;
+
+		border: 1px solid rgba($cp-dark, 0.15);
+		border-radius: 0.5rem;
+
+		background-color: rgba($cp-white, 0.75);
+
+		font-family: inherit;
+		font-size: inherit;
+		cursor: pointer;
+
+		@include displayFlexRow;
+		justify-content: space-between;
+	}
+
+	&__selectOptions {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		border: 1px solid rgba($cp-darkBlue, 0.9);
+		border-radius: 0.5rem;
+		background: linear-gradient(to bottom right, rgba($cp-white, 0.95) 20%, rgba($cp-blue, 0.95) 65%, rgba($cp-darkBlue, 0.95));
+
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+
+		z-index: 10;
+
+		transform-origin: top;
+
+		opacity: 0;
+		visibility: hidden;
+		transform: scaleY(0);
+
+		pointer-events: none;
+
+		transition: all 0.6s;
+	}
+
+	&__select.is-open .form__selectOptions {
+		opacity: 1;
+		visibility: visible;
+		transform: scaleY(1);
+
+		pointer-events: auto;
+	}
+
+	&__selectOption {
+		border: 1px solid rgba($cp-grey, 0.45);
+		padding: 0.75rem 2rem;
+		cursor: pointer;
+	}
+
+	&__selectOption:hover {
+		background: #f2f2f2;
+	}
+
 	@include respond(tab-land) {
 		&__formRow--message {
 			@include displayFlexRow;
