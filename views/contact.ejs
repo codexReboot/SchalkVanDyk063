@@ -269,12 +269,13 @@
 											maxlength="50"
 											placeholder="" />
 
-										<span class="form__error" aria-live="polite"></span>
+										<span class="form__error paragraph paragraph--formError" aria-live="polite"></span>
 									</div>
 
 									<div class="form__inputGroup form__inputGroup--lastname">
 										<label for="lastName">Last Name</label>
 										<input class="form__input form__input--lastName paragraph paragraph--input" type="text" id="lastName" name="lastName" required />
+										<span class="form__error paragraph paragraph--formError" aria-live="polite"></span>
 									</div>
 								</fieldset>
 
@@ -284,11 +285,13 @@
 									<div class="form__inputGroup form__inputGroup--email">
 										<label for="email">Email Address <span aria-hidden="true">*</span> </label>
 										<input class="form__input form__input--email paragraph paragraph--input" type="email" id="email" name="email" required />
+										<span class="form__error paragraph paragraph--formError" aria-live="polite"></span>
 									</div>
 
 									<div class="form__inputGroup form__inputGroup--phonenumber">
 										<label for="phone">Phone Number</label>
 										<input class="form__input form__input--phonenumber paragraph paragraph--input" type="tel" id="phone" name="phone" />
+										<span class="form__error paragraph paragraph--formError" aria-live="polite"></span>
 									</div>
 								</fieldset>
 							</div>
@@ -300,6 +303,7 @@
 									<div class="form__inputGroup form__inputGroup--subject">
 										<label for="subject">Subject</label>
 										<input class="form__input form__input--subject paragraph paragraph--input" type="text" id="subject" name="subject" />
+										<span class="form__error paragraph paragraph--formError" aria-live="polite"></span>
 									</div>
 
 									<div class="form__inputGroup form__inputGroup--service">
@@ -320,6 +324,7 @@
 									<label for="message">Message <span aria-hidden="true">*</span> </label>
 
 									<textarea class="form__textarea" id="message" name="message" rows="3" required></textarea>
+									<span class="form__error paragraph paragraph--formError" aria-live="polite"></span>
 								</div>
 							</fieldset>
 

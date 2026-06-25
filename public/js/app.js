@@ -1,6 +1,7 @@
 import { appState } from "./modules/appVariables.js";
 import { hideNavbarBgAndNavbarLogo, openMenuBg, closeMenuBg, checkScreenAndAttach, showNavbarBgAndNavbarLogo } from "./modules/navbarFunctions.js";
 import { listForInputClicks } from "./modules/formLogic.js";
+import { initContactFormValidation } from "./modules/contactFormValidation.js";
 ////////////////////////////////////////////////////////////////////////
 // navbar logic to show and hide the navbar background and logo
 ////////////////////////////////////////////////////////////////////////
@@ -175,3 +176,7 @@ document.addEventListener("scroll", () => {
 /////////////////////////////////
 // print
 listForInputClicks();
+
+////////////////////////////////
+// contactFormValidation
+initContactFormValidation();
