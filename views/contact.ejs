@@ -242,17 +242,13 @@
 					<p class="contactFormSection__paragraph contactFormSection__paragraph--action paragraph paragraph--contactform">All information submitted hrough this form is handled with care and confidentiality.</p>
 
 					<div class="contactFormSection__formContainer">
-						<form class="contactFormSection__form form" action="/contact" method="POST">
+						<div id="contactform" class="linkDiv"></div>
+						<form novalidate class="contactFormSection__form form" action="/contact" method="POST">
 							<h3 class="form__headingH3 headingH3 headingH3--contactform">Contact Form</h3>
 
 							<div class="form__formRowGroupNamesAndDetails">
 								<fieldset class="form__formRow form__formRow--names">
 									<legend class="form__headingH4 headingH4 headingH4--contactform">Full Names</legend>
-
-									<!-- <div class="form__inputGroup form__inputGroup--firstname">
-										<label for="firstName">First Name</label>
-										<input class="form__input paragraph paragraph--input" type="text" id="firstName" name="firstName" required />
-									</div> -->
 
 									<div class="form__inputGroup form__inputGroup--firstname">
 										<label for="firstName"> First Name <span aria-hidden="true">*</span> </label>
@@ -262,7 +258,6 @@
 											type="text"
 											id="firstName"
 											name="firstName"
-											required
 											aria-required="true"
 											autocomplete="given-name"
 											minlength="2"
@@ -274,7 +269,7 @@
 
 									<div class="form__inputGroup form__inputGroup--lastname">
 										<label for="lastName">Last Name</label>
-										<input class="form__input form__input--lastName paragraph paragraph--input" type="text" id="lastName" name="lastName" required />
+										<input class="form__input form__input--lastName paragraph paragraph--input" type="text" id="lastName" name="lastName" />
 										<span class="form__error paragraph paragraph--formError" aria-live="polite"></span>
 									</div>
 								</fieldset>
@@ -284,7 +279,7 @@
 
 									<div class="form__inputGroup form__inputGroup--email">
 										<label for="email">Email Address <span aria-hidden="true">*</span> </label>
-										<input class="form__input form__input--email paragraph paragraph--input" type="email" id="email" name="email" required />
+										<input class="form__input form__input--email paragraph paragraph--input" type="email" id="email" name="email" />
 										<span class="form__error paragraph paragraph--formError" aria-live="polite"></span>
 									</div>
 
@@ -339,13 +334,14 @@
 								<div class="form__inputGroup form__inputGroup--message">
 									<label for="message">Message <span aria-hidden="true">*</span> </label>
 
-									<textarea class="form__textarea" id="message" name="message" rows="3" required></textarea>
+									<textarea class="form__textarea paragraph paragraph--contactFormTextarea" id="message" name="message" rows="3"></textarea>
 									<span class="form__error paragraph paragraph--formError" aria-live="polite"></span>
 								</div>
 							</fieldset>
 
 							<div class="form__submitContainer">
 								<button type="submit" class="btn btn--secondary">Send Message</button>
+								<p class="form__contactFormSubmitMessage paragraph paragraph--contactFormSubmitMessage">Click on "send message" to submit contact form</p>
 							</div>
 						</form>
 					</div>

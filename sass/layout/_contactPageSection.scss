@@ -129,6 +129,7 @@
 		margin-top: 2rem;
 		width: min(100%, 45rem);
 		@include displayFlexColumn;
+		position: relative;
 	}
 	@include respond(tab-land) {
 		&__contactFormSectionContentContainer {

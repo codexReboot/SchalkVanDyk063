@@ -1,7 +1,11 @@
 export function initContactFormValidation() {
 	window.addEventListener("DOMContentLoaded", () => {
+		// select contact form on contact page
 		const form = document.querySelector("form");
+		// select inputs of contact form on contact page
 		const inputs = document.querySelectorAll(".form__inputGroup input, .form__inputGroup textarea");
+		// select message display of contact form for error and success messages
+		const submitMessage = document.querySelector(".form__contactFormSubmitMessage");
 
 		// -----------------------------
 		// VALIDATION RULES
@@ -52,7 +56,6 @@ export function initContactFormValidation() {
 					}
 					break;
 				}
-
 				// -------------------------
 				// EMAIL
 				// -------------------------
@@ -67,7 +70,6 @@ export function initContactFormValidation() {
 						setError("Enter a valid email address (e.g. john.smith@example.com)");
 					}
 					break;
-
 				// -------------------------
 				// PHONE
 				// -------------------------
@@ -86,7 +88,6 @@ export function initContactFormValidation() {
 					}
 					break;
 				}
-
 				// -------------------------
 				// SUBJECT
 				// -------------------------
@@ -98,7 +99,6 @@ export function initContactFormValidation() {
 						setError("Subject must be less than 100 characters");
 					}
 					break;
-
 				// -------------------------
 				// MESSAGE
 				// -------------------------
@@ -112,7 +112,6 @@ export function initContactFormValidation() {
 					}
 					break;
 			}
-
 			// -----------------------------
 			// UI UPDATE (centralized)
 			// -----------------------------
@@ -141,7 +140,6 @@ export function initContactFormValidation() {
 			clearError();
 			return true;
 		}
-
 		// -----------------------------
 		// LIVE VALIDATION
 		// -----------------------------
@@ -156,20 +154,66 @@ export function initContactFormValidation() {
 				}
 			});
 		}
-
 		// -----------------------------
 		// FORM SUBMIT VALIDATION
 		// -----------------------------
 		form.addEventListener("submit", (e) => {
-			let isValid = true;
+			e.preventDefault();
+			const requiredIds = ["firstName", "email", "message"];
+			const canSendMessage = requiredIds.every((id) => {
+				const input = document.getElementById(id);
+				return input ? validateField(input) : false;
+			});
+			const animateSubmitMessage = () => {
+				submitMessage.classList.remove("form__contactFormSubmitMessage--animate");
+				void submitMessage.offsetWidth; // Force a reflow so the browser sees the class removal
+				submitMessage.classList.add("form__contactFormSubmitMessage--animate");
+			};
+			const addError = () => {
+				submitMessage.classList.add("form__contactFormSubmitMessageError");
+				submitMessage.textContent = "Error! Please fix all the fields above.";
+				animateSubmitMessage();
+			};
+			const removeError = () => {
+				submitMessage.classList.remove("form__contactFormSubmitMessageError");
+			};
+			const addSuccess = () => {
+				removeError();
+				submitMessage.classList.add("form__contactFormSubmitMessageSuccess");
+				submitMessage.textContent = "Success! Sending Message.";
+				animateSubmitMessage();
+			};
+			const removeSuccess = () => {
+				submitMessage.classList.remove("form__contactFormSubmitMessageSuccess");
+			};
+			const resetSubmitMessage = () => {
+				submitMessage.textContent = 'Click on "send message" to submit contact form';
+				removeError();
+				removeSuccess();
+			};
+			if (canSendMessage) {
+				addSuccess();
+				setTimeout(() => {
+					resetSubmitMessage();
+					form.submit();
+				}, 800);
+			} else {
+				addError();
+				for (const input of inputs) {
+					if (input.id === "firstName" || input.id === "email" || input.id === "message") {
+						const isError = !validateField(input);
+						if (isError) {
+							setTimeout(() => {
+								input.scrollIntoView({
+									behavior: "smooth",
+									block: "center",
+								});
+							}, 1000);
 
-			for (const input of inputs) {
-				const valid = validateField(input);
-				if (!valid) isValid = false;
-			}
-
-			if (!isValid) {
-				e.preventDefault();
+							break;
+						}
+					}
+				}
 			}
 		});
 	});

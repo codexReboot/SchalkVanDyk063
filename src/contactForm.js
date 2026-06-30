@@ -22,6 +22,8 @@ export async function handleContactForm(req, res) {
 			replyTo: email,
 			subject: subject || "New Website Enquiry",
 			text: `
+New Message from Website Contact Form:
+
 Name: ${firstName} ${lastName}
 
 Email: ${email}
@@ -35,7 +37,7 @@ ${message}
 			`,
 		});
 
-		res.redirect("/contact");
+		res.redirect("/contact#contactform");
 	} catch (error) {
 		console.error("Email send failed:", error);
 		res.status(500).send("Unable to send message");

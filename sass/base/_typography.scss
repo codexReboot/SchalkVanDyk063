@@ -428,7 +428,8 @@
 		color: $cp-dark;
 	}
 	&--input,
-	&--formSelectOption {
+	&--formSelectOption,
+	&--contactFormTextarea {
 		color: rgba($cf-dark, 0.9);
 		font-size: clamp(1.3rem, 4.3vw, 1.5rem);
 		text-shadow: 1px 1px 1px rgba($cf-white, 1);
@@ -439,6 +440,10 @@
 		font-weight: 600;
 		font-size: clamp(1.3rem, 4.3vw, 1.5rem);
 		text-align: left;
+	}
+	&--contactFormSubmitMessage {
+		color: rgba($cp-dark, 0.95);
+		text-decoration: underline solid 1px;
 	}
 	&--formError {
 		color: rgba($cf-white, 1);

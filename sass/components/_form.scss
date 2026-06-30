@@ -10,7 +10,6 @@
 	width: 100%;
 	@include displayFlexColumn;
 	gap: 2rem;
-
 	&__formRowGroupNamesAndDetails {
 		width: 100%;
 		@include displayFlexColumn;
@@ -150,6 +149,32 @@
 
 	&__submitContainer {
 		margin-top: 0.5rem;
+	}
+	&__contactFormSubmitMessage {
+		background: linear-gradient(to bottom right, rgba($cp-white, 0.95), rgba($cp-grey, 0.9));
+		border: 1px solid rgba($cp-dark, 0.55);
+		border-radius: 0.5rem;
+		box-shadow: 0 0 25px 5px rgba($cp-dark, 0.45);
+		padding: 1.25rem 2rem;
+		margin-top: 3rem;
+
+		animation: none;
+
+		&--animate {
+			animation: submitMessagePulse 1s ease;
+		}
+	}
+	&__contactFormSubmitMessageSuccess {
+		color: rgba($cp-white, 0.95);
+		font-weight: 700;
+		background: linear-gradient(to bottom right, rgba($cp-green, 0.65), rgba($cp-green, 0.95));
+		border: 2px solid rgba($cp-green, 0.55);
+	}
+	&__contactFormSubmitMessageError {
+		color: rgba($cp-white, 0.95);
+		font-weight: 700;
+		background: linear-gradient(to bottom right, rgba($cp-red, 0.65), rgba($cp-red, 0.95));
+		border: 2px solid rgba($cp-red, 0.55);
 	}
 
 	&__select {

@@ -41,9 +41,6 @@ app.get("/hosting", (req, res) => {
 	res.render("hosting", { heading: "Domain Setup & Web Hosting" });
 });
 
-// Handle contact form submission and send email via SMTP
-app.post("/contact", handleContactForm);
-
 // Marketing page
 app.get("/marketing", (req, res) => {
 	res.render("marketing", { heading: "Online Digital Marketing & SEO" });
@@ -53,6 +50,9 @@ app.get("/marketing", (req, res) => {
 app.get("/contact", (req, res) => {
 	res.render("contact", { currentPage: "contact", heading: "Contact Us" });
 });
+
+// Handle contact form submission and send email via SMTP
+app.post("/contact", handleContactForm);
 
 // Popia page
 app.get("/popia", (req, res) => {

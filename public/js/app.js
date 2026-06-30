@@ -165,15 +165,15 @@ document.addEventListener("DOMContentLoaded", () => {
 ///////u////////////////////////////////////////////
 // returnTopBtnLogic
 ////////////////////////////////////////////////////
-import { returnToTopBtn, showReturnToTopBtn, hideReturnToTopBtn } from "./modules/returnToTopFunctions.js";
+// import { returnToTopBtn, showReturnToTopBtn, hideReturnToTopBtn } from "./modules/returnToTopFunctions.js";
 
-document.addEventListener("scroll", () => {
-	if (scrollY > 100) {
-		showReturnToTopBtn();
-	} else {
-		hideReturnToTopBtn();
-	}
-});
+// document.addEventListener("scroll", () => {
+// 	if (scrollY > 100) {
+// 		showReturnToTopBtn();
+// 	} else {
+// 		hideReturnToTopBtn();
+// 	}
+// });
 
 /////////////////////////////////
 // print

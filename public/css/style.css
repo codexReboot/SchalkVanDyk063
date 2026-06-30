@@ -15,6 +15,23 @@ $breakpoint argument choices
 ORDER: base + typography > general layout + grid > page layout > components
 
 */
+@keyframes submitMessagePulse {
+  0% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(0.95);
+  }
+  60% {
+    transform: scale(1.05);
+  }
+  80% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 *,
 *::before,
 *::after {
@@ -505,7 +522,7 @@ h6 {
 .paragraph--contactform {
   color: #333333;
 }
-.paragraph--input, .paragraph--formSelectOption {
+.paragraph--input, .paragraph--formSelectOption, .paragraph--contactFormTextarea {
   color: rgba(41, 40, 40, 0.9);
   font-size: clamp(1.3rem, 4.3vw, 1.5rem);
   text-shadow: 1px 1px 1px #f0f0f0;
@@ -516,6 +533,10 @@ h6 {
   font-weight: 600;
   font-size: clamp(1.3rem, 4.3vw, 1.5rem);
   text-align: left;
+}
+.paragraph--contactFormSubmitMessage {
+  color: rgba(51, 51, 51, 0.95);
+  text-decoration: underline solid 1px;
 }
 .paragraph--formError {
   color: #f0f0f0;
@@ -1426,6 +1447,30 @@ h6 {
 .form__submitContainer {
   margin-top: 0.5rem;
 }
+.form__contactFormSubmitMessage {
+  background: linear-gradient(to bottom right, rgba(242, 242, 242, 0.95), rgba(156, 156, 156, 0.9));
+  border: 1px solid rgba(51, 51, 51, 0.55);
+  border-radius: 0.5rem;
+  box-shadow: 0 0 25px 5px rgba(51, 51, 51, 0.45);
+  padding: 1.25rem 2rem;
+  margin-top: 3rem;
+  animation: none;
+}
+.form__contactFormSubmitMessage--animate {
+  animation: submitMessagePulse 1s ease;
+}
+.form__contactFormSubmitMessageSuccess {
+  color: rgba(242, 242, 242, 0.95);
+  font-weight: 700;
+  background: linear-gradient(to bottom right, rgba(45, 170, 6, 0.65), rgba(45, 170, 6, 0.95));
+  border: 2px solid rgba(45, 170, 6, 0.55);
+}
+.form__contactFormSubmitMessageError {
+  color: rgba(242, 242, 242, 0.95);
+  font-weight: 700;
+  background: linear-gradient(to bottom right, rgba(193, 18, 31, 0.65), rgba(193, 18, 31, 0.95));
+  border: 2px solid rgba(193, 18, 31, 0.55);
+}
 .form__select {
   position: relative;
   display: flex;
@@ -1920,6 +1965,7 @@ h6 {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  position: relative;
 }
 @media (min-width: 56.25em) {
   .contactFormSection__contactFormSectionContentContainer {
