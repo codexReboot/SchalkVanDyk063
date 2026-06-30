@@ -2,9 +2,14 @@ import express from "express";
 import path from "path";
 import { fileURLToPath } from "url";
 import { handleContactForm } from "./contactForm.js";
+import { contactMiddlewares } from "./rateLimiter.js";
 
 const app = express();
 const PORT = process.env.PORT || 5000;
+
+// Set immediately after app creation: ensure it is set before any middleware that relies on IP
+// Without this, rate limiting may NOT work correctly behind hosting proxies.
+app.set("trust proxy", 1);
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -52,7 +57,7 @@ app.get("/contact", (req, res) => {
 });
 
 // Handle contact form submission and send email via SMTP
-app.post("/contact", handleContactForm);
+app.post("/contact", ...contactMiddlewares, handleContactForm);
 
 // Popia page
 app.get("/popia", (req, res) => {
