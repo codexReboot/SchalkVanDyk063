@@ -3,6 +3,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 import { handleContactForm } from "./contactForm.js";
 import { contactMiddlewares } from "./rateLimiter.js";
+import { contactValidation } from "./contactValidation.js";
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -24,6 +25,9 @@ app.set("views", path.join(__dirname, "../views"));
 
 // Serve static files from the "public" folder
 app.use(express.static(path.join(__dirname, "../public")));
+
+// Serve shared static files from the "shared" folder
+app.use(express.static(path.join(__dirname, "../shared"))); // This is for shared files like validationRules.js that are used both on the client and server
 
 // Home page
 app.get("/", (req, res) => {
@@ -57,7 +61,7 @@ app.get("/contact", (req, res) => {
 });
 
 // Handle contact form submission and send email via SMTP
-app.post("/contact", ...contactMiddlewares, handleContactForm);
+app.post("/contact", ...contactMiddlewares, contactValidation, handleContactForm);
 
 // Popia page
 app.get("/popia", (req, res) => {

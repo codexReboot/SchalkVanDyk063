@@ -1,5 +1,8 @@
+import { validationRules } from "../../../validationRules.js";
 export function initContactFormValidation() {
 	window.addEventListener("DOMContentLoaded", () => {
+		console.log("init contact form validation");
+		console.log("validation rules", validationRules.fistName);
 		// select contact form on contact page
 		const form = document.querySelector("form");
 		// select inputs of contact form on contact page
@@ -29,13 +32,13 @@ export function initContactFormValidation() {
 				case "firstName": {
 					if (!value) {
 						setError("First name is required");
-					} else if (value.length < 2) {
-						setError("Must be at least 2 characters");
-					} else if (value.length > 50) {
-						setError("Must be less than 51 characters");
-					} else if (!/^[A-Za-z]/.test(value)) {
+					} else if (value.length < validationRules.firstName.minLength) {
+						setError(`Must be at least ${validationRules.firstName.minLength} characters`);
+					} else if (value.length > validationRules.firstName.maxLength) {
+						setError(`Must be less than ${validationRules.firstName.maxLength} characters`);
+					} else if (!validationRules.firstName.regex.start.test(value)) {
 						setError("Must start with a letter");
-					} else if (!/^[A-Za-z\s'-]+$/.test(value)) {
+					} else if (!validationRules.firstName.regex.full.test(value)) {
 						setError("Contains invalid characters");
 					}
 					break;
@@ -45,13 +48,14 @@ export function initContactFormValidation() {
 				// -------------------------
 				case "lastName": {
 					if (!value) {
-					} else if (value.length < 2) {
-						setError("Must be at least 2 characters");
-					} else if (value.length > 50) {
-						setError("Must be less than 51 characters");
-					} else if (!/^[A-Za-z]/.test(value)) {
+						// Left empty on purpose, last name is optional
+					} else if (value.length < validationRules.lastName.minLength) {
+						setError(`Must be at least ${validationRules.lastName.minLength} characters`);
+					} else if (value.length > validationRules.lastName.maxLength) {
+						setError(`Must be less than ${validationRules.lastName.maxLength} characters`);
+					} else if (!validationRules.lastName.regex.start.test(value)) {
 						setError("Must start with a letter");
-					} else if (!/^[A-Za-z\s'-]+$/.test(value)) {
+					} else if (!validationRules.lastName.regex.full.test(value)) {
 						setError("Contains invalid characters");
 					}
 					break;
@@ -62,11 +66,11 @@ export function initContactFormValidation() {
 				case "email":
 					if (!value) {
 						setError("Email address is required");
-					} else if (value.length < 5) {
-						setError("Email address is too short");
-					} else if (value.length > 254) {
-						setError("Email address is too long");
-					} else if (!/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/.test(value)) {
+					} else if (value.length < validationRules.email.minLength) {
+						setError(`Email address must be at least ${validationRules.email.minLength} characters`);
+					} else if (value.length > validationRules.email.maxLength) {
+						setError(`Email address must be less than ${validationRules.email.maxLength} characters`);
+					} else if (!validationRules.email.regex.test(value)) {
 						setError("Enter a valid email address (e.g. john.smith@example.com)");
 					}
 					break;
@@ -75,15 +79,16 @@ export function initContactFormValidation() {
 				// -------------------------
 				case "phone": {
 					if (!value) {
-					} else if (!/^\+?[0-9\s()-]+$/.test(value)) {
+						// Left empty on purpose, phone number is optional
+					} else if (!validationRules.phone.regex.test(value)) {
 						setError("Only numbers, spaces, brackets, hyphens, and + are allowed");
 					} else {
 						const digits = value.replace(/\D/g, "");
 
-						if (digits.length < 10) {
-							setError("Phone number must contain at least 10 digits");
-						} else if (digits.length > 15) {
-							setError("Phone number must be less than 15 digits");
+						if (digits.length < validationRules.phone.digitsMin) {
+							setError(`Phone number must contain at least ${validationRules.phone.digitsMin} digits`);
+						} else if (digits.length > validationRules.phone.digitsMax) {
+							setError(`Phone number must be less than ${validationRules.phone.digitsMax} digits`);
 						}
 					}
 					break;
@@ -93,8 +98,9 @@ export function initContactFormValidation() {
 				// -------------------------
 				case "subject":
 					if (!value) {
-					} else if (value.length < 3) {
-						setError("Subject must be at least 3 characters");
+						// Left empty on purpose, subject is optional
+					} else if (value.length < 2) {
+						setError("Subject must be at least 2 characters");
 					} else if (value.length > 100) {
 						setError("Subject must be less than 100 characters");
 					}
